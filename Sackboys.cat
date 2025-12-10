@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b099-a74b-512d-241d" name="Sackboys" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Sackboys - Library" id="62e6-097a-2bda-40be" targetId="a323-4e38-cc60-d792"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Foxes" hidden="false" id="f872-cdc4-5295-eb42" type="selectionEntry" targetId="e6e2-59e4-0fdf-b4fc"/>
+    <entryLink import="true" name="Snipers" hidden="false" id="ee22-8ef3-f74f-1fa2" type="selectionEntry" targetId="0307-51c6-9803-d08c"/>
+    <entryLink import="true" name="Veterans" hidden="false" id="8c0f-3e1c-4dcc-e233" type="selectionEntry" targetId="3025-682c-7fdc-b7c1"/>
+    <entryLink import="true" name="Blueberries" hidden="false" id="ae29-47f7-a6f0-526c" type="selectionEntry" targetId="bb70-8928-2bdd-23b4"/>
+    <entryLink import="true" name="Kribor VIII Operators" hidden="false" id="b060-2181-5958-438c" type="selectionEntry" targetId="12ec-7e8b-cbde-4a62"/>
+    <entryLink import="true" name="Captain" hidden="false" id="7966-807f-9589-8f6a" type="selectionEntry" targetId="9b74-6454-0cd9-6c2b"/>
+    <entryLink import="true" name="Hummingbird Operator" hidden="false" id="959a-43b2-50d2-266f" type="selectionEntry" targetId="ac72-370b-6ed0-d68c"/>
+    <entryLink import="true" name="Medic" hidden="false" id="1401-061f-551e-19ab" type="selectionEntry" targetId="bb06-33af-5cad-c2a6"/>
+    <entryLink import="true" name="Gunna" hidden="false" id="809e-a18d-9ad4-1c13" type="selectionEntry" targetId="162f-2f37-4f27-70f5"/>
+    <entryLink import="true" name="Vanguard Armour" hidden="false" id="377f-3ded-c2f7-299b" type="selectionEntry" targetId="9acc-785e-d36a-efcc"/>
+    <entryLink import="true" name="Brute" hidden="false" id="48f6-6a8a-e610-d917" type="selectionEntry" targetId="3f1c-a35d-dc2d-1050"/>
+    <entryLink import="true" name="Brute Sniper" hidden="false" id="bf0f-31fb-d069-1aca" type="selectionEntry" targetId="54bb-0a6b-98b7-d21e"/>
+  </entryLinks>
+</catalogue>
