@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1d8f-98a7-8e82-275d" name="Diamond Dogs" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="Diamond Dogs - Library" id="ebbe-a33a-d7b5-4917" targetId="f26f-7ffc-6626-b046"/>
-  </catalogueLinks>
-  <entryLinks>
-    <entryLink import="true" name="Flaming Buffalo" hidden="false" id="e444-26cd-4296-ae40" type="selectionEntry" targetId="a106-1de4-7375-c466"/>
-  </entryLinks>
-</catalogue>
