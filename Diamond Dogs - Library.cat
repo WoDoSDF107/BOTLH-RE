@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="f26f-7ffc-6626-b046" name="Diamond Dogs - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Flaming Buffalo" hidden="false" id="a106-1de4-7375-c466">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Flaming Buffalo" hidden="false" id="58b3-367d-6084-e10e">
+          <profiles>
+            <profile name="Flaming Buffalo" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="cd3e-832b-5816-d3b1">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">8&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="G44" hidden="false" id="d160-c0c3-fd6f-04d4" type="selectionEntry" targetId="a66d-223e-4fb6-a1a3"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="13cb-2cb1-bdc1-d10b" primary="true" name="Character"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="b563-3d9b-86d4-7aeb" primary="false" name="Human"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Lone Operative" id="4556-872f-e308-740b" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Flaming Buffalo" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="1343-c726-4153-73cf">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Specialist" id="7e09-6f83-0f47-d4ff" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Trap Specialist" hidden="false" id="399a-6ded-ae9c-cfa8" type="selectionEntry" targetId="b6dd-bff1-d4f0-1a4c"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f332-4cbf-fc4b-b0dc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84f8-a159-3edf-68b7"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="G44" hidden="false" id="a66d-223e-4fb6-a1a3">
+      <profiles>
+        <profile name="G44" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="1769-37a8-ff52-4eba">
+          <characteristics>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">5</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">6</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault, Heavy, Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e94-965e-b0e6-9ebe"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ff2-3bf0-d494-e758"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trap Specialist" hidden="false" id="b6dd-bff1-d4f0-1a4c">
+      <profiles>
+        <profile name="Trap Specialist" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f4b1-d262-77e4-b7e5">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start or end of your Movement phase, you may use this ability. Place one C4 token within 1&quot; of this unit. In any following phases, yours or your opponents, you may choose to detonate the token. Any units (including friendly units) within 3&quot; of that token receive 5 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
