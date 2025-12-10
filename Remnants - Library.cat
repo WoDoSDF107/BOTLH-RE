@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Recon Unit" hidden="false" id="8a59-9caa-f190-f885">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Recon Soldier" hidden="false" id="6dd2-e59a-8d24-9cbe">
+          <entryLinks>
+            <entryLink import="true" name="MP5" hidden="false" id="9435-44c0-122a-3111" type="selectionEntry" targetId="319f-785c-ebb9-4d0e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d99a-b150-1061-abfa-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d99a-b150-1061-abfa-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Recon Soldier" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="2d7b-e072-fce2-9e8c">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">4</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c1e7-faf0-178c-a598"/>
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="7d75-a8d7-54db-9eeb"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="81fe-b9a5-17cc-e30f" primary="true" name="Infantry"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="5e3a-f198-f8ad-79ae" primary="false" name="Human"/>
+        <categoryLink targetId="4fcf-f495-78ec-6e44" id="7843-4911-22b9-a8b3" primary="false" name="Remnants"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="&quot;To a place we&apos;ll burn.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="c821-fce5-12de-55ed">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once the unit is Below Half-strength, movement range is increased by 2, while range for all Ranged Weapons is reduced by 2&quot;. As well, on a successful Charge Move, you may roll a D6, if the outcome is 4+, deal D6 mortal wounds to the target unit, but this unit is destroyed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Scouts" id="6293-b38b-763d-df40" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="&quot;AtteeeenTION!&quot;" id="14b0-f930-d224-3966" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
+        <infoLink name="BANNER" id="08fb-25d2-bbdd-ef82" hidden="false" type="rule" targetId="b018-ded1-add1-e18e"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="35"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="8&quot;" field="c100-b9db-eacc-d3e0" affects="self.entries.recursive.profiles.Unit">
+          <conditions>
+            <condition type="lessThan" value="11" field="selections" scope="parent" childId="6dd2-e59a-8d24-9cbe" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="10&quot;" field="c100-b9db-eacc-d3e0" affects="self.entries.recursive.profiles.Unit">
+          <conditions>
+            <condition type="lessThan" value="6" field="selections" scope="parent" childId="6dd2-e59a-8d24-9cbe" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="multiply" value="2" field="7bd5-a3cc-211e-f62e" affects="self.entries.recursive">
+          <conditions>
+            <condition type="greaterThan" value="5" field="selections" scope="parent" childId="6dd2-e59a-8d24-9cbe" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MP5" hidden="false" id="319f-785c-ebb9-4d0e">
+      <profiles>
+        <profile name="MP5" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="1894-7b69-e176-dfab">
+          <characteristics>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">12&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">2</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="3efd-0590-5efa-45b7" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Infantrymen" hidden="false" id="751d-cb66-12af-966c">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Infantryman" hidden="false" id="a308-ffb9-65e8-4f51">
+          <profiles>
+            <profile name="Infantryman" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="cd44-e67d-df62-8231">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">4</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2bc8-3708-5d0a-f1be"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="0c13-7e7c-5ebc-aafe"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="M4" hidden="false" id="826a-6de8-7792-a02f" type="selectionEntry" targetId="0d0e-60b4-a683-7b48">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e18c-6fb3-949f-ea94"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76ff-05b2-9ba8-78d9"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="ad50-e7f5-456b-ea5a" primary="true" name="Infantry"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="db8c-d2b8-f2d0-8e62" primary="false" name="Human"/>
+        <categoryLink targetId="4fcf-f495-78ec-6e44" id="a802-16e6-89b7-3b8e" primary="false" name="Remnants"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="&quot;Sir! Yes, Sir!&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="85e8-5e2b-7f38-6123">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When this unit receives an order, roll a D3, add this amount to either the movement, toughness or range (for all weapons) for this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&quot;Sanitise the filth.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="3929-5e77-4da2-eb09">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">All weapons gain +1 strength against [Xenos] units.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="&quot;AtteeeenTION!&quot;" id="9694-730c-330d-d442" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
+        <infoLink name="BANNER" id="02bb-1532-7b0b-2290" hidden="false" type="rule" targetId="b018-ded1-add1-e18e"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="40"/>
+      </costs>
+      <modifiers>
+        <modifier type="multiply" value="2" field="7bd5-a3cc-211e-f62e" affects="self.entries.recursive">
+          <conditions>
+            <condition type="greaterThan" value="5" field="selections" scope="parent" childId="a308-ffb9-65e8-4f51" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M4" hidden="false" id="0d0e-60b4-a683-7b48">
+      <profiles>
+        <profile name="M4" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="46c9-85a0-9c1d-ec85">
+          <characteristics>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">20&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">2</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">1</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Assault" id="20ee-df4c-f2aa-0ec5" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cybermen" hidden="false" id="1d8e-b17a-3533-2b8f">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Cyberman" hidden="false" id="2efe-9003-2371-d9c1">
+          <profiles>
+            <profile name="Cyberman" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="c8b8-e07d-00ec-dd22">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">4&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="df86-1f5b-539a-eda5"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6a01-f50f-68f4-ba8f"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="9735-bfe1-2b1d-53c6" primary="true" name="Infantry"/>
+        <categoryLink targetId="acbc-85de-f294-b448" id="5783-dd4a-e29a-b875" primary="false" name="Mechanical"/>
+        <categoryLink targetId="4fcf-f495-78ec-6e44" id="7856-1252-2711-2eb0" primary="false" name="Remnants"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="M60" hidden="false" id="f143-751e-afa1-20bb" type="selectionEntry" targetId="112c-be2d-9f55-f064">
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="M4" hidden="false" id="e4c1-e659-1780-4cc3" type="selectionEntry" targetId="0d0e-60b4-a683-7b48"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Mechanical Madness (AURA)" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="a7fd-7994-90d8-9bfe">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When an enemy unit is within 3&quot; of this unit, they receive SHOCK status.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&quot;Piece yourself back together.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="e246-04bb-a3eb-97b5">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">The first time a model in this unit is destroyed, roll one D6. If the result is a 3+ (adding 1 to the result if this unit was destroyed as a result of an enemy Ranged Weapon), return it to the unit with 1 wound remaining. Any enemy units within engagement range of this unit gain SHOCK until their next Command Phase if this roll is successful.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="&quot;AtteeeenTION!&quot;" id="9410-6c3f-9eba-1e6c" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
+        <infoLink name="COLD HEART" id="e8f4-a905-8028-1fdf" hidden="false" type="rule" targetId="3742-1bf9-a0f8-0b11"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="100"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M60" hidden="false" id="112c-be2d-9f55-f064">
+      <profiles>
+        <profile name="➤ M60 FMJ Rounds" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="29cf-93fb-1ee4-b5b1">
+          <characteristics>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ M60 HE Rounds" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="24b0-0cb1-1379-8fb0">
+          <characteristics>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">20&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">5+</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">ANTI-Vehicle 3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="5cd3-d1c6-40b9-69fe" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Anti-" id="3cd4-8094-c9fc-e6c3" hidden="false" type="rule" targetId="4111-82e3-9444-e942">
+          <modifiers>
+            <modifier type="append" value="Vehicle 3+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Infantry" hidden="false" id="cb06-a086-e804-f9c0">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Heavy Infantryman" hidden="false" id="8a8a-96c8-16ad-abc3">
+          <entryLinks>
+            <entryLink import="true" name="M60" hidden="false" id="6a12-e824-a497-a381" type="selectionEntry" targetId="112c-be2d-9f55-f064">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ddd-9924-ba46-1cbb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4086-5062-de7c-8298"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="361c-7621-9888-a682"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="561d-996f-482f-848e"/>
+          </constraints>
+          <profiles>
+            <profile name="Heavy Infantryman" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="4f20-b16d-7797-db03">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">5&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="2d0c-eb95-109f-fc9f" primary="true" name="Infantry"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="ead2-bd40-0d17-71d9" primary="false" name="Human"/>
+        <categoryLink targetId="4fcf-f495-78ec-6e44" id="74f1-6968-2fdd-2838" primary="false" name="Remnants"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="&quot;Hold your ground!&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="1c50-edde-9f28-fbac">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If this unit remained stationary this turn, they receive an improvement of 1 to their save until the next Command Phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&quot;Second time&apos;s the charm!&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4fa9-f2c7-9e9c-2989">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When making an attack against Infantry units with Ranged Weapons, reroll a hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="&quot;AtteeeenTION!&quot;" id="383d-7168-a4f2-95f1" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="95"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Officer" hidden="false" id="e0a3-e572-aa96-0e5e">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Officer" hidden="false" id="16d1-b8ff-fda2-fb9c">
+          <profiles>
+            <profile name="Officer" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="a8d8-b9f8-d08c-969e">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">2</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f918-6fd9-7e1f-81b2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb5-5f18-b982-5e3e"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="1911" hidden="false" id="99f7-6f3d-9811-2fd0" type="selectionEntry" targetId="3bbf-6208-8327-79d0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2e2-a26f-ffc4-bdbe"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cef7-11b5-b331-142e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="30f6-053e-7156-c147" primary="true" name="Character"/>
+        <categoryLink targetId="33ee-b756-5da0-5503" id="6102-a7bc-8e22-2e33" primary="false" name="Leader"/>
+        <categoryLink targetId="4fcf-f495-78ec-6e44" id="e58f-7730-bd8c-85f8" primary="false" name="Remnants"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="c981-bb7e-b79d-f2c9" primary="false" name="Human"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="&quot;AtteeeenTION!&quot;" id="0b76-dfc5-0619-75a1" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
+        <infoLink name="Character Unit" id="84f7-6fca-837a-babd" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+      </infoLinks>
+      <profiles>
+        <profile name="&quot;Push on!&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4c56-bd61-4606-b02e">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Grants the bearer&apos;s unit IRON WILL.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&quot;Disengage!&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b2ee-5021-3881-8f3e">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">The bearer&apos;s unit can shoot in a turn in which it fell back.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="35"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="1911" hidden="false" id="3bbf-6208-8327-79d0">
+      <profiles>
+        <profile name="1911" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="8722-b967-c6ce-d95c">
+          <characteristics>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">12&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Support Engineer" hidden="false" id="21ec-9981-3de0-de0b">
+      <categoryLinks>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="cb29-af28-275e-4c4f" primary="true" name="Character"/>
+        <categoryLink targetId="4fcf-f495-78ec-6e44" id="1691-72cc-9b40-fd87" primary="false" name="Remnants"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="2770-91cc-a2fc-857b" primary="false" name="Human"/>
+        <categoryLink targetId="9c21-a33c-fd69-b8c4" id="0915-efda-8c64-7ff9" primary="false" name="Specialist"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="4063-e05b-e0f2-3fc5" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Combat Vest" hidden="false" id="1f63-d527-fefc-c1ba">
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="3+" field="55e5-4318-7023-255d" scope="unit" affects="self.entries.recursive.profiles.Unit" position="-1"/>
+                <modifier type="set" value="4" field="4e8c-3287-4126-05a4" affects="self.entries.recursive.profiles.Unit" scope="unit"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Support Vest" hidden="false" id="6328-0874-3fb2-9a9e">
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Support Vest" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9562-a401-234e-1aa7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="5cee-5283-c95d-c323">Mechanical units in the bearer&apos;s unit receive Feel No Pain 5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Feel No Pain" id="c6df-37cc-ca35-a669" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="62d7-fbf8-5f17-9ff6"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Support Engineer" hidden="false" id="bcd1-8a5d-0f24-50e2">
+          <profiles>
+            <profile name="Support Engineer" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="719c-3a78-5221-2487">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">2</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cef2-a282-a9c6-98fc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4f8-82df-ef7e-7848"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="1911" hidden="false" id="a1ac-48c6-c2a3-0146" type="selectionEntry" targetId="3bbf-6208-8327-79d0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da99-a2f7-9c96-879a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="824e-6f3a-6e5c-6be7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="&quot;I will put you back together.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="475c-3938-c93d-424b">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, if attached to a Recon Unit or Infantrymen unit, this unit can use this ability. If a model in the bearer&apos;s unit is destroyed, roll 1 D6. On a 3+, that model is replaced with a Cybermen model with an M4. If the roll is unsuccessful, this ability can be used again.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&quot;Placing Medkit!&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="050f-3f8d-60a5-de0c">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle you may use this ability. During your Command Phase, place a Medkit token 1&quot; from this model. Units within 1&quot; of this token recover D3 wounds during their Command Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="&quot;AtteeeenTION!&quot;" id="71b1-7e5b-27a1-c544" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="35"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Medic" hidden="false" id="aca0-136f-16fd-752a">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Medic" hidden="false" id="c872-8d70-ea20-4d2e">
+          <entryLinks>
+            <entryLink import="true" name="1911" hidden="false" id="12c3-6d04-15ec-eb19" type="selectionEntry" targetId="3bbf-6208-8327-79d0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7af0-e02a-6470-158e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="666a-27c7-83a3-7f29"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeed-ee5a-7ddf-e102"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea8d-adf8-510c-3c33"/>
+          </constraints>
+          <profiles>
+            <profile name="Medic" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="312d-c859-3556-18e1">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">2</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="299a-7b34-0af8-cc1f" primary="true" name="Character"/>
+        <categoryLink targetId="9c21-a33c-fd69-b8c4" id="50bb-4e28-f7ef-9d6a" primary="false" name="Specialist"/>
+        <categoryLink targetId="4fcf-f495-78ec-6e44" id="8bdf-8462-fb8f-6971" primary="false" name="Remnants"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="c6e0-8613-8ae6-f116" primary="false" name="Human"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="&quot;Just a flesh wound.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b3e5-4e5b-3fb3-ccf8">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Command phase, if the bearer’s unit is below its Starting Strength, you can return up to D3 destroyed models to this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&quot;Let&apos;s go practice medicine.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="1697-5edb-4cd9-9209">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, while this unit is within engagement range of an enemy Character unit, it can use this ability. Select one enemy Character Unit model within engagement range of this unit, next time that enemy unit is eligible to make an attack, its strength is doubled, but that model is destroyed upon making an attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="&quot;AtteeeenTION!&quot;" id="08e7-f99d-2c04-1b12" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="40"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="&quot;AtteeeenTION!&quot;" id="76cf-ccd6-8536-f19b" hidden="false">
+      <description>During your Command Phase, Remnants Leader units may issue one command to a friendly Remnants unit within 6&quot;. That command must be one of the following three:
+
+
+&quot;Send them to hell!&quot; - 
+Target 1 visible enemy unit, for the rest of this turn, any friendly Ranged Weapons have +1 to their Attack characteristic when targeting that unit.
+
+&quot;Know no fear!&quot; - 
+This unit cannot receive [SHOCK] until your next command phase.
+
+&quot;Finish them off!&quot; - 
+When targeting a unit below half of its Starting Strength, improve the Armour Penetration of Ranged Weapons by 1.</description>
+    </rule>
+  </sharedRules>
+</catalogue>

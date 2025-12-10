@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4f4a-cac5-8ea5-d499" name="Remnants" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Remnants - Library" id="a9dd-8607-1eb6-d0d1" targetId="2429-5a44-1f91-64aa"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Recon Unit" hidden="false" id="627c-c678-f217-54d6" type="selectionEntry" targetId="8a59-9caa-f190-f885"/>
+    <entryLink import="true" name="Infantrymen" hidden="false" id="493f-7eeb-3c7b-b014" type="selectionEntry" targetId="751d-cb66-12af-966c"/>
+    <entryLink import="true" name="Cybermen" hidden="false" id="fa04-3b73-547b-6b99" type="selectionEntry" targetId="1d8e-b17a-3533-2b8f"/>
+    <entryLink import="true" name="Heavy Infantry" hidden="false" id="5c2a-2495-8e26-be0f" type="selectionEntry" targetId="cb06-a086-e804-f9c0"/>
+    <entryLink import="true" name="Officer" hidden="false" id="3c64-43ee-a86f-f9bf" type="selectionEntry" targetId="e0a3-e572-aa96-0e5e"/>
+    <entryLink import="true" name="Support Engineer" hidden="false" id="5c7c-f172-e30f-acba" type="selectionEntry" targetId="21ec-9981-3de0-de0b"/>
+    <entryLink import="true" name="Medic" hidden="false" id="7364-e95e-65ab-6b74" type="selectionEntry" targetId="aca0-136f-16fd-752a"/>
+  </entryLinks>
+</catalogue>
