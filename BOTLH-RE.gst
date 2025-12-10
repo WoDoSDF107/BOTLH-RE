@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="30" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="31" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -247,4 +247,7 @@ When doing so:
       <description>When an enemy unit makes an attack with melee weapons against a model with the Parry keyword on any of its melee weapons, the player who controls the target unit can force the opponent to reroll x attack dice, with x being equal to the amount of different melee weapons with Parry that the target model has. If the result of that reroll is a 1, the attacking unit receives the damage that would have been dealt from that attack dice.</description>
     </rule>
   </sharedRules>
+  <publications>
+    <publication name="Github" id="2927-a797-ec12-86bf" hidden="false" publisherUrl="https://github.com/WoDoSDF107/BOTLH-RE"/>
+  </publications>
 </gameSystem>
