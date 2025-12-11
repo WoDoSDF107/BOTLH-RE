@@ -696,4 +696,7 @@ This unit cannot receive [SHOCK] until your next command phase.
 When targeting a unit below half of its Starting Strength, improve the Armour Penetration of Ranged Weapons by 1.</description>
     </rule>
   </sharedRules>
+  <publications>
+    <publication name="GitHub" id="ab3a-0c4b-2cc7-184d" hidden="false" publisherUrl="https://github.com/WoDoSDF107/BOTLH-RE"/>
+  </publications>
 </catalogue>
