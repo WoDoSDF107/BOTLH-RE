@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Recon Unit" hidden="false" id="8a59-9caa-f190-f885">
       <selectionEntries>
@@ -192,20 +192,62 @@
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6a01-f50f-68f4-ba8f"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Iron Fist" hidden="false" id="3b7c-56e7-e0d2-4449">
+          <profiles>
+            <profile name="Iron Fist" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="a0e0-6ce6-fdaa-cacf">
+              <characteristics>
+                <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
+                <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">4+</characteristic>
+                <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
+                <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="increment" value="1" field="077d-fba7-858f-2e57">
+              <conditions>
+                <condition type="greaterThan" value="3" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="077d-fba7-858f-2e57">
+              <conditions>
+                <condition type="greaterThan" value="4" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="077d-fba7-858f-2e57">
+              <conditions>
+                <condition type="greaterThan" value="5" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8a7f-5013-237f-0208">
+              <conditions>
+                <condition type="greaterThan" value="3" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8a7f-5013-237f-0208">
+              <conditions>
+                <condition type="greaterThan" value="4" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8a7f-5013-237f-0208">
+              <conditions>
+                <condition type="greaterThan" value="5" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8a7f-5013-237f-0208"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="077d-fba7-858f-2e57"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="9735-bfe1-2b1d-53c6" primary="true" name="Infantry"/>
         <categoryLink targetId="acbc-85de-f294-b448" id="5783-dd4a-e29a-b875" primary="false" name="Mechanical"/>
         <categoryLink targetId="4fcf-f495-78ec-6e44" id="7856-1252-2711-2eb0" primary="false" name="Remnants"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="M60" hidden="false" id="f143-751e-afa1-20bb" type="selectionEntry" targetId="112c-be2d-9f55-f064">
-          <costs>
-            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
-          </costs>
-        </entryLink>
-        <entryLink import="true" name="M4" hidden="false" id="e4c1-e659-1780-4cc3" type="selectionEntry" targetId="0d0e-60b4-a683-7b48"/>
-      </entryLinks>
       <profiles>
         <profile name="Mechanical Madness (AURA)" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="a7fd-7994-90d8-9bfe">
           <characteristics>
@@ -225,6 +267,102 @@
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="100"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="48bf-7c12-afbf-4b37" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="M60" hidden="false" id="f143-751e-afa1-20bb" type="selectionEntry" targetId="112c-be2d-9f55-f064">
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f5da-9c21-8739-26be"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="f5da-9c21-8739-26be">
+                  <conditions>
+                    <condition type="greaterThan" value="3" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5da-9c21-8739-26be">
+                  <conditions>
+                    <condition type="greaterThan" value="4" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5da-9c21-8739-26be">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="M4" hidden="false" id="e4c1-e659-1780-4cc3" type="selectionEntry" targetId="0d0e-60b4-a683-7b48">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b0eb-d25b-6353-93c3"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="b0eb-d25b-6353-93c3">
+                  <conditions>
+                    <condition type="greaterThan" value="3" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="b0eb-d25b-6353-93c3">
+                  <conditions>
+                    <condition type="greaterThan" value="4" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="b0eb-d25b-6353-93c3">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a2e9-a770-4117-c7f7"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e398-58de-f239-ead6"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="a2e9-a770-4117-c7f7">
+              <conditions>
+                <condition type="greaterThan" value="3" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a2e9-a770-4117-c7f7">
+              <conditions>
+                <condition type="greaterThan" value="4" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a2e9-a770-4117-c7f7">
+              <conditions>
+                <condition type="greaterThan" value="5" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="e398-58de-f239-ead6">
+              <conditions>
+                <condition type="greaterThan" value="3" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="e398-58de-f239-ead6">
+              <conditions>
+                <condition type="greaterThan" value="4" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="e398-58de-f239-ead6">
+              <conditions>
+                <condition type="greaterThan" value="5" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="multiply" value="2" field="7bd5-a3cc-211e-f62e" affects="self.entries.recursive.1d8e-b17a-3533-2b8f" scope="parent">
+          <conditions>
+            <condition type="greaterThan" value="3" field="selections" scope="parent" childId="2efe-9003-2371-d9c1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M60" hidden="false" id="112c-be2d-9f55-f064">
       <profiles>
