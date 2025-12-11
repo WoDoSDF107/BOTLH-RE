@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Recon Unit" hidden="false" id="8a59-9caa-f190-f885">
       <selectionEntries>
@@ -503,7 +503,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="35"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="45"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="1911" hidden="false" id="3bbf-6208-8327-79d0">
@@ -605,7 +605,7 @@
         <infoLink name="&quot;AtteeeenTION!&quot;" id="71b1-7e5b-27a1-c544" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="35"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="45"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Medic" hidden="false" id="aca0-136f-16fd-752a">
@@ -646,7 +646,7 @@
       <profiles>
         <profile name="&quot;Just a flesh wound.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b3e5-4e5b-3fb3-ccf8">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Command phase, if the bearer’s unit is below its Starting Strength, you can return up to D3 destroyed models to this unit.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Command phase, if the bearer’s unit is below its Starting Strength, you can return up to D3 destroyed models with the Human keyword to this unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="&quot;Let&apos;s go practice medicine.&quot;" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="1697-5edb-4cd9-9209">
@@ -659,7 +659,7 @@
         <infoLink name="&quot;AtteeeenTION!&quot;" id="08e7-f99d-2c04-1b12" hidden="false" type="rule" targetId="76cf-ccd6-8536-f19b"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="40"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="45"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="cfeb-3da0-e668-931e">
@@ -687,13 +687,13 @@
 
 
 &quot;Send them to hell!&quot; - 
-Target 1 visible enemy unit, for the rest of this turn, any friendly Ranged Weapons have +1 to their Attack characteristic when targeting that unit.
+Target 1 visible enemy unit, for the rest of this turn, Ranged Weapons equipped by the Remnants unit that receives this command have +1 to their Attack characteristic when targeting that unit.
 
 &quot;Know no fear!&quot; - 
 This unit cannot receive [SHOCK] until your next command phase.
 
-&quot;Finish them off!&quot; - 
-When targeting a unit below half of its Starting Strength, improve the Armour Penetration of Ranged Weapons by 1.</description>
+&quot;Finish &apos;em off!&quot; - 
+Ranged weapons equipped by this unit receive an improvement of 1 to their Armour Penetration characteristic when targeting a unit below half of its Starting Strength.</description>
     </rule>
   </sharedRules>
   <publications>
