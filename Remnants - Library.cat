@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Recon Unit" hidden="false" id="8a59-9caa-f190-f885">
       <selectionEntries>
@@ -11,6 +11,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d99a-b150-1061-abfa-max"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="9e29-69a6-a483-6297" type="selectionEntry" targetId="cfeb-3da0-e668-931e"/>
           </entryLinks>
           <profiles>
             <profile name="Recon Soldier" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="2d7b-e072-fce2-9e8c">
@@ -118,6 +119,7 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76ff-05b2-9ba8-78d9"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="423b-efc1-97ab-fdb3" type="selectionEntry" targetId="cfeb-3da0-e668-931e"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -268,6 +270,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4086-5062-de7c-8298"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="cf58-a026-c1a8-5f79" type="selectionEntry" targetId="cfeb-3da0-e668-931e"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="361c-7621-9888-a682"/>
@@ -335,6 +338,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cef7-11b5-b331-142e"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="a41a-6741-f109-60c8" type="selectionEntry" targetId="cfeb-3da0-e668-931e"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -443,6 +447,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="824e-6f3a-6e5c-6be7"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b12e-bf57-7eee-476c" type="selectionEntry" targetId="cfeb-3da0-e668-931e"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -475,6 +480,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="666a-27c7-83a3-7f29"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="a76f-e02e-14d2-ef21" type="selectionEntry" targetId="cfeb-3da0-e668-931e"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeed-ee5a-7ddf-e102"/>
@@ -517,6 +523,24 @@
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="40"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="cfeb-3da0-e668-931e">
+      <profiles>
+        <profile name="Close Combat Weapon" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="5d9d-c79f-d5ff-d034">
+          <characteristics>
+            <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
+            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+            <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+            <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9845-1654-7df3-647b"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f0f-3c63-72d0-a395"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
