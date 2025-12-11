@@ -1958,7 +1958,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Nuntius Timoris" hidden="false" id="5f82-fdc7-3a94-6489">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="55"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="60"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Nuntius Timoris" hidden="false" id="ffdd-2095-5b9f-5073">
