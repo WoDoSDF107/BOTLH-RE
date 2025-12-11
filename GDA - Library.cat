@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -153,7 +153,7 @@
         </profile>
         <profile name="Omniscient Eye" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="ab88-2012-9fc8-eb43">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This ability may be used during the Command Phase. One visible Friendly Infantry unit that is below half of its Starting Strength may be marked, each model in this unit has double its OC value until your next Command Phase.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This ability may be used during your Command Phase. Target one visible enemy unit below half of its starting strength, that unit has the Marked status until the end of your turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -443,6 +443,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fe5-34c4-56cf-fabd"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa9-d2e4-db80-52d8"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Combat Knife" hidden="false" id="8a3c-3430-f184-eff0" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -470,6 +473,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b495-c731-a075-d6a9"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Combat Knife" hidden="false" id="6405-17b5-27a4-4d09" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Foxhound w/ USAS 12" hidden="false" id="6ec2-c959-2b62-c238">
@@ -494,6 +498,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="590c-656a-b203-f114"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Combat Knife" hidden="false" id="e6c8-76f5-6b2e-0573" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -518,9 +523,9 @@
             <characteristic name="Description" typeId="5cee-5283-c95d-c323">This unit cannot be directly applied with SHOCK, and when PANIC is to be applied, apply SHOCK instead.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Veteran Resilience" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6326-4ceb-0a3f-a1c2">
+        <profile name="Focus Fire" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6326-4ceb-0a3f-a1c2">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Whenever an enemy unit allocated damage to this unit, halve the total Damage characteristic of that attack.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Target one enemy unit at the start of your shooting phase. This unit rerolls hit rolls of 1 when making attacks with Ranged Weapons against that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -536,7 +541,7 @@
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">3</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
-            <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
             <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 2, Heavy</characteristic>
           </characteristics>
@@ -762,9 +767,9 @@
             <characteristic name="Description" typeId="5cee-5283-c95d-c323">Add 1 to the Objective Control characteristic of models in the bearer&apos;s unit.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Word of God" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b846-f168-600b-0bc8">
+        <profile name="Call for Backup" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b846-f168-600b-0bc8">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, when this model&apos;s unit is targeted by a stratagem, reduce the MP cost by 1.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, at the end of your opponent&apos;s movement phase, you may target one friendly unit in reserves with the Rapid Entry stratagem for 0 MP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1055,7 +1060,7 @@
       <profiles>
         <profile name="Morphine Injection" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="8884-17fc-7695-af61">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">The bearer&apos;s unit has the Feel No Pain 6+ ability against mortal wounds.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">The bearer&apos;s unit has the Feel No Pain 5+ ability against mortal wounds.</characteristic>
           </characteristics>
         </profile>
         <profile name="Welding Flame" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="db47-f4c2-3f6d-3f35">
@@ -1551,8 +1556,8 @@
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">10&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
               </characteristics>
             </profile>
@@ -1612,7 +1617,7 @@
             <profile name="Pillbox Bunker" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="1d1a-437e-755b-2fcf">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">0&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">10</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
@@ -1743,6 +1748,13 @@
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="130"/>
       </costs>
+      <profiles>
+        <profile name="Phalanx Formation" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b6db-dc6c-f5f6-8a4a">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If this unit remained stationary this turn, improve the save characteristic of models in this unit by 1 until your next movement phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arming Sword" hidden="false" id="7fd3-fccf-13c2-17f2">
       <profiles>
@@ -1843,9 +1855,9 @@
       <profiles>
         <profile name="Tablets of Stone" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="7b98-ee81-6b22-9b6d">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">While leading a unit, this model can issue 1 order during its Command Phase that lasts until its next turn: 
-➤ James 4:7 - Models attached to this unit gain ANTI-NON-HUMAN 3+. 
-➤ John 3:18 - Models attached to this unit gain LETHAL HITS against HUMAN units.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">While leading a unit, this model can issue 1 order to that unit during its Command Phase that lasts until its next turn: 
+➤ James 4:7 - Models attached to this unit gain Anti-Xenos 3+. 
+➤ John 3:18 - Models attached to this unit gain Lethal Hits against Human units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2258,6 +2270,21 @@ RESTRICTIONS: Until the end of the phase, each time a model in your unit makes a
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07d9-ad74-e0c7-91e1-max"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rapid Entry (1 MP)" hidden="false" id="495e-5621-a342-1fa4">
+              <profiles>
+                <profile name="Rapid Entry (1 MP)" typeId="472c-3a83-4119-83cf" typeName="Core Stratagems" hidden="false" id="bec1-3c84-f7aa-d26a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="7cba-1272-590a-33b6">WHEN: End of your opponent’s Movement phase.
+TARGET: One unit from your army that is in Reserves.
+EFFECT: Your unit can arrive on the battlefield as if it were the Reinforcements step of your Movement phase, and if every model in that unit has the Deep Strike ability, you can set that unit up as described in the Deep Strike ability (even though it is not your Movement phase).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8916-0baa-ca8b-dfa6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b232-598e-9994-bf9d"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2495,7 +2522,7 @@ RESTRICTIONS: Until the end of the phase, each time a model in your unit makes a
               <profiles>
                 <profile name="Soul-sapping Proboscis" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="28a4-d43a-ed8c-059f">
                   <characteristics>
-                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">3</characteristic>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
                     <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">6+</characteristic>
                     <characteristic name="S" typeId="e681-af26-3aee-d26b">1</characteristic>
                     <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
@@ -2534,7 +2561,7 @@ RESTRICTIONS: Until the end of the phase, each time a model in your unit makes a
         </profile>
         <profile name="Hunger for Flesh" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="348d-2e54-e3eb-c34d">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Hit chance is increased by 1 against Human units, but decreased by 1 against Xenos or Mechanical units</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This unit receives a +1 to hit rolls against Human units, but a -1 against Xenos or Mechanical units</characteristic>
           </characteristics>
         </profile>
       </profiles>

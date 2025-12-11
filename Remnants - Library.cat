@@ -381,7 +381,7 @@
           <characteristics>
             <characteristic name="Range" typeId="910b-bab0-6061-64b0">20&quot;</characteristic>
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
-            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">5+</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
