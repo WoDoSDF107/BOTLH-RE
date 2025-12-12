@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Foxes" hidden="false" id="e6e2-59e4-0fdf-b4fc">
       <categoryLinks>
@@ -74,9 +74,9 @@
       <profiles>
         <profile name="Prowler" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="289e-8280-ae3c-c326">
           <characteristics>
-            <characteristic name="Range" typeId="910b-bab0-6061-64b0">30&quot;</characteristic>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">26&quot;</characteristic>
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">3</characteristic>
-            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
@@ -278,12 +278,12 @@
       <profiles>
         <profile name="Zeal Mage" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="9678-4f37-b3c4-89b1">
           <characteristics>
-            <characteristic name="Range" typeId="910b-bab0-6061-64b0">28&quot;</characteristic>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">2</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">1</characteristic>
-            <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
             <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Devastating Wounds</characteristic>
           </characteristics>
         </profile>
@@ -851,12 +851,16 @@
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6 + 2</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">6</characteristic>
-            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Devastating Wounds, Heavy</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Heavy, Lethal Hits</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Lethal Hits" id="8f62-2521-3da9-3556" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+        <infoLink name="Heavy" id="4419-d2d9-a239-4e1d" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sun Volt Cannon" hidden="false" id="4848-b71d-4654-0459">
       <profiles>
@@ -866,12 +870,15 @@
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D3 + 1</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">10</characteristic>
-            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Lethal Hits</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Devastating Wounds</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" id="66ca-d45c-1007-ab62" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vanguard Armour" hidden="false" id="9acc-785e-d36a-efcc">
       <selectionEntries>
@@ -1033,13 +1040,13 @@
       <profiles>
         <profile name="MI Bark Cannon" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="eb7d-650a-b89b-6b95">
           <characteristics>
-            <characteristic name="Range" typeId="910b-bab0-6061-64b0">20&quot;</characteristic>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">22&quot;</characteristic>
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">4</characteristic>
-            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Devastating Wounds, Heavy</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Heavy</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1052,12 +1059,15 @@
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D3</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">10</characteristic>
-            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Lethal Hits</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Devastating Wounds</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" id="fb41-f4cf-695b-cfc5" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Metallic Fist" hidden="false" id="1d57-5b93-a292-8e0b">
       <profiles>
