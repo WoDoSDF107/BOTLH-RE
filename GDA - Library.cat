@@ -2708,7 +2708,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </profile>
         <profile name="Overwhelming Presence" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="0070-bff7-d546-ecff">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">If any models whose Initiative characteristic is lower than this unit&apos;s attempt to make an attack with Melee weapons against this unit, they can only hit on an unmodified 6+.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">You may use this ability at the start of your Command Phase. Until your next Command Phase, if any models whose Initiative characteristic is lower than this unit&apos;s attempt to make an attack with Melee weapons against this unit, they can only hit on an unmodified 6+.</characteristic>
           </characteristics>
         </profile>
         <profile name="Horn of Judgement" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="da03-4140-e4de-801e">
