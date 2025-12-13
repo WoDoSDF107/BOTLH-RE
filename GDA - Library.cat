@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -1169,7 +1169,7 @@
         <categoryLink targetId="6362-52a6-6f3c-1301" id="c92a-0a9d-6d31-4d21" primary="false" name="War Dogs"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="250"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="200"/>
       </costs>
       <profiles>
         <profile name="Break their Spirits" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6f67-9b36-f026-308b">
@@ -1508,16 +1508,11 @@
       <profiles>
         <profile name="Tactical Deployment" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="d58b-ebf9-8668-cf64">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Disembarking units can make a move after they have disembarked.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Units that disembark from this model after it has made a Normal move this phase do not count as having made a Normal move themselves, and can make a move during this phase. For 1 MP, they can also declare a charge, the MP cost covers all units that disembarked this phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Firing Deck" id="8692-6bdf-8d17-909a" hidden="false" type="rule" targetId="13b2-6518-dab3-7ea1">
-          <modifiers>
-            <modifier type="append" value="2" field="name"/>
-          </modifiers>
-        </infoLink>
         <infoLink name="Transport" id="2664-691f-dc1b-fe4f" hidden="false" type="rule" targetId="c8f7-4cd9-0669-02e3">
           <modifiers>
             <modifier type="append" value="24 War Dogs Infantry and Knights Infantry models. It cannot transport Hellhounds and Nuntius Timoris." field="description"/>
@@ -2213,8 +2208,8 @@ RESTRICTIONS: That Vehicle unit cannot have the Fly keyword.</characteristic>
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5afe-870a-f1c1-11ef-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5afe-870a-f1c1-11ef-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5afe-870a-f1c1-11ef-min-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5afe-870a-f1c1-11ef-min-max"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -2246,9 +2241,33 @@ EFFECT: That unit is now set alight for the remainder of the turn. Its movement 
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="346d-445b-e0f1-ce00"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a99f-1b1e-fb82-9b89"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="346d-445b-e0f1-ce00-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="346d-445b-e0f1-ce00-max"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Jury Rigging (2 MP)" hidden="false" id="d5f7-0cbc-c2ee-392f">
+              <profiles>
+                <profile name="Jury Rigging (2 MP)" typeId="0ca5-05f0-bca4-e2aa" typeName="Detachment Stratagems" hidden="false" id="e22f-665d-b2cf-0597">
+                  <characteristics>
+                    <characteristic name="Description" typeId="8fc2-8158-b7d4-6333">WHEN: Your Command Phase
+TARGET: One Vehicle unit within 3&quot; of a War Dogs - Medic Unit
+EFFECT: This Vehicle unit gains D6+2 wounds, regardless of total wound count, until your next command phase, and all of its ranged weapons receive an increase of D6 to their attacks, as well as the Hazardous keyword. 
+RESTRICTIONS: This stratagem may only be used on a given unit once per battle.
+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="32dd-f8ff-2fed-dea0-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32dd-f8ff-2fed-dea0-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="83e0-ded8-068b-4b01" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2266,8 +2285,8 @@ RESTRICTIONS: Until the end of the phase, each time a model in your unit makes a
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07d9-ad74-e0c7-91e1-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07d9-ad74-e0c7-91e1-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07d9-ad74-e0c7-91e1-min-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07d9-ad74-e0c7-91e1-min-max"/>
               </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Rapid Entry (1 MP)" hidden="false" id="495e-5621-a342-1fa4">
@@ -2281,9 +2300,39 @@ EFFECT: Your unit can arrive on the battlefield as if it were the Reinforcements
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8916-0baa-ca8b-dfa6"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b232-598e-9994-bf9d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8916-0baa-ca8b-dfa6-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8916-0baa-ca8b-dfa6-max"/>
               </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mowed Down (2 MP)" hidden="false" id="cd17-ea38-79f2-ec15">
+              <profiles>
+                <profile name="Mowed Down (2 MP)" typeId="472c-3a83-4119-83cf" typeName="Core Stratagems" hidden="false" id="372f-c41b-f402-1c66">
+                  <characteristics>
+                    <characteristic name="Description" typeId="7cba-1272-590a-33b6">WHEN: Your movement phase
+TARGET: One Vehicle unit within engagement range of enemy infantry models
+EFFECT: While one Vehicle is within engagement range of enemy infantry models, if that unit&apos;s Initiative characteristic is not lower than that of any models in engagement range, it can make a fall back move through enemy models without needing to take a desperate escape test. As well, any models that were passed over during the fall back move must roll a D6, on a 1, that model received 1 mortal wound.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc92-0350-03c1-a3e6-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc92-0350-03c1-a3e6-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Get Over Here (1 MP)" hidden="false" id="71d4-1aae-61cb-7f26">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e1f-187a-253c-1ebe-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e1f-187a-253c-1ebe-max"/>
+              </constraints>
+              <profiles>
+                <profile name="Get Over Here (1 MP)" typeId="472c-3a83-4119-83cf" typeName="Core Stratagems" hidden="false" id="aef0-94c3-d7d9-a736">
+                  <characteristics>
+                    <characteristic name="Description" typeId="7cba-1272-590a-33b6">WHEN: During the opponent&apos;s movement phase
+TARGET: An enemy Infantry unit 
+EFFECT: If an enemy unit attempts to make a fall back move while within engagement range of a friendly Knights unit, roll X-Y D6 (X being the number of Knights models in that unit and Y being the number of models in the target unit). If the result is greater than 7 (adding an extra D6 to the result if the total initiative of the chosen Knights unit is higher than the target unit), that unit cannot fall back.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2633,6 +2682,17 @@ EFFECT: Your unit can arrive on the battlefield as if it were the Reinforcements
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1864-727d-bef7-1512-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1864-727d-bef7-1512-max"/>
           </constraints>
+          <profiles>
+            <profile name="Gabriel the Messenger" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="a7c6-c8c6-90f1-d95d">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">7&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -2646,24 +2706,24 @@ EFFECT: Your unit can arrive on the battlefield as if it were the Reinforcements
             <characteristic name="Description" typeId="5cee-5283-c95d-c323">You may use one ability from the &quot;The Messenger&quot; ability list per turn.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Horn of Judgement" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="0070-bff7-d546-ecff">
+        <profile name="Overwhelming Presence" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="0070-bff7-d546-ecff">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your command phase, select one unit within 6”. If that unit is Infantry, restore up to D3 models to that unit. If that unit is a Character, restore up to D3 wounds to that unit.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">If any models whose Initiative characteristic is lower than this unit&apos;s attempt to make an attack with Melee weapons against this unit, they can only hit on an unmodified 6+.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Rousing Soliloquy " typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="da03-4140-e4de-801e">
+        <profile name="Horn of Judgement" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="da03-4140-e4de-801e">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">You may use this ability during the Command Phase. Select one War Dogs unit within 12&quot; of this unit, that unit receives an increase of D3 to their Movement, Toughness, or Objective Control characteristic.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">You may use this ability during the Command Phase. Select one War Dogs unit within 12&quot; of this unit, that unit restores D3 lost models to their unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Righteous Proselytism" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="bd14-4441-1efb-3a2e">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy Infantry unit (with a model count greater than 1) within 6&quot; of this unit. Roll a D6, if the outcome of that roll is less than the save characteristic of one model from that unit (chosen at the discretion of the owner of that unit), that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy Infantry unit (with a model count greater than 1) within 6&quot; of this unit. If the Initiative characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is lower than that of this unit, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
           </characteristics>
         </profile>
         <profile name="Honourary Duellist" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f35b-84d9-212d-5217">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When making an attack against an enemy unit with a melee weapon, if the damage exceeds that needed to kill one model in that unit, the damage does not transfer to other models. The amount of excess wounds dealt as damage is restored to all friendly Infantry units within 6&quot;.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When making an attack against an enemy unit with a melee weapon, if the damage exceeds that needed to kill one model in that unit, the damage does not transfer to other models. The amount of excess wounds dealt as damage is restored to one friendly Infantry unit within 6&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>

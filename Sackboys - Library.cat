@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Foxes" hidden="false" id="e6e2-59e4-0fdf-b4fc">
       <categoryLinks>
@@ -226,6 +226,12 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e5f-b2b5-2387-9678"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Molten Blade" hidden="false" id="0d82-94be-958f-2c85" type="selectionEntry" targetId="4654-0253-9e46-e3dc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ceb-df91-1dcf-6d25"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e055-2ee5-3ada-5c0a"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -432,6 +438,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7eb-c400-af3a-a8c2"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b450-2e58-9c03-f5f3" type="selectionEntry" targetId="81c1-3c1f-8f3b-4b45"/>
           </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Kribor VIII Operator" hidden="false" id="35e9-beb2-0b74-40fe">
@@ -457,6 +464,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f26-3bc5-d982-085b"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b3d5-c42c-25a1-a76d" type="selectionEntry" targetId="81c1-3c1f-8f3b-4b45"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -748,7 +756,7 @@
       <profiles>
         <profile name="Medical Attention" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9d1d-f0cd-34a6-2e58">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If all models in the bearer&apos;s unit have the Sackboys keyword, the bearer&apos;s unit receive Feel No Pain 5+. </characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If all models in the bearer&apos;s unit have the Sackboys keyword, the bearer&apos;s unit receive Feel No Pain 5+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -803,6 +811,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e91a-4c99-60de-3790"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39ba-b089-6ded-2306"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="6a06-f455-2f08-1794" type="selectionEntry" targetId="81c1-3c1f-8f3b-4b45"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
