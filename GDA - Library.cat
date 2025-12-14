@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -1700,7 +1700,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1731,7 +1731,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1846,7 +1846,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1878,6 +1878,11 @@
             <characteristic name="Description" typeId="5cee-5283-c95d-c323">While leading a unit, this model can issue 1 order to that unit during its Command Phase that lasts until its next turn: 
 ➤ James 4:7 - Models attached to this unit gain Anti-Xenos 3+. 
 ➤ John 3:18 - Models attached to this unit gain Lethal Hits against Human units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Military Strategy" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9c84-632f-b8b0-aca1">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When this unit or its attached unit target an enemy unit, if no models in that unit have a Mental Fortitude characteristic higher than that of this model, this unit and/or its attached unit reroll hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1915,7 +1920,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1946,7 +1951,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2338,7 +2343,7 @@ EFFECT: Your unit can arrive on the battlefield as if it were the Reinforcements
                   <characteristics>
                     <characteristic name="Description" typeId="7cba-1272-590a-33b6">WHEN: Your movement phase
 TARGET: One Vehicle unit within engagement range of enemy infantry models
-EFFECT: While one Vehicle is within engagement range of enemy infantry models, if that unit&apos;s Initiative characteristic is not lower than that of any models in engagement range, it can make a fall back move through enemy models without needing to take a desperate escape test. As well, any models that were passed over during the fall back move must roll a D6, on a 1, that model received 1 mortal wound.</characteristic>
+EFFECT: While one Vehicle is within engagement range of enemy infantry models, if there are no models within engagement range with a Mental Fortitude characteristic higher than 5, it can make a fall back move through enemy models without needing to take a desperate escape test. As well, any models that were passed over during the fall back move must roll a D6, on a 1, that model received 1 mortal wound.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2357,7 +2362,7 @@ EFFECT: While one Vehicle is within engagement range of enemy infantry models, i
                   <characteristics>
                     <characteristic name="Description" typeId="7cba-1272-590a-33b6">WHEN: During the opponent&apos;s movement phase
 TARGET: An enemy Infantry unit 
-EFFECT: If an enemy unit attempts to make a fall back move while within engagement range of a friendly Knights unit, roll X-Y D6 (X being the number of Knights models in that unit and Y being the number of models in the target unit). If the result is greater than 7 (adding an extra D6 to the result if the total initiative of the chosen Knights unit is higher than the target unit), that unit cannot fall back.</characteristic>
+EFFECT: If an enemy unit attempts to make a fall back move while within engagement range of a friendly Knights unit, roll X-Y D6 (X being the number of Knights models in that unit and Y being the number of models in the target unit). If the result is greater than 7 (adding an extra D6 to the result if the total Mental Fortitude of the all models in the chosen Knights unit is higher than the target unit), that unit cannot fall back.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
