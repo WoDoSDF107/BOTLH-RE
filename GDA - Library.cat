@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -764,7 +764,6 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="33ee-b756-5da0-5503" id="50b1-5928-754e-a3be" primary="false" name="Leader"/>
         <categoryLink targetId="5b8f-4c9b-9026-374c" id="b5f1-2326-487e-e119" primary="true" name="Character"/>
         <categoryLink targetId="9c21-a33c-fd69-b8c4" id="d8a0-d67c-451e-353d" primary="false" name="Specialist"/>
         <categoryLink targetId="8b4b-7eda-1061-634f" id="2a1d-ef04-0fea-f63c" primary="false" name="GDA"/>
