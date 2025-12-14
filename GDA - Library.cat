@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -316,12 +316,12 @@
       <profiles>
         <profile name="Heartbeat Monitor" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9527-d7b9-1e8d-c966">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If an enemy unit within 8&quot; is behind cover, any friendly ranged weapons that target that unit have the Ignores Cover keyword.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If an enemy unit within 6&quot; is behind thin cover, any friendly ranged weapons that target that unit have the Ignores Cover keyword.</characteristic>
           </characteristics>
         </profile>
         <profile name="Thermal Binoculars" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4b58-3eae-7909-1c37">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">One visible enemy unit within 12&quot; can be applied with the MARKED status until the end of the turn, and if that unit has the Human keyword, attacking friendly units gain +1 to hit rolls against the marked unit.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your movement phase, select one enemy Infantry unit within 12&quot; of this unit. If that enemy unit is destroyed by the end of this turn, receive 1 MP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -532,9 +532,9 @@
             <characteristic name="Description" typeId="5cee-5283-c95d-c323">This unit cannot be directly applied with SHOCK, and when PANIC is to be applied, apply SHOCK instead.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Focus Fire" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6326-4ceb-0a3f-a1c2">
+        <profile name="Bred to Hunt" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6326-4ceb-0a3f-a1c2">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Target one enemy unit at the start of your shooting phase. This unit rerolls hit rolls of 1 when making attacks with Ranged Weapons against that unit.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If this unit destroys an enemy unit that has the Marked status upon being destroyed, you receive 1 MP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -775,7 +775,7 @@
       <profiles>
         <profile name="Vox Broadcast" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="db59-a6f9-8a8e-45a0">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Add 1 to the Objective Control characteristic of models in the bearer&apos;s unit.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Command phase, if this unit is attached to a unit and is present on the board (including if it is embarked in transport), it generates 1 MP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Call for Backup" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b846-f168-600b-0bc8">
@@ -785,7 +785,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="30"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="45"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Shock Team" hidden="false" id="5191-2486-7e6b-5c78">
@@ -1013,7 +1013,7 @@
         </profile>
         <profile name="Point Man" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="8bdd-4c48-6260-f815">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, during the enemy’s Shooting Phase, if this unit is targeted by a ranged weapons and is part of a unit, the enemy unit does not shoot, this model shoots at the enemy unit as if it were their Shooting Phase, then they and their unit can make a normal move in any direction, as long as it does not enter or end within engagement range of an enemy unit. The enemy unit is then Marked until their next turn.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, during the enemy’s Shooting Phase, if this unit is attached to a unit, and said unit is targeted by Ranged weapons, the enemy unit does not shoot. If they are eligible to, this model shoots at that enemy unit as if it were their Shooting Phase, then they and their unit can make a normal move in any direction, as long as it does not enter or end within engagement range of an enemy unit. That enemy unit is then Marked until their next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1243,92 +1243,6 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a252-9fc3-ec70-66b7"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1392-fb23-5d5c-a011"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="War Dogs - M50 Ontos" hidden="false" id="d957-1d88-4d7e-6f61">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="M50 Ontos" hidden="false" id="68dc-f681-0971-ccb8">
-          <profiles>
-            <profile name="M50 Ontos" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="d836-322c-cc7b-78e2">
-              <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">12&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">7</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Tank Tracks" hidden="false" id="cc91-8804-6231-5441" type="selectionEntry" targetId="f6b0-e323-320f-ef23"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1446-4e23-9f53-878f"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e57-378d-9b95-bfaf"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="M40 Recoilless Rifles" hidden="false" id="efec-8092-c825-074b">
-          <profiles>
-            <profile name="M40 Recoilless Rifles" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="e984-bee2-7d7b-7924">
-              <characteristics>
-                <characteristic name="Range" typeId="910b-bab0-6061-64b0">45&quot;</characteristic>
-                <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">6</characteristic>
-                <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
-                <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">8</characteristic>
-                <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
-                <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
-                <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast, Anti-Mechanical 3+, Ignores Cover</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aafc-2f0f-e362-53d3"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="add5-af61-808f-3ee8"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Blast" id="fec4-77f4-0b68-2669" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-            <infoLink name="Anti-" id="6006-4ee2-4b56-4cda" hidden="false" type="rule" targetId="4111-82e3-9444-e942">
-              <modifiers>
-                <modifier type="append" value="Mechanical 3+" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Ignores Cover" id="440e-c128-4277-2009" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <categoryLinks>
-        <categoryLink name="Vehicle" hidden="false" id="3c88-a026-fd40-4da1" targetId="1fd3-1951-3be2-5a2d" primary="true"/>
-        <categoryLink name="GDA" hidden="false" id="b203-66de-090e-5c12" targetId="8b4b-7eda-1061-634f" primary="false"/>
-        <categoryLink name="Mechanical" hidden="false" id="520a-b569-3f5a-a9f8" targetId="acbc-85de-f294-b448" primary="false"/>
-        <categoryLink targetId="6362-52a6-6f3c-1301" id="c03a-5fe4-5fd8-12c6" primary="false" name="War Dogs"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="180"/>
-      </costs>
-      <profiles>
-        <profile name="Finish them off" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="46f1-9263-d6f4-b37b">
-          <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If a target MECHANICAL unit is below half of its Starting Strength, increase the Armour Penetration characteristic of Ranged attacks made against it by this unit by 1.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Spotting Rifles" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9059-2a5d-f4ea-5319">
-          <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Before making an attack with ranged weapons with this unit, roll 1 d6 for each attack it makes. For every 5+, you may add 1 to the hit roll of any dice rolled when making the following attacks.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Deadly Demise" id="8b1e-c0fc-a3ef-fc87" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
-          <modifiers>
-            <modifier type="append" value="D6" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <rules>
-        <rule name="Damaged 1-3 Wounds Remaining" id="6646-bb05-ff2f-9308" hidden="false">
-          <description>While this model has 1-3 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
-        </rule>
-      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - M1 Abrams" hidden="false" id="4edb-ce2e-cf1e-53b4">
       <costs>
@@ -1865,12 +1779,20 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9f6-4766-58ff-f987"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72c0-4604-cf1c-c3f4"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="S&amp;W 500" hidden="false" id="bd14-b814-7a7a-d966" type="selectionEntry" targetId="c994-827e-119a-c30e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02e9-675f-26c4-00df"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5813-cd4d-852c-3cb7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
         <profile name="Tablets of Stone" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="7b98-ee81-6b22-9b6d">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Choose one ability during your command phase that lasts until your next command phase.
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">For 1 MP, choose one ability during your command phase that lasts until your next command phase.
 
 ➤ James 4:7 - Models attached to this unit scores a Critical Hit on a successful unmodified Hit roll of 5+ when making attacks against Xenos units.
 
@@ -2522,6 +2444,9 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Holy Generals" id="a46f-5075-af50-7d24" hidden="false" type="rule" targetId="32ae-9629-a975-53a2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heretics - Treachery of Heretics" hidden="false" id="9389-45bd-9048-81bd">
       <categoryLinks>
@@ -2772,6 +2697,9 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Holy Generals" id="54dd-2f7c-6bdc-a09d" hidden="false" type="rule" targetId="32ae-9629-a975-53a2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="ba53-949b-0581-00c2">
       <profiles>
@@ -2783,138 +2711,6 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
             <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="War Dogs - M151 Truck" hidden="false" id="b574-7b63-41c6-97ff">
-      <categoryLinks>
-        <categoryLink targetId="8b4b-7eda-1061-634f" id="755c-9e7c-01b7-36e8" primary="false" name="GDA"/>
-        <categoryLink targetId="acbc-85de-f294-b448" id="4a93-36ca-876f-ae4d" primary="false" name="Mechanical"/>
-        <categoryLink targetId="6362-52a6-6f3c-1301" id="5ac5-7941-6fdc-2aa8" primary="false" name="War Dogs"/>
-        <categoryLink targetId="c12f-061e-8965-3818" id="8075-d3a8-da55-2353" primary="true" name="Dedicated Transport"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="M151 Truck" hidden="false" id="1dd9-c951-0a25-3de1">
-          <profiles>
-            <profile name="M151 Truck" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="f5b1-ff7e-5862-c05e">
-              <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">10&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">5</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Bumper" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="34a7-db6d-2054-28ff">
-              <characteristics>
-                <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">3</characteristic>
-                <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
-                <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
-                <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
-                <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-                <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="1bf7-13dd-35f6-9818" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="106mm Recoilless Rifle" hidden="false" id="a5e9-0fb2-a6d2-bdbd">
-                  <profiles>
-                    <profile name="106mm Recoilless Rifle" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="fda9-4d8c-034a-9a57">
-                      <characteristics>
-                        <characteristic name="Range" typeId="910b-bab0-6061-64b0">35&quot;</characteristic>
-                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6</characteristic>
-                        <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
-                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">8</characteristic>
-                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
-                        <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast, Indirect Fire</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Indirect Fire" id="f3a2-1c8b-fc47-caac" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
-                    <infoLink name="Blast" id="00fd-25c8-9d9d-bb24" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="987b-31ae-3f47-0fa7"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="M60" hidden="false" id="1e2e-ea39-bc73-7f3b">
-                  <profiles>
-                    <profile name="M60" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="1c56-6459-292e-8f97">
-                      <characteristics>
-                        <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
-                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">3</characteristic>
-                        <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
-                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
-                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
-                        <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 3</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Rapid Fire" id="f7de-80a1-74b5-ea2f" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786">
-                      <modifiers>
-                        <modifier type="append" value="3" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9217-8657-2c3e-5c57"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc11-c37b-bbbf-1889-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc11-c37b-bbbf-1889-max"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6aed-2bf5-9651-8c43-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aed-2bf5-9651-8c43-max"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="8&quot;" field="c100-b9db-eacc-d3e0" affects="self.entries.recursive.profiles.Unit">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="a5e9-0fb2-a6d2-bdbd" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <infoLinks>
-        <infoLink name="Transport" id="4dea-0f84-f166-0445" hidden="false" type="rule" targetId="c8f7-4cd9-0669-02e3">
-          <modifiers>
-            <modifier type="append" value="5 War Dogs Infantry models." field="description"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Firing Deck" id="47a7-d109-1760-2a62" hidden="false" type="rule" targetId="13b2-6518-dab3-7ea1">
-          <modifiers>
-            <modifier type="append" value="4" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="75"/>
-      </costs>
-      <profiles>
-        <profile name="Mounted Weapon" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="aafe-38bf-bbbd-6350">
-          <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Attacks with this model&apos;s ranged weapon can only be made if at least one model is embarked inside of this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Off-Roader" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="7159-ea26-5074-1b32">
-          <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If an enemy unit selects this unit as the target of an attack made with ranged weapons, before they make any rolls, the owner of this unit can select a unit embarked inside of this unit as the target instead (unless that attack has the Indirect Fire or Blast keywords), and their stats are used to make that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2974,6 +2770,9 @@ Ability: For 1 MP, at the end of the movement phase, you may use this support we
     </rule>
     <rule name="War is my Shepherd" id="2b80-b7c8-176d-7fba" hidden="false">
       <description>If a Knights unit is within 6” of a War Dogs unit, it will act as a Sergeant for any abilities or rules that utilise them.</description>
+    </rule>
+    <rule name="Holy Generals" id="32ae-9629-a975-53a2" hidden="false">
+      <description>At the start of your Command phase, if this unit is present on the board (including if it is embarked in transport), you receive 1 MP.</description>
     </rule>
   </sharedRules>
   <profileTypes>

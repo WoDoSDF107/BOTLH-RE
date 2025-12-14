@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b0b8-5e5e-a90e-2809" name="GDA" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b0b8-5e5e-a90e-2809" name="GDA" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="GDA - Library" id="ce8b-7403-0c71-222a" targetId="bd2a-a4e1-9521-462a"/>
   </catalogueLinks>
@@ -21,7 +21,6 @@
     </entryLink>
     <entryLink import="true" name="War Dogs - Medic" hidden="false" id="745a-aa94-cf46-3eb1" type="selectionEntry" targetId="3d7b-3beb-8230-428b"/>
     <entryLink import="true" name="War Dogs - M48 Patton" hidden="false" id="68e9-c338-30c6-232a" type="selectionEntry" targetId="210a-2b40-ffcf-0416"/>
-    <entryLink import="true" name="War Dogs - M50 Ontos" hidden="false" id="42c3-83f3-8168-c9db" type="selectionEntry" targetId="d957-1d88-4d7e-6f61"/>
     <entryLink import="true" name="War Dogs - M1 Abrams" hidden="false" id="3f0a-e590-9529-951f" type="selectionEntry" targetId="4edb-ce2e-cf1e-53b4"/>
     <entryLink import="true" name="War Dogs - CH47 Chinook" hidden="false" id="a8bf-9847-b54d-5023" type="selectionEntry" targetId="c661-a51c-b392-3707"/>
     <entryLink import="true" name="War Dogs - M113 APC" hidden="false" id="8495-7a2e-1158-56e3" type="selectionEntry" targetId="3015-b765-e84e-9295"/>
@@ -38,6 +37,5 @@
     <entryLink import="true" name="Heretics - Treachery of Heretics" hidden="false" id="f234-544c-31bb-d6cc" type="selectionEntry" targetId="9389-45bd-9048-81bd"/>
     <entryLink import="true" name="Heretics - Cluster of Botflies" hidden="false" id="9bae-55b0-ea1d-c37f" type="selectionEntry" targetId="53cf-05e3-f232-00cf"/>
     <entryLink import="true" name="Archangel - Gabriel the Messenger" hidden="false" id="94bf-7d5c-b68b-c10d" type="selectionEntry" targetId="acb5-6d48-0fdf-084a"/>
-    <entryLink import="true" name="War Dogs - M151 Truck" hidden="false" id="99a2-6e50-d530-ae76" type="selectionEntry" targetId="b574-7b63-41c6-97ff"/>
   </entryLinks>
 </catalogue>
