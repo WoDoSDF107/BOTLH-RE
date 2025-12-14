@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="31" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="32" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -35,6 +35,7 @@
         <characteristicType name="SR" id="55e5-4318-7023-255d"/>
         <characteristicType name="W" id="7547-1a30-8027-a225"/>
         <characteristicType name="OC" id="17b7-6486-cf25-b101"/>
+        <characteristicType name="MF" id="dbfc-7c96-dcff-d55b"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Character Restrictions" id="b994-5cbb-c4b6-d222" hidden="false">

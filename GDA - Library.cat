@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -28,6 +28,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -50,6 +51,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -167,6 +169,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -189,6 +192,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -331,6 +335,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -353,6 +358,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -425,6 +431,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -460,6 +467,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -485,6 +493,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -604,6 +613,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">10</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -738,6 +748,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -788,6 +799,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -827,6 +839,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -854,6 +867,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -917,6 +931,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1025,6 +1040,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1094,6 +1110,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1238,6 +1255,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1326,6 +1344,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">12</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1488,6 +1507,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">10</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1554,6 +1574,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1616,6 +1637,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1678,6 +1700,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1708,6 +1731,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1822,6 +1846,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1890,6 +1915,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1920,6 +1946,7 @@
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1977,6 +2004,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2076,6 +2104,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">7+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2252,8 +2281,7 @@ EFFECT: That unit is now set alight for the remainder of the turn. Its movement 
                     <characteristic name="Description" typeId="8fc2-8158-b7d4-6333">WHEN: Your Command Phase
 TARGET: One Vehicle unit within 3&quot; of a War Dogs - Medic Unit
 EFFECT: This Vehicle unit gains D6+2 wounds, regardless of total wound count, until your next command phase, and all of its ranged weapons receive an increase of D6 to their attacks, as well as the Hazardous keyword. 
-RESTRICTIONS: This stratagem may only be used on a given unit once per battle.
-</characteristic>
+RESTRICTIONS: This stratagem may only be used on a given unit once per battle.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2352,6 +2380,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">10</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2528,6 +2557,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">7+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2594,6 +2624,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">7+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2690,6 +2721,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">10</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2718,7 +2750,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </profile>
         <profile name="Righteous Proselytism" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="bd14-4441-1efb-3a2e">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy Infantry unit (with a model count greater than 1) within 6&quot; of this unit. If the Initiative characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is lower than that of this unit, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy Infantry unit (with a model count greater than 1) within 6&quot; of this unit. If the Mental Fortitude characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is less than half of this unit&apos;s, roll a D6. On a 3+, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
           </characteristics>
         </profile>
         <profile name="Honourary Duellist" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f35b-84d9-212d-5217">
@@ -2766,6 +2798,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">5</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
               </characteristics>
             </profile>
             <profile name="Bumper" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="34a7-db6d-2054-28ff">
