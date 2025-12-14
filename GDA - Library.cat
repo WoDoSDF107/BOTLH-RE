@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -259,7 +259,7 @@
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault, Rapid Fire 3</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault, Rapid Fire 2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -269,7 +269,7 @@
         <profile name="Bayonet" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="3540-65a8-83ab-ca94">
           <characteristics>
             <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
-            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
+            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
             <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
@@ -792,7 +792,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Shock Team Sergeant" hidden="false" id="8365-06c8-9f34-c9f7">
           <profiles>
-            <profile name="War Dog - Shock Team" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="2c41-deb5-f368-d688">
+            <profile name="War Dog - Shock Team Sergeant" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="2c41-deb5-f368-d688">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
@@ -908,7 +908,7 @@
         </profile>
         <profile name="Bayonet Charge" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="5c76-9149-a773-6ca0">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If this unit advanced this turn, attacks made against it receive a -1 to hit rolls until next turn.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If this unit made a charge this turn, this unit&apos;s melee weapons receive a +1 to hit rolls.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1783,7 +1783,7 @@
             <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
             <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
-            <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
+            <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
             <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Parry</characteristic>
           </characteristics>
         </profile>
@@ -1824,17 +1824,12 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Anti-" id="06e3-419a-2352-9df9" hidden="false" type="rule" targetId="4111-82e3-9444-e942">
-          <modifiers>
-            <modifier type="append" value="Mechanical 3+" field="name"/>
-          </modifiers>
-        </infoLink>
         <infoLink name="Parry" id="910c-fa79-d189-4989" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="18eb-bfa5-d514-3c34">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="65"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Knight Sergeant" hidden="false" id="dbb0-9f8f-a94b-4b54">
@@ -1875,9 +1870,15 @@
       <profiles>
         <profile name="Tablets of Stone" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="7b98-ee81-6b22-9b6d">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">While leading a unit, this model can issue 1 order to that unit during its Command Phase that lasts until its next turn: 
-➤ James 4:7 - Models attached to this unit gain Anti-Xenos 3+. 
-➤ John 3:18 - Models attached to this unit gain Lethal Hits against Human units.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Choose one ability during your command phase that lasts until your next command phase.
+
+➤ James 4:7 - Models attached to this unit scores a Critical Hit on a successful unmodified Hit roll of 5+ when making attacks against Xenos units.
+
+➤ Ephesians 6:11 - Models attached to this unit receive a +1 to toughness when a Xenos unit targets them with Ranged Weapons.
+
+➤ John 3:18 - When models attached to this unit target Human units with Ranged weapons, those Ranged weapons receive a +1 to their strength characteristic.
+
+➤ Matthew 28:19 - If models attached to this unit made a successful charge move against a Human unit this turn (and the highest Mental Fortitude characteristic of a model in that unit is higher than or equal to any model in the target unit), all enemy models within engagement range receive SHOCK until your next command phase.</characteristic>
           </characteristics>
         </profile>
         <profile name="Military Strategy" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9c84-632f-b8b0-aca1">
