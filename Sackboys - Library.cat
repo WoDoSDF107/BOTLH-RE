@@ -48,7 +48,7 @@
       <infoLinks>
         <infoLink name="Feel No Pain" id="951d-894d-91c4-6717" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
           <modifiers>
-            <modifier type="append" value="5+" field="name"/>
+            <modifier type="append" value="6+" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="Scouts" id="47a7-727a-a617-e345" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
@@ -262,7 +262,7 @@
         <infoLink name="HIKER" id="3614-dd68-1940-45e5" hidden="false" type="rule" targetId="ecc4-08c7-2193-4f72"/>
         <infoLink name="Feel No Pain" id="abf2-8922-b0c2-9dd3" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
           <modifiers>
-            <modifier type="append" value="5+" field="name"/>
+            <modifier type="append" value="6+" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="IRON WILL" id="effa-514c-84cd-0e24" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
@@ -705,7 +705,7 @@
       <infoLinks>
         <infoLink name="Feel No Pain" id="b558-bf25-889c-ad75" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
           <modifiers>
-            <modifier type="append" value="5+" field="name"/>
+            <modifier type="append" value="6+" field="name"/>
           </modifiers>
         </infoLink>
         <infoLink name="REORGANISED" id="01dc-b83f-ec13-1892" hidden="false" type="rule" targetId="8676-f94e-b5ad-28bf">
@@ -874,7 +874,7 @@
       <infoLinks>
         <infoLink name="Feel No Pain" id="d8ef-a565-09ea-8e9b" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
           <modifiers>
-            <modifier type="append" value="6+" field="name"/>
+            <modifier type="append" value="5+" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
