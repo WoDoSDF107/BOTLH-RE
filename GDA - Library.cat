@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -27,7 +27,7 @@
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
               </characteristics>
             </profile>
@@ -50,7 +50,7 @@
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
               </characteristics>
             </profile>
@@ -1124,12 +1124,13 @@
                     <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">8</characteristic>
                     <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
                     <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
-                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast, Ignores Cover</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Blast" id="3134-05aa-e6c7-22dd" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                <infoLink name="Ignores Cover" id="c071-ce4a-104c-179a" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa90-4eb6-b4c6-cb0f"/>
@@ -1142,7 +1143,7 @@
                   <characteristics>
                     <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
                     <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">3</characteristic>
-                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
                     <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
                     <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
                     <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
@@ -1185,7 +1186,7 @@
         <categoryLink targetId="6362-52a6-6f3c-1301" id="c92a-0a9d-6d31-4d21" primary="false" name="War Dogs"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="200"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="180"/>
       </costs>
       <profiles>
         <profile name="Break their Spirits" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6f67-9b36-f026-308b">
@@ -1676,9 +1677,11 @@
       <infoLinks>
         <infoLink name="AGGRESSOR" id="53e8-62e4-7382-51b9" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="34c3-f10f-8409-4412" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
+        <infoLink name="War is my Shepherd" id="a3ca-1a9d-929f-b76e" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
+        <infoLink name="Xenocidal Hatred" id="5a00-f23e-79b2-d792" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="130"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="120"/>
       </costs>
       <profiles>
         <profile name="Phalanx Formation" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b6db-dc6c-f5f6-8a4a">
@@ -1742,7 +1745,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="18eb-bfa5-d514-3c34">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="65"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="55"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Knight Sergeant" hidden="false" id="dbb0-9f8f-a94b-4b54">
@@ -1799,7 +1802,9 @@
 
 ➤ John 3:18 - When models attached to this unit target Human units with Ranged weapons, those Ranged weapons receive a +1 to their strength characteristic.
 
-➤ Matthew 28:19 - If models attached to this unit made a successful charge move against a Human unit this turn (and the highest Mental Fortitude characteristic of a model in that unit is higher than or equal to any model in the target unit), all enemy models within engagement range receive SHOCK until your next command phase.</characteristic>
+➤ Matthew 28:19 - If models attached to this unit made a successful charge move against a Human unit this turn (and the highest Mental Fortitude characteristic of a model in that unit is higher than or equal to any model in the target unit), all enemy models within engagement range receive SHOCK until your next command phase.
+
+If you did not select an ability this turn, roll 1 D6. If the result was a 4+, receive 1 MP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Military Strategy" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9c84-632f-b8b0-aca1">
@@ -1811,6 +1816,8 @@
       <infoLinks>
         <infoLink name="AGGRESSOR" id="756f-780a-fa6b-a6ca" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="2d7b-d383-bb4c-a971" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
+        <infoLink name="War is my Shepherd" id="7075-c2da-2f1a-d630" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
+        <infoLink name="Xenocidal Hatred" id="cd07-d453-79fe-c4df" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="f629-1578-6cbf-b4b4" id="9611-06a2-1dd1-d92d" primary="false" name="Knights"/>
@@ -1905,9 +1912,11 @@
       <infoLinks>
         <infoLink name="AGGRESSOR" id="4f75-91cd-d830-f43b" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="fe61-a823-039f-8dee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
+        <infoLink name="War is my Shepherd" id="49ad-12dd-344b-8e1a" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
+        <infoLink name="Xenocidal Hatred" id="ad5c-cb43-9529-540b" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="145"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="110"/>
       </costs>
       <profiles>
         <profile name="Ironclad Angels" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="286d-bd0e-4a3a-5cad">
@@ -1919,7 +1928,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Nuntius Timoris" hidden="false" id="5f82-fdc7-3a94-6489">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="60"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Nuntius Timoris" hidden="false" id="ffdd-2095-5b9f-5073">
@@ -1968,13 +1977,15 @@
         </profile>
         <profile name="Crucify their idols" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6c35-a931-5bda-8514">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If the bearer or their unit destroy an enemy Character Infantry model with Melee Weapons, any enemy units with the same faction keyword as that Character unit within 12&quot; receive PANIC until their next turn.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If the bearer or their attached unit destroy an enemy Character Infantry model with Melee Weapons, you receive 2 MP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="AGGRESSOR" id="29dd-b39a-13c1-6849" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="7818-d05b-9cdb-9eee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
+        <infoLink name="War is my Shepherd" id="9c54-fa35-16a1-8093" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
+        <infoLink name="Xenocidal Hatred" id="da18-5775-01bf-f1c5" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Knights" hidden="false" id="a83a-6072-e67c-eae2" targetId="f629-1578-6cbf-b4b4" primary="false"/>
@@ -2097,7 +2108,7 @@
             <selectionEntry type="upgrade" import="true" name="Airborne Assault Unit" hidden="false" id="83e0-ded8-068b-4b01">
               <rules>
                 <rule name="Tactical Insertion" id="c189-4841-d38c-a3b6" hidden="false">
-                  <description>A maximum number of units depending on battle size can be selected at the start of the game. These units have the Deep Strike keyword. If that unit already has the Deep Strike keyword, they may now make a move after deep striking.
+                  <description>A maximum number of Infantry units (including their attached characters) depending on battle size can be selected at the start of the game. These units have the Deep Strike keyword. If that unit already has the Deep Strike keyword, they may now make a move after deep striking.
 
 
 &lt;= 1000 pts - 3 Units
@@ -2134,7 +2145,9 @@
                 </modifier>
               </modifiers>
               <rules>
-                <rule name="Fearmongering" id="8475-4dd2-d546-b941" hidden="false"/>
+                <rule name="Fearmongering" id="8475-4dd2-d546-b941" hidden="false">
+                  <description>When an enemy unit selects a Human Heretic unit with an attack made with Ranged Weapons, if the highest Mental Fortitude characteristic of a model in that unit is not greater than or equal to 5, that unit receives SHOCK. If that enemy unit targets the unit with an attack made with Melee Weapons, they receive PANIC instead.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>
@@ -2496,6 +2509,28 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="5096-e3e1-f00d-1f42"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Drugged to Death" hidden="false" id="f387-7ff6-d025-78aa">
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Feel No Pain" id="c6d0-1831-eddf-cf7f" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+              <modifiers>
+                <modifier type="append" value="5+" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="cfa8-0664-1d9e-7fea" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f5d-2329-2887-521c"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <profiles>
         <profile name="Mindless Berserker" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4bca-aaf3-7d17-2ecf">
@@ -2680,7 +2715,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </profile>
         <profile name="Righteous Proselytism" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="bd14-4441-1efb-3a2e">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy Infantry unit (with a model count greater than 1) within 6&quot; of this unit. If the Mental Fortitude characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is less than half of this unit&apos;s, roll a D6. On a 3+, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy non-Character Infantry unit (with a model count greater than 1) within 6&quot; of this unit. If the Mental Fortitude characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is less than half of this unit&apos;s, roll a D6. On a 3+, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
           </characteristics>
         </profile>
         <profile name="Honourary Duellist" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f35b-84d9-212d-5217">
@@ -2762,7 +2797,7 @@ Ability: For 1 MP, at the end of the movement phase, you may use this support we
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Psalm: 23" id="e36e-d156-7403-64ce" hidden="false">
-      <description>While a Sergeant is present in a War Dogs Infantry unit, reroll a wound roll of 1.</description>
+      <description>While a Sergeant is present in a War Dogs Infantry unit (or War Dogs Leader), reroll a wound roll of 1.</description>
     </rule>
     <rule name="Xenocidal Hatred" id="fd5c-9ae8-3357-8991" hidden="false">
       <description>All Knights units weapons have Lethal Hits against Xenos units.</description>

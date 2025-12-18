@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Recon Unit" hidden="false" id="8a59-9caa-f190-f885">
       <selectionEntries>
@@ -425,7 +425,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
               </characteristics>
             </profile>
           </profiles>
