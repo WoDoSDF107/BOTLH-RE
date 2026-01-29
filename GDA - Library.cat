@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -33,7 +33,12 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="FN FAL" hidden="false" id="0b9c-c043-c43f-063d" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04"/>
+            <entryLink import="true" name="FN FAL" hidden="false" id="0b9c-c043-c43f-063d" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62ff-e045-f1d1-5815-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62ff-e045-f1d1-5815-max"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="M1911" hidden="false" id="d36e-db19-3a1e-8729" type="selectionEntry" targetId="dce7-36a1-8d43-29b2"/>
             <entryLink import="true" name="Combat Knife" hidden="false" id="1774-e06f-86ea-f396" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
           </entryLinks>
@@ -60,7 +65,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4353-8c42-2f28-5578"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="FN FAL" hidden="false" id="2aba-84e6-62a0-3b70" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04"/>
+            <entryLink import="true" name="FN FAL" hidden="false" id="2aba-84e6-62a0-3b70" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18fa-ecf4-6e32-5025-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18fa-ecf4-6e32-5025-max"/>
+              </constraints>
+            </entryLink>
             <entryLink import="true" name="M1911" hidden="false" id="fdad-3d58-6f0f-bfdb" type="selectionEntry" targetId="dce7-36a1-8d43-29b2"/>
             <entryLink import="true" name="Combat Knife" hidden="false" id="9537-4ed5-1166-dc56" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
           </entryLinks>
@@ -422,7 +432,7 @@
           <profiles>
             <profile name="Foxhound Sergeant" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="e9c5-501c-38aa-34d8">
               <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">5&quot;</characteristic>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
@@ -484,7 +494,7 @@
               <profiles>
                 <profile name="Foxhound" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="a6a2-6f94-23f7-bbae">
                   <characteristics>
-                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">5&quot;</characteristic>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                     <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
@@ -1008,7 +1018,7 @@
         </profile>
         <profile name="Point Man" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="8bdd-4c48-6260-f815">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, during the enemy’s Shooting Phase, if this unit is attached to a unit, and said unit is targeted by Ranged weapons, the enemy unit does not shoot. If they are eligible to, this model shoots at that enemy unit as if it were their Shooting Phase, then they and their unit can make a normal move in any direction, as long as it does not enter or end within engagement range of an enemy unit. That enemy unit is then Marked until their next turn.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, during the enemy’s Shooting Phase, if this unit is attached to a unit, and that unit is targeted by Ranged weapons, this model can shoot at the enemy unit as if it were their Shooting Phase. That enemy unit is then Marked until their next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1413,8 +1423,8 @@
             <profile name="CH47 Chinook" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="bd2f-a73f-30a8-d767">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">20&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">9</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">10</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
@@ -1798,7 +1808,7 @@
 
 ➤ John 3:18 - When models attached to this unit target Human units with Ranged weapons, those Ranged weapons receive a +1 to their strength characteristic.
 
-➤ Matthew 28:19 - If models attached to this unit made a successful charge move against a Human unit this turn (and the highest Mental Fortitude characteristic of a model in that unit is higher than or equal to any model in the target unit), all enemy models within engagement range receive SHOCK until your next command phase.
+➤ Matthew 28:19 - If models attached to this unit are within Engagement Range of an enemy Human unit, if the highest Mental Fortitude characteristic of a model in that Human unit is less than or equal to the highest in this model&apos;s bodyguard unit, one model from that enemy unit (chosen at the discretion of the opposing player) joins this model&apos;s bodyguard unit.
 
 If you did not select an ability this turn, roll 1 D6. If the result was a 4+, receive 1 MP.</characteristic>
           </characteristics>
@@ -1924,7 +1934,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 4+, r
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Nuntius Timoris" hidden="false" id="5f82-fdc7-3a94-6489">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="55"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Nuntius Timoris" hidden="false" id="ffdd-2095-5b9f-5073">
@@ -1968,7 +1978,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 4+, r
         </profile>
         <profile name="Schadenfreude" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="351a-534c-5f3d-b775">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Whenever an enemy unit receives an emotion effect due to the “Sin of Empathy” ability, this unit and its bodyguard unit receives GLEE until the next enemy turn.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Whenever an enemy unit receives an emotion effect due to the “The Sin of Empathy” ability, this unit&apos;s bodyguard unit receives GLEE until the next enemy turn.</characteristic>
           </characteristics>
         </profile>
         <profile name="Crucify their idols" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6c35-a931-5bda-8514">
@@ -2454,6 +2464,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
       </modifiers>
       <infoLinks>
         <infoLink name="Holy Generals" id="a46f-5075-af50-7d24" hidden="false" type="rule" targetId="32ae-9629-a975-53a2"/>
+        <infoLink name="Attached Hero" id="19dc-724f-27ac-1433" hidden="false" type="rule" targetId="6148-b038-e979-3c55"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heretics - Treachery of Heretics" hidden="false" id="9389-45bd-9048-81bd">
@@ -2689,9 +2700,9 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Martyrdom" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="5650-e13d-6010-4435">
+        <profile name="Haunting Visage" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="5650-e13d-6010-4435">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This model cannot be targeted with Ranged Weapons, unless that Ranged Weapon has the Precision keyword, and if it does, it must target this units bodyguard unit first.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Enemy Ranged Weapons targeting this model can only land a successful hit on a 6+.</characteristic>
           </characteristics>
         </profile>
         <profile name="The Messenger" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="bf87-9fc6-1c02-5a0c">
@@ -2711,7 +2722,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </profile>
         <profile name="Righteous Proselytism" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="bd14-4441-1efb-3a2e">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy non-Character Infantry unit (with a model count greater than 1) within 6&quot; of this unit. If the Mental Fortitude characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is less than half of this unit&apos;s, roll a D6. On a 3+, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy non-Character Infantry unit (with a model count greater than 1) within 9&quot; of this unit. If the Mental Fortitude characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is less than half of this unit&apos;s, roll a D6. On a 3+, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
           </characteristics>
         </profile>
         <profile name="Honourary Duellist" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f35b-84d9-212d-5217">
@@ -2729,6 +2740,8 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
       </modifiers>
       <infoLinks>
         <infoLink name="Holy Generals" id="54dd-2f7c-6bdc-a09d" hidden="false" type="rule" targetId="32ae-9629-a975-53a2"/>
+        <infoLink name="IRON WILL" id="8c83-5ace-e157-7aa8" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
+        <infoLink name="Attached Hero" id="dce6-8331-ad7b-2323" hidden="false" type="rule" targetId="6148-b038-e979-3c55"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fists" hidden="false" id="ba53-949b-0581-00c2">
@@ -2773,13 +2786,14 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
           <characteristics>
             <characteristic name="Range" typeId="5b97-cbf5-625e-9854">12&quot;</characteristic>
             <characteristic name="A" typeId="8524-9648-72fe-b421">1</characteristic>
-            <characteristic name="BS" typeId="997f-09a2-3a86-b592">3+</characteristic>
+            <characteristic name="BS" typeId="997f-09a2-3a86-b592">5+</characteristic>
             <characteristic name="S" typeId="06fa-f7bd-a348-0c1c">N/A</characteristic>
             <characteristic name="AP" typeId="fd77-21cf-cf04-7b75">N/A</characteristic>
             <characteristic name="D" typeId="d0f8-90c2-c3d5-128f">N/A</characteristic>
             <characteristic name="Keywords" typeId="7739-e288-77e6-4099">Smoke Grenade</characteristic>
-            <characteristic name="Description" typeId="6fc9-dd4f-aa26-990f">Used during the shooting phase. Upon a successful hit, the target unit receives a -1 to hit rolls for 1 turn. If this unit is within engagement range of the target unit, this unit also receives -1 to hit rolls.
-Ability: For 1 MP, at the end of the movement phase, you may use this support weapon&apos;s ability. Attacks targeting this unit made with ranged weapons receive a -1 to hit rolls.</characteristic>
+            <characteristic name="Description" typeId="6fc9-dd4f-aa26-990f">Used during your shooting phase. If this weapon successfully hits, the target unit can only score a hit on a 5+ until the end of their turn. If the unit using this weapon is within engagement range of the target unit, these rules apply to them as well.
+Ability: For 1 MP, at the end of your movement phase or your opponent&apos;s movement phase, you may use this support weapon&apos;s ability. Until the start of your next turn, the unit that uses this support weapon&apos;s ability cannot shoot, but they also cannot be targeted by units more than 12&quot; away, and enemy units receives a +1 to hit rolls when targeting this unit with Ranged Weapons. 
+Restrictions: This Support Weapon cannot be used against Vehicles.</characteristic>
           </characteristics>
         </profile>
       </profiles>
