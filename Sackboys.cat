@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b099-a74b-512d-241d" name="Sackboys" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b099-a74b-512d-241d" name="Sackboys" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Sackboys - Library" id="62e6-097a-2bda-40be" targetId="a323-4e38-cc60-d792"/>
   </catalogueLinks>
@@ -16,5 +16,6 @@
     <entryLink import="true" name="Vanguard Armour" hidden="false" id="377f-3ded-c2f7-299b" type="selectionEntry" targetId="9acc-785e-d36a-efcc"/>
     <entryLink import="true" name="Brute" hidden="false" id="48f6-6a8a-e610-d917" type="selectionEntry" targetId="3f1c-a35d-dc2d-1050"/>
     <entryLink import="true" name="Brute Sniper" hidden="false" id="bf0f-31fb-d069-1aca" type="selectionEntry" targetId="54bb-0a6b-98b7-d21e"/>
+    <entryLink import="true" name="Beacon" hidden="false" id="e5d7-a8f0-c605-1dd8" type="selectionEntry" targetId="3677-9b19-461f-fc99"/>
   </entryLinks>
 </catalogue>

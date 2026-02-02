@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Foxes" hidden="false" id="e6e2-59e4-0fdf-b4fc">
       <categoryLinks>
@@ -109,7 +109,7 @@
         <profile name="Close Combat Weapon" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="27db-7599-28a9-5476">
           <characteristics>
             <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
-            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">2+</characteristic>
+            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
             <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
@@ -1198,6 +1198,77 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c23-dc15-d214-1052"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f569-f270-90df-59a1"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Beacon" hidden="false" id="3677-9b19-461f-fc99">
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="120"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="156a-9b84-d46c-5095" id="0c1d-ed0a-d266-ce52" primary="false" name="Sackboys"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="3cb8-cd0d-c80d-a77f" primary="true" name="Infantry"/>
+        <categoryLink targetId="faa5-4992-eabf-8c91" id="cf98-c253-2f0b-5cb1" primary="false" name="Xenos"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Beacon" hidden="false" id="5598-c97b-c388-bf81">
+          <profiles>
+            <profile name="Beacon" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="8be3-b3ca-9399-14bb">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">8&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Punisher Rifle" hidden="false" id="c398-4b1f-36b7-eccc" type="selectionEntry" targetId="fda7-16ee-36b8-a550">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e42-778e-85b8-6336-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e42-778e-85b8-6336-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="239a-fe19-f448-56eb" type="selectionEntry" targetId="81c1-3c1f-8f3b-4b45"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1a7b-f1d2-77a5-8729"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="416d-3f47-04ee-b689"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Overwatch" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="8cd5-c278-7046-3239">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">During your opponent&apos;s movement phase, if a visible enemy unit (that does not have the Infiltrators keyword) ends a move within 24&quot; of this unit, this unit may make an attack with their Punisher Rifles as if it were their Shooting Phase, however, Attacks are reduced to 1 and an unmodified hit roll of 5+ is required to hit. This ability cannot be used if the &quot;Signaling&quot; ability was used during your previous turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tunnel Bearer (1 MP)" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="48e7-aee9-9719-14ed">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Friendly units in Strategic Reserves can be set up within 3&quot; of this unit, as long as this unit is not within 9&quot; of an enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Signaling (1 MP)" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="e00f-55a5-dccb-d827">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">During your Shooting Phase, if this unit has not made an attack with Ranged Weapons this phase, select one friendly unit within 12&quot; of this unit. That friendly unit receives a +1 to hit rolls until the end of the phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Punisher Rifle" hidden="false" id="fda7-16ee-36b8-a550">
+      <profiles>
+        <profile name="Punisher Rifle" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="d4fb-8500-328c-255d">
+          <characteristics>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">36&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">2</characteristic>
+            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+            <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <profileTypes>
