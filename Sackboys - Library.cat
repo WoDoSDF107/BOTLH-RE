@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="a323-4e38-cc60-d792" name="Sackboys - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="9" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Foxes" hidden="false" id="e6e2-59e4-0fdf-b4fc">
       <categoryLinks>
@@ -25,8 +25,8 @@
             <entryLink import="true" name="Close Combat Weapon" hidden="false" id="bf64-14f3-8ca1-4922" type="selectionEntry" targetId="81c1-3c1f-8f3b-4b45"/>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="dcd6-d607-81a1-65e5"/>
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="5ef6-a78f-3fd9-0474"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="dcd6-d607-81a1-65e5"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5ef6-a78f-3fd9-0474"/>
           </constraints>
           <profiles>
             <profile name="Fox" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="16ce-88d0-2fc3-106e">
@@ -43,7 +43,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="110"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="90"/>
       </costs>
       <infoLinks>
         <infoLink name="Feel No Pain" id="951d-894d-91c4-6717" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
@@ -81,10 +81,17 @@
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="a9da-54f3-e83e-b1b3" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hisp II" hidden="false" id="c434-a37d-ee2a-54d6">
       <profiles>
@@ -1201,7 +1208,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Beacon" hidden="false" id="3677-9b19-461f-fc99">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="120"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="100"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="156a-9b84-d46c-5095" id="0c1d-ed0a-d266-ce52" primary="false" name="Sackboys"/>
@@ -1254,6 +1261,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="a614-fe68-c67a-6edf" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Punisher Rifle" hidden="false" id="fda7-16ee-36b8-a550">
       <profiles>
@@ -1265,7 +1279,7 @@
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 1</characteristic>
           </characteristics>
         </profile>
       </profiles>

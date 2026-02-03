@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -607,7 +607,7 @@
         <categoryLink targetId="6362-52a6-6f3c-1301" id="ae9e-9837-d091-176b" primary="false" name="War Dogs"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="300"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="280"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hellhound" hidden="false" id="5d05-1d0b-d156-c74c">
@@ -661,7 +661,7 @@
       <profiles>
         <profile name="Mindless Fury" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4a86-fa40-131f-4375">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">During the opponent’s Shooting Phase, if an attack made with Ranged Weapons is successfully made on this unit, this unit can return fire at the attacking unit with one of its ranged weapons, but all hit rolls hit on a 6+ and attacks cannot be rerolled.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">During the opponent’s Shooting Phase, if an attack made with Ranged Weapons is successfully made on this unit, this unit can make an attack with one of its ranged weapons at the attacking unit, but all hit rolls hit on a 6+ and attacks cannot be rerolled.</characteristic>
           </characteristics>
         </profile>
         <profile name="Dishonourable Discharge" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="ebb9-2ce1-39c5-406f">
@@ -671,7 +671,7 @@
         </profile>
         <profile name="Bleeding Profusely" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="544f-81b5-2dee-ae04">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When an enemy Infantry unit receives damage from this units’ melee weapons, that unit receives that same amount of damage again at the start of the opponents’ Movement Phase.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When an enemy Human or Xenos Infantry unit receives damage from this units’ melee weapons, that unit receives D3 mortal wounds at the start of the opponents’ Movement Phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -679,6 +679,11 @@
         <infoLink name="Psalm: 23" id="1caf-7f0b-3430-1f23" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
         <infoLink name="COLD HEART" id="22e2-b62d-1fb3-94f4" hidden="false" type="rule" targetId="3742-1bf9-a0f8-0b11"/>
       </infoLinks>
+      <rules>
+        <rule name="Transport Rules" id="0319-a809-783b-2f20" hidden="false">
+          <description>Each Hellhound model takes up the space of 3 models.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M134 Minigun" hidden="false" id="9de2-bac2-45ee-2c25">
       <profiles>
@@ -1684,10 +1689,10 @@
         <infoLink name="AGGRESSOR" id="53e8-62e4-7382-51b9" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="34c3-f10f-8409-4412" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="a3ca-1a9d-929f-b76e" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Xenocidal Hatred" id="5a00-f23e-79b2-d792" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Walking Bastion" id="5a00-f23e-79b2-d792" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="120"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="140"/>
       </costs>
       <profiles>
         <profile name="Phalanx Formation" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b6db-dc6c-f5f6-8a4a">
@@ -1751,7 +1756,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="18eb-bfa5-d514-3c34">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="55"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="70"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Knight Sergeant" hidden="false" id="dbb0-9f8f-a94b-4b54">
@@ -1808,9 +1813,9 @@
 
 ➤ John 3:18 - When models attached to this unit target Human units with Ranged weapons, those Ranged weapons receive a +1 to their strength characteristic.
 
-➤ Matthew 28:19 - If models attached to this unit are within Engagement Range of an enemy Human unit, if the highest Mental Fortitude characteristic of a model in that Human unit is less than or equal to the highest in this model&apos;s bodyguard unit, one model from that enemy unit (chosen at the discretion of the opposing player) joins this model&apos;s bodyguard unit.
+➤ Matthew 28:19 - If models attached to this unit are within Engagement Range of an enemy Human unit, if the highest Mental Fortitude characteristic of a model in that Human unit is less than or equal to 4, one model from that enemy unit (chosen at the discretion of the opposing player) joins this model&apos;s bodyguard unit.
 
-If you did not select an ability this turn, roll 1 D6. If the result was a 4+, receive 1 MP.</characteristic>
+If you did not select an ability this turn, roll 1 D6. If the result was a 5+, receive 1 MP.</characteristic>
           </characteristics>
         </profile>
         <profile name="Military Strategy" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9c84-632f-b8b0-aca1">
@@ -1823,7 +1828,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 4+, r
         <infoLink name="AGGRESSOR" id="756f-780a-fa6b-a6ca" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="2d7b-d383-bb4c-a971" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="7075-c2da-2f1a-d630" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Xenocidal Hatred" id="cd07-d453-79fe-c4df" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Walking Bastion" id="cd07-d453-79fe-c4df" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="f629-1578-6cbf-b4b4" id="9611-06a2-1dd1-d92d" primary="false" name="Knights"/>
@@ -1919,10 +1924,10 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 4+, r
         <infoLink name="AGGRESSOR" id="4f75-91cd-d830-f43b" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="fe61-a823-039f-8dee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="49ad-12dd-344b-8e1a" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Xenocidal Hatred" id="ad5c-cb43-9529-540b" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Walking Bastion" id="ad5c-cb43-9529-540b" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="110"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="125"/>
       </costs>
       <profiles>
         <profile name="Ironclad Angels" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="286d-bd0e-4a3a-5cad">
@@ -1934,7 +1939,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 4+, r
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Nuntius Timoris" hidden="false" id="5f82-fdc7-3a94-6489">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="55"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="65"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Nuntius Timoris" hidden="false" id="ffdd-2095-5b9f-5073">
@@ -1991,7 +1996,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 4+, r
         <infoLink name="AGGRESSOR" id="29dd-b39a-13c1-6849" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="7818-d05b-9cdb-9eee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="9c54-fa35-16a1-8093" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Xenocidal Hatred" id="da18-5775-01bf-f1c5" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Walking Bastion" id="da18-5775-01bf-f1c5" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Knights" hidden="false" id="a83a-6072-e67c-eae2" targetId="f629-1578-6cbf-b4b4" primary="false"/>
@@ -2087,11 +2092,6 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 4+, r
         <categoryLink targetId="bd44-b2c0-15bd-1790" id="3d20-31ca-2fed-e5fe" primary="false" name="Fly"/>
       </categoryLinks>
       <profiles>
-        <profile name="Flesh-piercing Mandibles" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6b59-9982-1c88-a095">
-          <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Attacks made against Human units receive a +1 to hit rolls.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="The Ripping Swarm" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="7b3b-80d8-1f41-2fa2">
           <characteristics>
             <characteristic name="Description" typeId="5cee-5283-c95d-c323">Each time this model ends a Normal move, select one unit it moved over during that move, if that unit has the Human or Xenos keywords, roll one D6 for every model in that unit. On a 6+, that unit suffers 1 mortal wound.</characteristic>
@@ -2613,7 +2613,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </profile>
         <profile name="Hunger for Flesh" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="348d-2e54-e3eb-c34d">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This unit receives a +1 to hit rolls against Human units, but a -1 against Xenos or Mechanical units</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This unit receives a +1 to hit rolls against Human units, but a -1 against Mechanical units</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2862,10 +2862,14 @@ Restrictions: This Support Weapon cannot be used against Vehicles.</characterist
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Psalm: 23" id="e36e-d156-7403-64ce" hidden="false">
-      <description>While a Sergeant is present in a War Dogs Infantry unit (or War Dogs Leader), reroll a wound roll of 1.</description>
+      <description>While a Sergeant is present in a War Dogs Infantry unit (or Leader unit), reroll a wound roll of 1.</description>
     </rule>
-    <rule name="Xenocidal Hatred" id="fd5c-9ae8-3357-8991" hidden="false">
-      <description>All Knights units weapons have Lethal Hits against Xenos units.</description>
+    <rule name="Hallowed Sentinels" id="fd5c-9ae8-3357-8991" hidden="false">
+      <description>When an enemy unit attempts to charge a friendly unit which consists entirely of Knights models (not counting any characters attached to that unit), if the model with the highest Mental Fortitude characteristic in that enemy unit is less than the highest in the friendly unit, that enemy unit must roll a D6. 
+
+**If the result is a 1**, that unit receives SHOCK until their next turn and cannot make a charge for the rest of the phase. 
+**If the result is a 2, 3 or 4**, that unit cannot make a charge move against the target Knight unit, but can select a different target.
+**If the result is a 5 or 6**, that unit can successfully charge.</description>
     </rule>
     <rule name="War is my Shepherd" id="2b80-b7c8-176d-7fba" hidden="false">
       <description>If a Knights unit is within 6” of a War Dogs unit, it will act as a Sergeant for any abilities or rules that utilise them.</description>
