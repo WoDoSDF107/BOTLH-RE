@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="32" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="33" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -36,6 +36,7 @@
         <characteristicType name="W" id="7547-1a30-8027-a225"/>
         <characteristicType name="OC" id="17b7-6486-cf25-b101"/>
         <characteristicType name="MF" id="dbfc-7c96-dcff-d55b"/>
+        <characteristicType name="CC" id="f4e7-dd5b-6bb4-6485"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Character Restrictions" id="b994-5cbb-c4b6-d222" hidden="false">
@@ -243,9 +244,6 @@ When doing so:
     </rule>
     <rule name="Transport" id="c8f7-4cd9-0669-02e3" hidden="false">
       <description>This model has a transport capacity of</description>
-    </rule>
-    <rule name="Parry" id="d742-513e-df1a-74ea" hidden="false">
-      <description>When an enemy unit makes an attack with melee weapons against a model with the Parry keyword on any of its melee weapons, the player who controls the target unit can force the opponent to reroll x attack dice, with x being equal to the amount of different melee weapons with Parry that the target model has. If the result of that reroll is a 1, the attacking unit receives the damage that would have been dealt from that attack dice.</description>
     </rule>
   </sharedRules>
   <publications>

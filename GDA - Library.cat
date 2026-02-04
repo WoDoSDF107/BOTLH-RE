@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="21" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="22" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -29,6 +29,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -57,6 +58,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
+                <characteristic typeId="f4e7-dd5b-6bb4-6485" name="CC"/>
               </characteristics>
             </profile>
           </profiles>
@@ -176,6 +178,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -199,6 +202,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
+                <characteristic typeId="f4e7-dd5b-6bb4-6485" name="CC"/>
               </characteristics>
             </profile>
           </profiles>
@@ -297,7 +301,7 @@
             <characteristic name="S" typeId="e681-af26-3aee-d26b">5</characteristic>
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Parry</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -305,9 +309,6 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76a3-6fb3-b108-8db8"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2cc-adc3-e93b-ff6e"/>
       </constraints>
-      <infoLinks>
-        <infoLink name="Parry" id="af6a-85b6-f073-7f5f" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Bloodhound Ops" hidden="false" id="3956-efe9-8831-4d0a">
       <costs>
@@ -342,6 +343,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">2</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -365,6 +367,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
+                <characteristic typeId="f4e7-dd5b-6bb4-6485" name="CC"/>
               </characteristics>
             </profile>
           </profiles>
@@ -438,6 +441,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -474,6 +478,7 @@
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -500,6 +505,7 @@
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -620,6 +626,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">10</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -720,7 +727,7 @@
             <characteristic name="S" typeId="e681-af26-3aee-d26b">8</characteristic>
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-4</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Anti-Vehicle 3+, Parry</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Anti-Vehicle 3+</characteristic>
           </characteristics>
         </profile>
         <profile name="➤ Jagged Blade - Sweep" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="8774-21d5-0b3e-e923">
@@ -730,7 +737,7 @@
             <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-2</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Lethal Hits, Parry</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Lethal Hits</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -741,7 +748,6 @@
             <modifier type="append" value="Vehicle 3+" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Parry" id="7006-dad1-c476-0875" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3e9-35a6-6eb0-39c4"/>
@@ -760,6 +766,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">2</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -810,6 +817,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -850,6 +858,7 @@
                     <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -878,6 +887,7 @@
                     <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -942,6 +952,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -987,7 +998,7 @@
                     <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
                     <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
                     <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Anti-Xenos 3+, Devastating Wounds, Parry</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Anti-Xenos 3+, Devastating Wounds</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -998,7 +1009,6 @@
                     <modifier type="append" value="Xenos 3+" field="name"/>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Parry" id="4445-c7ee-e81f-32bb" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12e7-c98c-5b04-4e77"/>
@@ -1051,6 +1061,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1121,6 +1132,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1270,6 +1282,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">12</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1433,6 +1446,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">10</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1500,6 +1514,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1563,6 +1578,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1626,6 +1642,7 @@
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1657,6 +1674,7 @@
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1689,7 +1707,7 @@
         <infoLink name="AGGRESSOR" id="53e8-62e4-7382-51b9" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="34c3-f10f-8409-4412" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="a3ca-1a9d-929f-b76e" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Walking Bastion" id="5a00-f23e-79b2-d792" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Hallowed Sentinels" id="5a00-f23e-79b2-d792" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="140"/>
@@ -1708,16 +1726,13 @@
           <characteristics>
             <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">3</characteristic>
             <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
-            <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
-            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
+            <characteristic name="S" typeId="e681-af26-3aee-d26b">5</characteristic>
+            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Parry</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Parry" id="c258-4d3e-9006-8aa9" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="S&amp;W 500" hidden="false" id="c994-827e-119a-c30e">
       <profiles>
@@ -1744,15 +1759,12 @@
             <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
             <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
             <characteristic name="S" typeId="e681-af26-3aee-d26b">8</characteristic>
-            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-2</characteristic>
+            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Parry</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Parry" id="910c-fa79-d189-4989" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="18eb-bfa5-d514-3c34">
       <costs>
@@ -1769,6 +1781,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1828,7 +1841,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
         <infoLink name="AGGRESSOR" id="756f-780a-fa6b-a6ca" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="2d7b-d383-bb4c-a971" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="7075-c2da-2f1a-d630" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Walking Bastion" id="cd07-d453-79fe-c4df" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Hallowed Sentinels" id="cd07-d453-79fe-c4df" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="f629-1578-6cbf-b4b4" id="9611-06a2-1dd1-d92d" primary="false" name="Knights"/>
@@ -1861,6 +1874,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1892,6 +1906,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                     <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1924,7 +1939,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
         <infoLink name="AGGRESSOR" id="4f75-91cd-d830-f43b" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="fe61-a823-039f-8dee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="49ad-12dd-344b-8e1a" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Walking Bastion" id="ad5c-cb43-9529-540b" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Hallowed Sentinels" id="ad5c-cb43-9529-540b" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="125"/>
@@ -1952,6 +1967,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
                 <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1996,7 +2012,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
         <infoLink name="AGGRESSOR" id="29dd-b39a-13c1-6849" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="7818-d05b-9cdb-9eee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
         <infoLink name="War is my Shepherd" id="9c54-fa35-16a1-8093" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Walking Bastion" id="da18-5775-01bf-f1c5" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
+        <infoLink name="Hallowed Sentinels" id="da18-5775-01bf-f1c5" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Knights" hidden="false" id="a83a-6072-e67c-eae2" targetId="f629-1578-6cbf-b4b4" primary="false"/>
@@ -2054,6 +2070,7 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2327,6 +2344,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">10</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">6</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2508,6 +2526,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2540,9 +2559,9 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Mindless Berserker" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4bca-aaf3-7d17-2ecf">
+        <profile name="Flailing Assault" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4bca-aaf3-7d17-2ecf">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When this unit Charges, add its Movement value to the outcome of the Charge roll.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When an enemy unit makes a Strike or Repose roll against this unit, subtract 1 from that roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2597,6 +2616,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2643,7 +2663,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                     <characteristic name="S" typeId="e681-af26-3aee-d26b">5</characteristic>
                     <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
                     <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Devastating Wounds, Precision, Parry</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Devastating Wounds, Precision</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2654,7 +2674,6 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
               <infoLinks>
                 <infoLink name="Devastating Wounds" id="4c33-f570-a9c3-eaf7" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                 <infoLink name="Precision" id="9137-a29a-bb44-4442" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
-                <infoLink name="Parry" id="eac2-2fc6-3e17-03eb" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="The Son" hidden="false" id="798a-d109-a047-1b37">
@@ -2666,14 +2685,13 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                     <characteristic name="S" typeId="e681-af26-3aee-d26b">5</characteristic>
                     <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
                     <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Lethal Hits, Precision, Parry</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Lethal Hits, Precision</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink name="Precision" id="6cb6-bd30-80eb-57f7" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
                 <infoLink name="Lethal Hits" id="ecde-1df2-9f35-0d3e" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
-                <infoLink name="Parry" id="50a1-8be3-cb24-908f" hidden="false" type="rule" targetId="d742-513e-df1a-74ea"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52b9-f965-3db8-b5f3-min"/>
@@ -2694,6 +2712,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
                 <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">10</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">6</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2819,6 +2838,7 @@ Restrictions: This Support Weapon cannot be used against Vehicles.</characterist
                 <characteristic name="W" typeId="7547-1a30-8027-a225">5</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
             <profile name="Confident Driver" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="0b20-c280-aef3-62a1">
@@ -2865,11 +2885,11 @@ Restrictions: This Support Weapon cannot be used against Vehicles.</characterist
       <description>While a Sergeant is present in a War Dogs Infantry unit (or Leader unit), reroll a wound roll of 1.</description>
     </rule>
     <rule name="Hallowed Sentinels" id="fd5c-9ae8-3357-8991" hidden="false">
-      <description>When an enemy unit attempts to charge a friendly unit which consists entirely of Knights models (not counting any characters attached to that unit), if the model with the highest Mental Fortitude characteristic in that enemy unit is less than the highest in the friendly unit, that enemy unit must roll a D6. 
+      <description>When an enemy unit makes a successful charge roll against a friendly unit which consists entirely of Knights models (not counting any characters attached to that unit), if the model with the highest Mental Fortitude characteristic in that enemy unit is less than the highest in the friendly unit, that enemy unit must roll a D6 before making the charge move. 
 
 **If the result is a 1**, that unit receives SHOCK until their next turn and cannot make a charge for the rest of the phase. 
-**If the result is a 2, 3 or 4**, that unit cannot make a charge move against the target Knight unit, but can select a different target.
-**If the result is a 5 or 6**, that unit can successfully charge.</description>
+**If the result is a 2 or 3**, that unit cannot make a charge move against the target Knight unit, but can select a different target.
+**If the result is a 4, 5 or 6**, that unit can successfully charge.</description>
     </rule>
     <rule name="War is my Shepherd" id="2b80-b7c8-176d-7fba" hidden="false">
       <description>If a Knights unit is within 6” of a War Dogs unit, it will act as a Sergeant for any abilities or rules that utilise them.</description>
