@@ -44,6 +44,19 @@
         <characteristicType name="Description" id="c49c-95e3-b8a3-224f"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Vehicle Unit" id="a4bf-d46f-db19-28f9" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="M" id="59a0-32b9-8030-1543"/>
+        <characteristicType name="T" id="2fcd-2126-34e8-0944"/>
+        <characteristicType name="Front" id="f3f8-1ae7-4be7-9365"/>
+        <characteristicType name="Side" id="b79e-1d83-ab8f-4de7"/>
+        <characteristicType name="Back" id="3f6d-e0d8-46cd-5302"/>
+        <characteristicType name="W" id="04c5-b2ed-5c10-cd42"/>
+        <characteristicType name="OC" id="8e7c-bc56-bb7f-c2b4"/>
+        <characteristicType name="MF" id="4395-2ce2-d480-3d3c"/>
+        <characteristicType name="CC" id="d469-e29f-097b-3790"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <forceEntries>
     <forceEntry name="Army Roster" id="d4ab-4ef8-1994-7cca" hidden="false">

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e443-3885-6320-b9dd" name="Automatons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Troopers" hidden="false" id="2305-a25a-dd3e-6a1b" type="selectionEntry" targetId="3099-2b5d-7234-d48a"/>
+    <entryLink import="true" name="Berserkers" hidden="false" id="041f-5025-29d0-cefc" type="selectionEntry" targetId="7b0e-43cb-0ad1-fe82"/>
+    <entryLink import="true" name="Devastator" hidden="false" id="e058-55e1-5776-7f0f" type="selectionEntry" targetId="cfc8-2f44-18fa-7a14"/>
+    <entryLink import="true" name="Heavy Devastator" hidden="false" id="122f-b836-5a04-2870" type="selectionEntry" targetId="9819-5db7-133d-2f57"/>
+    <entryLink import="true" name="Scout Strider" hidden="false" id="1f00-9d6e-ac81-6c1a" type="selectionEntry" targetId="50d0-2fdf-5521-859f"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Automatons - Library" id="ae87-c661-8453-b8cc" targetId="44f3-7dc2-b2b0-fe8b"/>
+  </catalogueLinks>
+</catalogue>
