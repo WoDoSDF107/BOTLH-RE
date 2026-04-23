@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="22" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="23" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -58,7 +58,7 @@
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
-                <characteristic typeId="f4e7-dd5b-6bb4-6485" name="CC"/>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -93,14 +93,14 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="FN FAL" hidden="false" id="9dfd-fe86-1e3b-ce04">
+    <selectionEntry type="upgrade" import="true" name="M14" hidden="false" id="9dfd-fe86-1e3b-ce04">
       <profiles>
-        <profile name="FN FAL" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="6874-63c7-e3d4-b144">
+        <profile name="M14" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="6874-63c7-e3d4-b144">
           <characteristics>
             <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
-            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">2</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
-            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
             <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault</characteristic>
@@ -312,7 +312,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Bloodhound Ops" hidden="false" id="3956-efe9-8831-4d0a">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="70"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="85"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="0ac6-67f5-50b3-a015" targetId="0dfd-0bc5-60ba-673c" primary="true"/>
@@ -323,12 +323,12 @@
       <profiles>
         <profile name="Heartbeat Monitor" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9527-d7b9-1e8d-c966">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If an enemy unit within 6&quot; is behind thin cover, any friendly ranged weapons that target that unit have the Ignores Cover keyword.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Shooting Phase, you may select an enemy unit within 3&quot; of this unit that is behind thin cover. Until the end of your shooting phase, friendly ranged weapons that target that unit have the Ignores Cover keyword.</characteristic>
           </characteristics>
         </profile>
         <profile name="Thermal Binoculars" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4b58-3eae-7909-1c37">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your movement phase, select one enemy Infantry unit within 12&quot; of this unit. If that enemy unit is destroyed by the end of this turn, receive 1 MP.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your movement phase, select one visible non-mechanical enemy Infantry unit within 12&quot; of this unit. If that enemy unit is destroyed by the end of this turn, receive 1 MP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -386,6 +386,7 @@
         <infoLink name="Psalm: 23" id="1045-fccf-24ad-2516" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
         <infoLink name="Infiltrators" id="a580-38a0-dd01-3db8" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="HIKER" id="5104-d264-d992-3f2d" hidden="false" type="rule" targetId="ecc4-08c7-2193-4f72"/>
+        <infoLink name="Stealth" id="2892-2ea6-e0ff-5350" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="M34 Smoke Grenade" hidden="false" id="f441-0ac0-0944-d154" type="selectionEntry" targetId="ce87-973b-bd0d-0ccf"/>
@@ -1028,7 +1029,7 @@
       <profiles>
         <profile name="Indomitable Will" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="771f-5000-8af9-7501">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This bearer or their unit cannot be directly applied with SHOCK, and when PANIC is to be applied, apply SHOCK instead.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">The bearer of this ability and their unit cannot be directly applied with SHOCK, and when PANIC is to be applied, apply SHOCK instead.</characteristic>
           </characteristics>
         </profile>
         <profile name="Point Man" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="8bdd-4c48-6260-f815">
@@ -1575,7 +1576,7 @@
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">0&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">7</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
@@ -1622,104 +1623,6 @@
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Knights - Knight Brothers" hidden="false" id="35d8-8264-96c5-5fec">
-      <categoryLinks>
-        <categoryLink targetId="f629-1578-6cbf-b4b4" id="6a2b-3791-5f10-f1a6" primary="false" name="Knights"/>
-        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="880b-9c16-04ae-955f" primary="true" name="Infantry"/>
-        <categoryLink targetId="0052-4108-3b9f-e544" id="0081-6c54-a3fa-1b37" primary="false" name="Human"/>
-        <categoryLink targetId="8b4b-7eda-1061-634f" id="2494-e766-9051-0cfd" primary="false" name="GDA"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Knight Brothers" id="0a91-c182-82f7-ecca" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="model" import="true" name="Knight Brother w/ Arming Sword" hidden="false" id="f8a3-c184-41f5-dd4a">
-              <profiles>
-                <profile name="Knight Brother w/ Arming Sword" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="ff0d-93d1-1466-329d">
-                  <characteristics>
-                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
-                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
-                    <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
-                    <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
-                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
-                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Arming Sword" hidden="false" id="e994-e62a-fe84-ed53" type="selectionEntry" targetId="7fd3-fccf-13c2-17f2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f164-7b96-63b9-97a4"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13be-0f2a-40c2-29a8"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="S&amp;W 500" hidden="false" id="a079-9232-bf9a-335f" type="selectionEntry" targetId="c994-827e-119a-c30e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="051a-2601-0eed-7189"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="681e-b5a2-0ac8-6ed9"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="0c18-0847-80b1-c14b"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Knight Brother w/ Zweihander" hidden="false" id="32f1-0ea8-3e0e-bdd1">
-              <profiles>
-                <profile name="Knight Brother w/ Zweihander" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="2245-beee-0b3c-b634">
-                  <characteristics>
-                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
-                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
-                    <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
-                    <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
-                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
-                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink import="true" name="S&amp;W 500" hidden="false" id="5a4a-bc71-d185-96c8" type="selectionEntry" targetId="c994-827e-119a-c30e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c42-8668-64d8-a156"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bff-6517-cb02-31e1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Zweihander" hidden="false" id="ad5a-1d98-db41-d0a5" type="selectionEntry" targetId="615d-1e9a-6a55-08a2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9650-e9ac-d52f-ad60"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29ee-a769-662d-dcb9"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="5a50-15c2-11ef-aa91"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="bb3e-4b20-c08a-5474"/>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="11bd-bb0f-aa11-c004"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <infoLinks>
-        <infoLink name="AGGRESSOR" id="53e8-62e4-7382-51b9" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
-        <infoLink name="IRON WILL" id="34c3-f10f-8409-4412" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
-        <infoLink name="War is my Shepherd" id="a3ca-1a9d-929f-b76e" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Hallowed Sentinels" id="5a00-f23e-79b2-d792" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="140"/>
-      </costs>
-      <profiles>
-        <profile name="Phalanx Formation" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b6db-dc6c-f5f6-8a4a">
-          <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">If this unit remained stationary this turn, improve the save characteristic of models in this unit by 1 until your next movement phase.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arming Sword" hidden="false" id="7fd3-fccf-13c2-17f2">
       <profiles>
         <profile name="Arming Sword" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="6e49-2aa0-1a70-d80e">
@@ -1727,8 +1630,8 @@
             <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">3</characteristic>
             <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
             <characteristic name="S" typeId="e681-af26-3aee-d26b">5</characteristic>
-            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
-            <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
+            <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
             <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
           </characteristics>
         </profile>
@@ -1756,19 +1659,24 @@
       <profiles>
         <profile name="Zweihander" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="66b1-aaf0-43f3-3cee">
           <characteristics>
-            <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+            <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">3</characteristic>
             <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
-            <characteristic name="S" typeId="e681-af26-3aee-d26b">8</characteristic>
+            <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
             <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
             <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">*Rending</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule name="Rending" id="da88-7879-acc8-bc2e" hidden="false">
+          <description>If the Strength characteristic of this weapon is greater than that of the target unit&apos;s Toughness characteristic, this weapon automatically wounds.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="18eb-bfa5-d514-3c34">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="70"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="115"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Knight Sergeant" hidden="false" id="dbb0-9f8f-a94b-4b54">
@@ -1777,7 +1685,7 @@
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
@@ -1791,7 +1699,7 @@
                 <entryLink import="true" name="Zweihander" hidden="false" id="2f5e-98b7-f839-c32d" type="selectionEntry" targetId="615d-1e9a-6a55-08a2"/>
                 <entryLink import="true" name="Arming Sword" hidden="false" id="22af-578d-09e6-081d" type="selectionEntry" targetId="7fd3-fccf-13c2-17f2">
                   <modifiers>
-                    <modifier type="set" value="3+" field="55e5-4318-7023-255d" scope="unit" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="set" value="2+" field="55e5-4318-7023-255d" scope="unit" affects="self.entries.recursive.profiles.Unit"/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
@@ -1833,15 +1741,13 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
         </profile>
         <profile name="Military Strategy" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9c84-632f-b8b0-aca1">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When this unit or its attached unit target an enemy unit, if no models in that unit have a Mental Fortitude characteristic higher than that of this model, this unit and/or its attached unit reroll hit rolls of 1.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When this unit and its attached unit target an enemy unit, if no models in that unit have a Mental Fortitude characteristic higher than that of this model, this unit and its attached unit reroll hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="AGGRESSOR" id="756f-780a-fa6b-a6ca" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="2d7b-d383-bb4c-a971" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
-        <infoLink name="War is my Shepherd" id="7075-c2da-2f1a-d630" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Hallowed Sentinels" id="cd07-d453-79fe-c4df" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="f629-1578-6cbf-b4b4" id="9611-06a2-1dd1-d92d" primary="false" name="Knights"/>
@@ -1864,9 +1770,9 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
       <selectionEntryGroups>
         <selectionEntryGroup name="Knight Defenders" id="46b1-f64f-40b2-6079" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Knight Defender w/ Arming Sword" hidden="false" id="3248-fbed-ef2d-466c">
+            <selectionEntry type="model" import="true" name="Knight Defender" hidden="false" id="3248-fbed-ef2d-466c">
               <profiles>
-                <profile name="Knight Defender w/ Arming Sword" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="7837-59c8-47c5-b007">
+                <profile name="Knight Defender" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="7837-59c8-47c5-b007">
                   <characteristics>
                     <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                     <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
@@ -1879,12 +1785,6 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Arming Sword" hidden="false" id="3b0d-10af-8896-7c56" type="selectionEntry" targetId="7fd3-fccf-13c2-17f2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5df2-4e6c-506b-d7cb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4343-bd35-0da3-4694"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="S&amp;W 500" hidden="false" id="98d0-6540-dbcf-940c" type="selectionEntry" targetId="c994-827e-119a-c30e">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3970-d383-5f99-2de6"/>
@@ -1895,6 +1795,27 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a9dd-d167-9f97-5d8a"/>
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="e7eb-2eea-5bb6-865d" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Arming Sword" hidden="false" id="3b0d-10af-8896-7c56" type="selectionEntry" targetId="7fd3-fccf-13c2-17f2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4343-bd35-0da3-4694"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Mace" hidden="false" id="326f-caf7-b0fa-8da5" type="selectionEntry" targetId="26d3-3177-5e39-5608">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffc0-9ae0-abe7-f860"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Twin Axes" hidden="false" id="eea0-ccf7-84c4-1e8c" type="selectionEntry" targetId="912c-9a2d-3971-06a9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaaa-a0a9-0059-5b11"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Knight Defender w/ Zweihander" hidden="false" id="009d-3d8c-62f6-020b">
               <profiles>
@@ -1938,32 +1859,30 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
       <infoLinks>
         <infoLink name="AGGRESSOR" id="4f75-91cd-d830-f43b" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="fe61-a823-039f-8dee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
-        <infoLink name="War is my Shepherd" id="49ad-12dd-344b-8e1a" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Hallowed Sentinels" id="ad5c-cb43-9529-540b" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="125"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="175"/>
       </costs>
       <profiles>
         <profile name="Ironclad Angels" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="286d-bd0e-4a3a-5cad">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">While this unit is leading a War Dogs unit, the bearer&apos;s unit rerolls hit rolls of 1, and the Weapon Skill of their melee weapons is improved by 1.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">While this unit is leading a War Dogs unit, the bearer&apos;s unit rerolls hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Nuntius Timoris" hidden="false" id="5f82-fdc7-3a94-6489">
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="65"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="110"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Nuntius Timoris" hidden="false" id="ffdd-2095-5b9f-5073">
           <profiles>
-            <profile name="Knight Sergeant" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="c783-d777-30e5-892b">
+            <profile name="Nuntius Timoris" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="c783-d777-30e5-892b">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
@@ -1972,12 +1891,6 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Arming Sword" hidden="false" id="e6dd-930a-5fee-6c1d" type="selectionEntry" targetId="7fd3-fccf-13c2-17f2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efa7-e15e-9889-1bc1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ac-ef43-bb2d-829a"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="S&amp;W 500" hidden="false" id="cc45-c3ac-7ca7-2c24" type="selectionEntry" targetId="c994-827e-119a-c30e">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c548-98df-b215-2d6c"/>
@@ -1989,6 +1902,26 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8449-f0ab-ec27-d639"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5771-5b6e-701d-ccb0"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="54b5-efd6-6588-fd2b" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Arming Sword" hidden="false" id="e6dd-930a-5fee-6c1d" type="selectionEntry" targetId="7fd3-fccf-13c2-17f2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ac-ef43-bb2d-829a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Mace" hidden="false" id="6e8b-6ae6-7f69-396c" type="selectionEntry" targetId="26d3-3177-5e39-5608">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa62-6b8b-444b-1502"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c94-aae0-3cf2-8d79"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abe7-ddd0-a3d2-2f8a"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -2011,8 +1944,6 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
       <infoLinks>
         <infoLink name="AGGRESSOR" id="29dd-b39a-13c1-6849" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
         <infoLink name="IRON WILL" id="7818-d05b-9cdb-9eee" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
-        <infoLink name="War is my Shepherd" id="9c54-fa35-16a1-8093" hidden="false" type="rule" targetId="2b80-b7c8-176d-7fba"/>
-        <infoLink name="Hallowed Sentinels" id="da18-5775-01bf-f1c5" hidden="false" type="rule" targetId="fd5c-9ae8-3357-8991"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Knights" hidden="false" id="a83a-6072-e67c-eae2" targetId="f629-1578-6cbf-b4b4" primary="false"/>
@@ -2741,7 +2672,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
         </profile>
         <profile name="Righteous Proselytism" typeId="67fe-c30e-9f67-7a2e" typeName="The Messenger" hidden="false" id="bd14-4441-1efb-3a2e">
           <characteristics>
-            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy non-Character Infantry unit (with a model count greater than 1) within 9&quot; of this unit. If the Mental Fortitude characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is less than half of this unit&apos;s, roll a D6. On a 3+, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
+            <characteristic name="Description" typeId="1af9-0667-e9b6-7f8c">During your shooting phase, select one visible enemy non-Character Infantry unit (with a model count greater than 1) within 6&quot; of this unit that has the Human or Xenos keywords. If the Mental Fortitude characteristic of one model from that unit (chosen at the discretion of the owner of that unit) is less than half of this unit&apos;s, roll a D6. On a 3+, that model becomes attached to this unit, acting as a bodyguard unit. If that unit has the Xenos keyword, it loses its ranged and melee weapons, adding 1 Fists in its place.</characteristic>
           </characteristics>
         </profile>
         <profile name="Honourary Duellist" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f35b-84d9-212d-5217">
@@ -2811,7 +2742,7 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
             <characteristic name="D" typeId="d0f8-90c2-c3d5-128f">N/A</characteristic>
             <characteristic name="Keywords" typeId="7739-e288-77e6-4099">Smoke Grenade</characteristic>
             <characteristic name="Description" typeId="6fc9-dd4f-aa26-990f">Used during your shooting phase. If this weapon successfully hits, the target unit can only score a hit on a 5+ until the end of their turn. If the unit using this weapon is within engagement range of the target unit, these rules apply to them as well.
-Ability: For 1 MP, at the end of your movement phase or your opponent&apos;s movement phase, you may use this support weapon&apos;s ability. Until the start of your next turn, the unit that uses this support weapon&apos;s ability cannot shoot, but they also cannot be targeted by units more than 12&quot; away, and enemy units receives a +1 to hit rolls when targeting this unit with Ranged Weapons. 
+Ability: For 1 MP, at the end of your movement phase or your opponent&apos;s movement phase, you may use this support weapon&apos;s ability. Until the start of your next turn, the unit that uses this support weapon&apos;s ability cannot shoot, but they also cannot be targeted by units more than 12&quot; away, and enemy units receives a -1 to hit rolls when targeting this unit with Ranged Weapons. 
 Restrictions: This Support Weapon cannot be used against Vehicles.</characteristic>
           </characteristics>
         </profile>
@@ -2879,20 +2810,166 @@ Restrictions: This Support Weapon cannot be used against Vehicles.</characterist
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights - Knight Brothers" hidden="false" id="1f99-2684-686e-250a">
+      <categoryLinks>
+        <categoryLink targetId="f629-1578-6cbf-b4b4" id="3bb3-4846-e4bf-df56" primary="false" name="Knights"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="eca9-a333-3e8b-1cc6" primary="true" name="Infantry"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="36c4-b25b-a381-8f6c" primary="false" name="Human"/>
+        <categoryLink targetId="8b4b-7eda-1061-634f" id="a921-d2c3-3ad5-f36d" primary="false" name="GDA"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Knight Brothers" id="8d0c-b4c4-22f9-a2a7" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Knight Brother" hidden="false" id="79f8-a19f-c0c5-2518">
+              <profiles>
+                <profile name="Knight Brother" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="4827-e0f8-0bde-1b04">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="S&amp;W 500" hidden="false" id="409a-8c6e-dc8f-d4fc" type="selectionEntry" targetId="c994-827e-119a-c30e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b725-548a-99bc-e69d"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5c9-c48e-5701-f067"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7df2-2274-5a77-7ee4"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear Selection" id="138d-8cfa-559d-4d32" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Arming Sword" hidden="false" id="a16d-47c0-82b1-88ab" type="selectionEntry" targetId="7fd3-fccf-13c2-17f2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="545c-c81f-f929-76dd"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Mace" hidden="false" id="019a-b5e6-43b1-aa8b" type="selectionEntry" targetId="26d3-3177-5e39-5608">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b4e-b52d-7fbd-d980"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Twin Axes" hidden="false" id="d76a-f43b-6564-3dce" type="selectionEntry" targetId="912c-9a2d-3971-06a9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76c3-1697-29f8-0fdd"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b18-3090-d36e-2e5e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7b0-e5e2-313b-27cd"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="4" field="7df2-2274-5a77-7ee4">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="parent" childId="3b4a-d171-f8d6-2f7c" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Knight Brother w/ Zweihander" hidden="false" id="3b4a-d171-f8d6-2f7c">
+              <profiles>
+                <profile name="Knight Brother w/ Zweihander" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="18fa-4ff6-79e5-1fc8">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">5</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="S&amp;W 500" hidden="false" id="e30a-8e9a-a4f4-72ca" type="selectionEntry" targetId="c994-827e-119a-c30e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbf2-b0c9-dfed-7b98"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27ba-26f7-cd2c-26c2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Zweihander" hidden="false" id="e99a-f819-1856-babb" type="selectionEntry" targetId="615d-1e9a-6a55-08a2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6e0-d2b5-7dfe-636b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3613-dd60-a167-d4d5"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad12-465e-ce86-9cc1"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="5459-5188-814c-da81"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4ed6-ab3a-0a6b-7661"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="AGGRESSOR" id="6b00-61d1-8680-ba17" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
+        <infoLink name="IRON WILL" id="2460-0046-ff69-4f81" hidden="false" type="rule" targetId="c78c-fc61-e10e-bcb8"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="225"/>
+      </costs>
+      <profiles>
+        <profile name="Battle Formations" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="3f49-dc53-e498-174c">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the beginning of your turn, select one of the three stances for this unit. Until the start of your next turn, the rules for that stance are applied.
+ 
+Offensive Stance: All of this unit&apos;s Melee Weapons receive the Sustained Hits 1 keyword.
+ 
+Defensive Stance: When this unit is targeted by Ranged Weapons, it receives an Invulnerable Save of 5+.
+ 
+Riposte Stance: If this unit is targeted by an attack made with Melee Weapons, when performing Save Rolls, if the result of any of those rolls is a 6+, apply 1 Mortal Wound to the enemy unit that targeted this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mace" hidden="false" id="26d3-3177-5e39-5608">
+      <profiles>
+        <profile name="Mace" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="5f59-bbbb-fb02-92dd">
+          <characteristics>
+            <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
+            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
+            <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
+            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
+            <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Axes" hidden="false" id="912c-9a2d-3971-06a9" page="">
+      <profiles>
+        <profile name="Twin Axes" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="7d17-6bc2-a7a6-b2da">
+          <characteristics>
+            <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">5</characteristic>
+            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
+            <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
+            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+            <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule name="Psalm: 23" id="e36e-d156-7403-64ce" hidden="false">
-      <description>While a Sergeant is present in a War Dogs Infantry unit (or Leader unit), reroll a wound roll of 1.</description>
-    </rule>
-    <rule name="Hallowed Sentinels" id="fd5c-9ae8-3357-8991" hidden="false">
-      <description>When an enemy unit makes a successful charge roll against a friendly unit which consists entirely of Knights models (not counting any characters attached to that unit), if the model with the highest Mental Fortitude characteristic in that enemy unit is less than the highest in the friendly unit, that enemy unit must roll a D6 before making the charge move. 
-
-**If the result is a 1**, that unit receives SHOCK until their next turn and cannot make a charge for the rest of the phase. 
-**If the result is a 2 or 3**, that unit cannot make a charge move against the target Knight unit, but can select a different target.
-**If the result is a 4, 5 or 6**, that unit can successfully charge.</description>
-    </rule>
-    <rule name="War is my Shepherd" id="2b80-b7c8-176d-7fba" hidden="false">
-      <description>If a Knights unit is within 6” of a War Dogs unit, it will act as a Sergeant for any abilities or rules that utilise them.</description>
+    <rule name="War is my Shepherd" id="e36e-d156-7403-64ce" hidden="false">
+      <description>While a Sergeant is present in this War Dogs Infantry unit (or Leader unit), you may reroll one hit roll, wound roll, or save roll for this unit this turn. This rule also applies if a Knight unit is within 6&quot; of this unit,</description>
     </rule>
     <rule name="Holy Generals" id="32ae-9629-a975-53a2" hidden="false">
       <description>At the start of your Command phase, if this unit is present on the board (including if it is embarked in transport), you receive 1 MP.</description>
