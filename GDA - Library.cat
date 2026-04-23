@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="24" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="25" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -551,24 +551,6 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff6c-2eaa-7f8f-15d7"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="M2 Flamethrower" hidden="false" id="cab0-9606-c60c-ad26">
-                      <profiles>
-                        <profile name="M2 Flamethrower" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="2f8e-2662-c3f3-498c">
-                          <characteristics>
-                            <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
-                            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
-                            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
-                            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
-                            <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
-                            <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
-                            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="812e-688d-e4d9-c774"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="M40" hidden="false" id="c23c-5d93-a098-1843">
                       <profiles>
                         <profile name="M40" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="a42a-3963-5d03-cdc3">
@@ -592,6 +574,13 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21aa-73fe-ef82-1443"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c765-90bc-6098-4174"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="M2 Flamethrower" hidden="false" id="481d-f779-758c-a130" type="selectionEntry" targetId="fadb-27a0-385e-8fcd">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9faf-51fc-760c-3e7f"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -1450,15 +1439,17 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="M48 Patton" hidden="false" id="8713-51e1-28cb-d435">
           <profiles>
-            <profile name="M48 Patton" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="8728-f5c4-87d5-5f80">
+            <profile name="M48 Patton" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="8728-f5c4-87d5-5f80">
               <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">10&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
-                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
+                <characteristic name="T" typeId="2fcd-2126-34e8-0944">8</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">3+</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">3+</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">3+</characteristic>
+                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">8</characteristic>
+                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">3</characteristic>
+                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
+                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1568,8 +1559,8 @@
       <profiles>
         <profile name="M2 Flamethrower" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="9679-01ef-8b93-c05c">
           <characteristics>
-            <characteristic name="Range" typeId="910b-bab0-6061-64b0">3&quot;</characteristic>
-            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6</characteristic>
+            <characteristic name="Range" typeId="910b-bab0-6061-64b0">4&quot;</characteristic>
+            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">N/A</characteristic>
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
@@ -1607,15 +1598,17 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="M1 Abrams" hidden="false" id="2979-c89b-bf12-83cd">
           <profiles>
-            <profile name="M1 Abrams" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="fdf9-d3ad-ee49-5f0b">
+            <profile name="M1 Abrams" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="fdf9-d3ad-ee49-5f0b">
               <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">10&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">10</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">12</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
-                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
+                <characteristic name="T" typeId="2fcd-2126-34e8-0944">10</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">2+</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">2+</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">2+</characteristic>
+                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">12</characteristic>
+                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">3</characteristic>
+                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
+                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1778,15 +1771,17 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="CH47 Chinook" hidden="false" id="73d8-dbde-6dac-445b">
           <profiles>
-            <profile name="CH47 Chinook" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="bd2f-a73f-30a8-d767">
+            <profile name="CH47 Chinook" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="bd2f-a73f-30a8-d767">
               <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">20&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">10</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
-                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                <characteristic name="M" typeId="59a0-32b9-8030-1543">20&quot;</characteristic>
+                <characteristic name="T" typeId="2fcd-2126-34e8-0944">8</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">4+</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">3+</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">3+</characteristic>
+                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">10</characteristic>
+                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">0</characteristic>
+                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
+                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1853,15 +1848,17 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="M113 APC" hidden="false" id="dddd-6544-f308-cb7f">
           <profiles>
-            <profile name="M113 APC" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="6244-e56c-bd29-be53">
+            <profile name="M113 APC" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="6244-e56c-bd29-be53">
               <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">10&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
-                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
+                <characteristic name="T" typeId="2fcd-2126-34e8-0944">8</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">2+</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">3+</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">3+</characteristic>
+                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">6</characteristic>
+                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">2</characteristic>
+                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
+                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3377,15 +3374,17 @@ Riposte Stance: If this unit is targeted by an attack made with Melee Weapons, w
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Catapult" hidden="false" id="bf74-e688-0f28-996f">
           <profiles>
-            <profile name="Catapult" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="ff12-3fdb-c0f1-5742">
+            <profile name="Catapult" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="ff12-3fdb-c0f1-5742">
               <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">8&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
-                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                <characteristic name="M" typeId="59a0-32b9-8030-1543">8&quot;</characteristic>
+                <characteristic name="T" typeId="2fcd-2126-34e8-0944">6</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">4+</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">4+</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">5+</characteristic>
+                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">6</characteristic>
+                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">0</characteristic>
+                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
+                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
