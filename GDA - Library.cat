@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="23" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="24" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -34,7 +34,7 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="FN FAL" hidden="false" id="0b9c-c043-c43f-063d" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
+            <entryLink import="true" name="M14" hidden="false" id="0b9c-c043-c43f-063d" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62ff-e045-f1d1-5815-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62ff-e045-f1d1-5815-max"/>
@@ -67,7 +67,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4353-8c42-2f28-5578"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="FN FAL" hidden="false" id="2aba-84e6-62a0-3b70" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
+            <entryLink import="true" name="M14" hidden="false" id="2aba-84e6-62a0-3b70" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18fa-ecf4-6e32-5025-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18fa-ecf4-6e32-5025-max"/>
@@ -79,7 +79,7 @@
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Psalm: 23" id="9cff-8c7a-b08b-1e9b" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
+        <infoLink name="War is my Shepherd" id="9cff-8c7a-b08b-1e9b" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
         <infoLink name="BANNER" id="1792-2391-0640-c2f6" hidden="false" type="rule" targetId="b018-ded1-add1-e18e"/>
       </infoLinks>
       <entryLinks>
@@ -89,6 +89,11 @@
         <modifier type="set" value="35" field="7bd5-a3cc-211e-f62e">
           <conditions>
             <condition type="lessThan" value="5" field="selections" scope="self" childId="68c2-d5c6-8e5d-dc60" shared="true" includeChildForces="false" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -218,9 +223,16 @@
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Psalm: 23" id="fa89-580c-041b-f55a" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
+        <infoLink name="War is my Shepherd" id="fa89-580c-041b-f55a" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
         <infoLink name="BANNER" id="9b57-96c4-8bc4-6954" hidden="false" type="rule" targetId="b018-ded1-add1-e18e"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="L42a1" hidden="false" id="9387-4f3f-376b-9b0b">
       <profiles>
@@ -339,7 +351,7 @@
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">2</characteristic>
@@ -363,11 +375,11 @@
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
-                <characteristic typeId="f4e7-dd5b-6bb4-6485" name="CC"/>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485"/>
               </characteristics>
             </profile>
           </profiles>
@@ -383,7 +395,7 @@
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Psalm: 23" id="1045-fccf-24ad-2516" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
+        <infoLink name="War is my Shepherd" id="1045-fccf-24ad-2516" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
         <infoLink name="Infiltrators" id="a580-38a0-dd01-3db8" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
         <infoLink name="HIKER" id="5104-d264-d992-3f2d" hidden="false" type="rule" targetId="ecc4-08c7-2193-4f72"/>
         <infoLink name="Stealth" id="2892-2ea6-e0ff-5350" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
@@ -391,6 +403,13 @@
       <entryLinks>
         <entryLink import="true" name="M34 Smoke Grenade" hidden="false" id="f441-0ac0-0944-d154" type="selectionEntry" targetId="ce87-973b-bd0d-0ccf"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Silenced M1911" hidden="false" id="2e27-47d0-dc61-35c4">
       <profiles>
@@ -446,48 +465,43 @@
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="16b7-dd90-83aa-8241" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="FN MAG" hidden="false" id="8337-1391-f64d-4e30" type="selectionEntry" targetId="3f0f-feb8-d6b8-7c35"/>
-                <entryLink import="true" name="USAS-12" hidden="false" id="f62a-df76-15fc-73ea" type="selectionEntry" targetId="e9f9-06e4-78ad-c2e8"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3635-85c4-9adf-6158"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fe5-34c4-56cf-fabd"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa9-d2e4-db80-52d8"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Combat Knife" hidden="false" id="8a3c-3430-f184-eff0" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
+            <entryLink import="true" name="M16" hidden="false" id="ada1-1bda-9eca-34c8" type="selectionEntry" targetId="3f0f-feb8-d6b8-7c35">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c41-97de-18d4-3dc7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e1e-eecf-e870-1940"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Foxhounds" id="e7a8-4773-9d4a-46c2" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Foxhound w/ FN MAG" hidden="false" id="0ac4-50e8-af4d-37dc">
+            <selectionEntry type="model" import="true" name="Foxhound w/ M16" hidden="false" id="0ac4-50e8-af4d-37dc">
               <profiles>
                 <profile name="Foxhound" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="67af-c3b7-56e2-888a">
                   <characteristics>
-                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">5&quot;</characteristic>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                     <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
-                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
                     <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2e58-d42b-0140-487b"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2e58-d42b-0140-487b"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="FN MAG" hidden="false" id="acac-48aa-6539-8aaf" type="selectionEntry" targetId="3f0f-feb8-d6b8-7c35">
+                <entryLink import="true" name="M16" hidden="false" id="acac-48aa-6539-8aaf" type="selectionEntry" targetId="3f0f-feb8-d6b8-7c35">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a42-179c-c1c1-0326"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b495-c731-a075-d6a9"/>
@@ -496,7 +510,7 @@
                 <entryLink import="true" name="Combat Knife" hidden="false" id="6405-17b5-27a4-4d09" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Foxhound w/ USAS 12" hidden="false" id="6ec2-c959-2b62-c238">
+            <selectionEntry type="model" import="true" name="Foxhound w/ Special Weapon" hidden="false" id="6ec2-c959-2b62-c238">
               <profiles>
                 <profile name="Foxhound" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="a6a2-6f94-23f7-bbae">
                   <characteristics>
@@ -504,29 +518,298 @@
                     <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
                     <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
                     <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
-                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">3</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                     <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
                     <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9f19-ddaa-0a5b-d13a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f19-ddaa-0a5b-d13a"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="USAS-12" hidden="false" id="8849-c08b-5e26-e8d6" type="selectionEntry" targetId="e9f9-06e4-78ad-c2e8">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6669-c775-5c19-3b8b"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="590c-656a-b203-f114"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Combat Knife" hidden="false" id="e6c8-76f5-6b2e-0573" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="c669-a232-7abc-c0cf" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ithaca M37" hidden="false" id="27ae-9c83-c748-c45a">
+                      <profiles>
+                        <profile name="Ithaca M37" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="d3f0-69a1-85d3-8619">
+                          <characteristics>
+                            <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
+                            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
+                            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
+                            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
+                            <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
+                            <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
+                            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff6c-2eaa-7f8f-15d7"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="M2 Flamethrower" hidden="false" id="cab0-9606-c60c-ad26">
+                      <profiles>
+                        <profile name="M2 Flamethrower" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="2f8e-2662-c3f3-498c">
+                          <characteristics>
+                            <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
+                            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
+                            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
+                            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
+                            <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
+                            <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
+                            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="812e-688d-e4d9-c774"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="M40" hidden="false" id="c23c-5d93-a098-1843">
+                      <profiles>
+                        <profile name="M40" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="a42a-3963-5d03-cdc3">
+                          <characteristics>
+                            <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
+                            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
+                            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
+                            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
+                            <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
+                            <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
+                            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a161-4f86-f7fb-fbce"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21aa-73fe-ef82-1443"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c765-90bc-6098-4174"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Foxhound w/ Heavy Weapon" hidden="false" id="e57d-eab4-1cea-f9a8">
+              <entryLinks>
+                <entryLink import="true" name="Combat Knife" hidden="false" id="831b-838f-a25f-6359" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="57d3-11d8-d866-baf7" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="M60" hidden="false" id="3fe5-2437-0ac3-3d0b">
+                      <profiles>
+                        <profile name="M60" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="7926-8134-6c66-791c">
+                          <characteristics>
+                            <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
+                            <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
+                            <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
+                            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
+                            <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
+                            <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
+                            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d29-7676-862c-1b22"/>
+                      </constraints>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="M9 Bazooka + M16" hidden="false" id="e6eb-54c4-5e6e-bbf9">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23b2-3fd5-164c-afd7"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="M9 Bazooka" hidden="false" id="ca68-7b6a-d784-b4aa">
+                          <profiles>
+                            <profile name="M9 Bazooka" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="314e-72ec-2ae8-0f76">
+                              <characteristics>
+                                <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
+                                <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
+                                <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
+                                <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
+                                <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
+                                <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
+                                <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57fc-7896-f10d-49ac"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbda-10ac-8895-cb52"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <entryLinks>
+                        <entryLink import="true" name="M16" hidden="false" id="e6b8-6326-e30b-14fb" type="selectionEntry" targetId="3f0f-feb8-d6b8-7c35">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8b1-5aa5-f7f5-fd51"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81f1-929b-59d6-91fb"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93f0-8bbd-d66e-71b4"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e7c-0ca5-cc51-8447"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f71-4a86-7412-9df5"/>
+              </constraints>
+              <profiles>
+                <profile name="Foxhound" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="f7ff-c044-babe-d141">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Foxhound w/ M203" hidden="false" id="ee02-3030-c106-52eb">
+              <profiles>
+                <profile name="Foxhound" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="7e71-4a16-798d-7244">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b626-006a-5810-ad2a"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="M16" hidden="false" id="4944-8ce2-3bfc-507a" type="selectionEntry" targetId="3f0f-feb8-d6b8-7c35">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef46-17a3-d797-12c4"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c49-ee4e-a8cd-29e1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Combat Knife" hidden="false" id="2482-7078-0725-b22d" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="M203 Grenade Launcher" hidden="false" id="15d3-30d2-9a7a-560b">
+                  <profiles>
+                    <profile name="M203 Grenade Launcher" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="89de-1872-c2e4-db89">
+                      <characteristics>
+                        <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
+                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
+                        <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
+                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
+                        <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
+                        <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
+                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="325e-390e-593a-be59"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aba-4af7-beb9-987a"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Foxhound Medical" hidden="false" id="05ac-5d70-580c-e0a5">
+              <entryLinks>
+                <entryLink import="true" name="Combat Knife" hidden="false" id="12bd-20b4-a66b-5cdf" type="selectionEntry" targetId="0be3-1a7d-955c-5d9c"/>
+                <entryLink import="true" name="M16" hidden="false" id="4077-8b40-bfd9-febb" type="selectionEntry" targetId="3f0f-feb8-d6b8-7c35">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a3c-916e-d5b4-d03b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44ce-355f-0def-42fc"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af9f-ed9f-f2cf-1d2f"/>
+              </constraints>
+              <profiles>
+                <profile name="Foxhound" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="61ac-b08f-d021-e67c">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Feel No Pain" id="0273-4cff-4eb1-b2a4" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+                  <modifiers>
+                    <modifier type="append" value="5+" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Foxhound Fearmonger" hidden="false" id="4994-5c7d-005f-f62b">
+              <profiles>
+                <profile name="Foxhound Fearmonger" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="da8c-7548-42dd-3438">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Coated in Viscera" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f545-3b66-d0e5-ba65">
+                  <characteristics>
+                    <characteristic name="Description" typeId="5cee-5283-c95d-c323">While an enemy unit is within Engagement Range of this unit, that enemy unit has the PANIC status.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Barbed Cudgel" hidden="false" id="070f-b869-5f51-fa70">
+                  <profiles>
+                    <profile name="Barbed Cudgel" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="93f7-c9e8-4adf-e873">
+                      <characteristics>
+                        <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">3</characteristic>
+                        <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
+                        <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                        <characteristic name="D" typeId="6930-1108-fb51-4fa6">3</characteristic>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Devastating Wounds</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating Wounds" id="d250-11d5-e7bc-819d" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="647c-0d20-eafe-2517-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="647c-0d20-eafe-2517-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6601-0b74-2881-dd47"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3672-572a-82aa-ffb2"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="744a-f86d-6789-c72f"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3672-572a-82aa-ffb2"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="744a-f86d-6789-c72f"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -552,20 +835,27 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Psalm: 23" id="2d10-935a-2059-c66e" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
+        <infoLink name="War is my Shepherd" id="2d10-935a-2059-c66e" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="FN MAG" hidden="false" id="3f0f-feb8-d6b8-7c35">
+    <selectionEntry type="upgrade" import="true" name="M16" hidden="false" id="3f0f-feb8-d6b8-7c35">
       <profiles>
-        <profile name="FN MAG" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="0655-b0a1-4e73-bff3">
+        <profile name="M16" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="0655-b0a1-4e73-bff3">
           <characteristics>
             <characteristic name="Range" typeId="910b-bab0-6061-64b0">30&quot;</characteristic>
             <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">3</characteristic>
             <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
-            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
-            <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+            <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+            <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 2, Heavy</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 2, Assault</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -575,7 +865,7 @@
             <modifier type="append" value="2" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Heavy" id="0694-18ca-b97d-9463" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Assault" id="0eb0-5c37-57c5-88e3" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="USAS-12" hidden="false" id="e9f9-06e4-78ad-c2e8">
@@ -684,7 +974,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Psalm: 23" id="1caf-7f0b-3430-1f23" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
+        <infoLink name="War is my Shepherd" id="1caf-7f0b-3430-1f23" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
         <infoLink name="COLD HEART" id="22e2-b62d-1fb3-94f4" hidden="false" type="rule" targetId="3742-1bf9-a0f8-0b11"/>
       </infoLinks>
       <rules>
@@ -692,6 +982,13 @@
           <description>Each Hellhound model takes up the space of 3 models.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M134 Minigun" hidden="false" id="9de2-bac2-45ee-2c25">
       <profiles>
@@ -805,6 +1102,13 @@
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="45"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Shock Team" hidden="false" id="5191-2486-7e6b-5c78">
       <selectionEntries>
@@ -934,9 +1238,16 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Psalm: 23" id="b7f4-11ed-f34c-ecb0" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
+        <infoLink name="War is my Shepherd" id="b7f4-11ed-f34c-ecb0" hidden="false" type="rule" targetId="e36e-d156-7403-64ce"/>
         <infoLink name="AGGRESSOR" id="58c9-5e5e-608f-f9d2" hidden="false" type="rule" targetId="389d-aeeb-c74e-b256"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Veteran" hidden="false" id="d07b-4c5b-7b2a-d24b">
       <costs>
@@ -1046,6 +1357,13 @@
         <categoryLink targetId="33ee-b756-5da0-5503" id="20c1-a883-0756-2d2f" primary="false" name="Leader"/>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="4fda-716b-fbf7-983d" primary="false" name="Infantry"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Medic" hidden="false" id="3d7b-3beb-8230-428b">
       <costs>
@@ -1120,6 +1438,13 @@
         <categoryLink targetId="6362-52a6-6f3c-1301" id="26b4-a8a9-5f60-6c5c" primary="false" name="War Dogs"/>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="63f8-dbd6-57f9-49b7" primary="false" name="Infantry"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - M48 Patton" hidden="false" id="210a-2b40-ffcf-0416">
       <selectionEntries>
@@ -1231,6 +1556,13 @@
           <description>While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M2 Flamethrower" hidden="false" id="fadb-27a0-385e-8fcd">
       <profiles>
@@ -1359,6 +1691,13 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="120 MM M256 Gun" hidden="false" id="4249-00b7-4636-33c5">
       <profiles>
@@ -1495,6 +1834,13 @@
           <description>While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - M113 APC" hidden="false" id="3015-b765-e84e-9295">
       <categoryLinks>
@@ -1566,6 +1912,13 @@
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="90"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Pillbox Bunker" hidden="false" id="6b4d-49f7-2182-153d">
       <selectionEntries>
@@ -1622,6 +1975,13 @@
           <description>THIS UNIT CANNOT BE PLACED INTO STRATEGIC RESERVES</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arming Sword" hidden="false" id="7fd3-fccf-13c2-17f2">
       <profiles>
@@ -2054,6 +2414,13 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Detachment" hidden="false" id="9094-cacf-468e-75b6">
       <selectionEntryGroups>
@@ -2103,6 +2470,25 @@ If you did not select an ability this turn, roll 1 D6. If the result was a 5+, r
                   <description>When an enemy unit selects a Human Heretic unit with an attack made with Ranged Weapons, if the highest Mental Fortitude characteristic of a model in that unit is not greater than or equal to 5, that unit receives SHOCK. If that enemy unit targets the unit with an attack made with Melee Weapons, they receive PANIC instead.</description>
                 </rule>
               </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Michael&apos;s Chosen" hidden="false" id="58f5-d9af-40c3-8f5f">
+              <rules>
+                <rule name="Tactical Insertion" id="4bf4-bdf6-5df6-a520" hidden="false">
+                  <description>A maximum number of Infantry units (including their attached characters) depending on battle size can be selected at the start of the game. These units have the Deep Strike keyword. If that unit already has the Deep Strike keyword, they may now make a move after deep striking.
+
+
+&lt;= 1000 pts - 3 Units
+&lt;= 2000 pts - 4 Units
+&lt;= 3000 pts - 5 Units</description>
+                </rule>
+              </rules>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2502,6 +2888,13 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="30"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heretics - Cluster of Botflies" hidden="false" id="53cf-05e3-f232-00cf">
       <categoryLinks>
@@ -2568,6 +2961,13 @@ EFFECT: If an enemy unit attempts to make a fall back move while within engageme
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Archangel - Gabriel the Messenger" hidden="false" id="acb5-6d48-0fdf-084a">
       <costs>
@@ -2800,7 +3200,7 @@ Restrictions: This Support Weapon cannot be used against Vehicles.</characterist
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="FN FAL" hidden="false" id="2b34-e7e0-5c02-42a5" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
+            <entryLink import="true" name="M14" hidden="false" id="2b34-e7e0-5c02-42a5" type="selectionEntry" targetId="9dfd-fe86-1e3b-ce04">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0687-eab8-71c8-5986-min"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0687-eab8-71c8-5986-max"/>
@@ -2809,6 +3209,13 @@ Restrictions: This Support Weapon cannot be used against Vehicles.</characterist
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="08c9-4689-7646-83ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Brothers" hidden="false" id="1f99-2684-686e-250a">
       <categoryLinks>
@@ -2952,7 +3359,7 @@ Riposte Stance: If this unit is targeted by an attack made with Melee Weapons, w
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin Axes" hidden="false" id="912c-9a2d-3971-06a9" page="">
+    <selectionEntry type="upgrade" import="true" name="Twin Axes" hidden="false" id="912c-9a2d-3971-06a9">
       <profiles>
         <profile name="Twin Axes" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="7d17-6bc2-a7a6-b2da">
           <characteristics>
@@ -2965,6 +3372,89 @@ Riposte Stance: If this unit is targeted by an attack made with Melee Weapons, w
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights - Catapult" hidden="false" id="b512-72b1-13f9-9556">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Catapult" hidden="false" id="bf74-e688-0f28-996f">
+          <profiles>
+            <profile name="Catapult" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="ff12-3fdb-c0f1-5742">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">8&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Catapult" hidden="false" id="ce74-2d60-5adb-4266">
+              <profiles>
+                <profile name="➤ Catapult - Steel Rain" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="ea2f-ec6c-1812-7299">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">48&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+6</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">6</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast, Anti-Infantry 2+, Indirect Fire</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤ Catapult - Titanium Shotput" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="3fc1-52fb-9039-65af">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">48&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D3</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">12</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">-4</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">5</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast, Indirect Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Indirect Fire" id="fb03-bbb7-6641-5719" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
+                <infoLink name="Blast" id="32fd-8249-c08e-e35b" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                <infoLink name="Anti-" id="166b-9479-8075-0c25" hidden="false" type="rule" targetId="4111-82e3-9444-e942">
+                  <modifiers>
+                    <modifier type="append" value="Infantry 2+" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fd6-ce4e-8910-29a5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c39-54bb-9b78-4886"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e925-79fe-e925-6a53"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ff5-612b-b5bd-7d3a"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="1fd3-1951-3be2-5a2d" id="4d62-a335-4750-5366" primary="true" name="Vehicle"/>
+        <categoryLink targetId="f629-1578-6cbf-b4b4" id="8bb7-f755-3f88-a280" primary="false" name="Knights"/>
+        <categoryLink targetId="8b4b-7eda-1061-634f" id="ebd6-3259-56ec-0ff8" primary="false" name="GDA"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Fixed Position" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9e17-8ad8-f872-b029">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of the movement phase, before this unit has performed a movement action, you must declare if this unit is Fixed or Repositioning.
+
+Fixed - This unit&apos;s Movement characteristic is set to 0&quot; until the end of this turn. It is able to make attacks with Ranged Weapons.
+
+Repositioning - This unit is not able to make attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="150"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
