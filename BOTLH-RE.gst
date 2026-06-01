@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="33" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="34" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -39,22 +39,17 @@
         <characteristicType name="CC" id="f4e7-dd5b-6bb4-6485"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Character Restrictions" id="b994-5cbb-c4b6-d222" hidden="false">
-      <characteristicTypes>
-        <characteristicType name="Description" id="c49c-95e3-b8a3-224f"/>
-      </characteristicTypes>
-    </profileType>
     <profileType name="Vehicle Unit" id="a4bf-d46f-db19-28f9" hidden="false">
       <characteristicTypes>
         <characteristicType name="M" id="59a0-32b9-8030-1543"/>
-        <characteristicType name="T" id="2fcd-2126-34e8-0944"/>
         <characteristicType name="Front" id="f3f8-1ae7-4be7-9365"/>
         <characteristicType name="Side" id="b79e-1d83-ab8f-4de7"/>
         <characteristicType name="Back" id="3f6d-e0d8-46cd-5302"/>
-        <characteristicType name="W" id="04c5-b2ed-5c10-cd42"/>
-        <characteristicType name="OC" id="8e7c-bc56-bb7f-c2b4"/>
-        <characteristicType name="MF" id="4395-2ce2-d480-3d3c"/>
-        <characteristicType name="CC" id="d469-e29f-097b-3790"/>
+        <characteristicType name="SR" id="04c5-b2ed-5c10-cd42"/>
+        <characteristicType name="W" id="8e7c-bc56-bb7f-c2b4"/>
+        <characteristicType name="OC" id="4395-2ce2-d480-3d3c"/>
+        <characteristicType name="MF" id="d469-e29f-097b-3790"/>
+        <characteristicType name="CC" id="6977-91de-ecff-307e"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -99,7 +94,7 @@
   </costTypes>
   <sharedRules>
     <rule name="Anti-" id="4111-82e3-9444-e942" hidden="false" publicationId="48fc-15aa-b307-9443" page="28">
-      <description>Weapons with **[ANTI-KEYWORD X+]** in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the keyword after the word ‘Anti-’, an unmodified Wound roll of ‘x+’ scores a Critical Wound.</description>
+      <description>Weapons with **[ANTI-KEYWORD X+]** in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the keyword after the word ‘Anti-’, an unmodified Wound roll of ‘x+’ automatically wounds. If an Anti weapon has the Anti-Vehicle keyword, a roll of x automatically scores a Glancing Hit.</description>
     </rule>
     <rule name="Assault" id="fc8a-8c24-bae9-cc1c" hidden="false" publicationId="48fc-15aa-b307-9443" page="25">
       <description>Weapons with **[ASSAULT]** in their profile are known as Assault weapons. If a unit that Advanced this turn contains any models equipped with Assault weapons, it is still eligible to shoot in this turn’s Shooting phase. When such a unit is selected to shoot, you can only resolve attacks using Assault weapons its models are equipped with.</description>
@@ -257,6 +252,17 @@ When doing so:
     </rule>
     <rule name="Transport" id="c8f7-4cd9-0669-02e3" hidden="false">
       <description>This model has a transport capacity of</description>
+    </rule>
+    <rule name="Vehicle" id="8f96-dddd-0807-6654" hidden="false">
+      <description>When targeting a vehicle unit, after performing a hit roll, you must perform an Armour test. To perform an Armour test, first roll a wound roll and add the Strength value of that model&apos;s weapon to the roll.
+
+If the result is less than the target&apos;s Armour, that roll misses.
+If the result is equal to the target&apos;s Armour, the roll succeeds, but the Armour Penetration characteristic of that weapon is set to 0 for that attack.
+If the result is greater than the target&apos;s Armour, the roll succeeds.
+If the result is twice the target&apos;s Armour, the roll succeeds and automatically wounds the target vehicle, ignoring the Save roll.</description>
+    </rule>
+    <rule name="Cleave" id="e182-e31a-f8fa-84b0" hidden="false">
+      <description>Each time you determine how many attacks are made with a Cleave weapon, add 1 to the result for every five models that were in the target unit when you selected it as the target (rounding down).</description>
     </rule>
   </sharedRules>
   <publications>

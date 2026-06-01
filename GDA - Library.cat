@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="25" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="26" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -1443,13 +1443,14 @@
               <characteristics>
                 <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
                 <characteristic name="T" typeId="2fcd-2126-34e8-0944">8</characteristic>
-                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">3+</characteristic>
-                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">3+</characteristic>
-                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">3+</characteristic>
-                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">8</characteristic>
-                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">3</characteristic>
-                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
-                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">12</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">10</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">8</characteristic>
+                <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">3+</characteristic>
+                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">8</characteristic>
+                <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">3</characteristic>
+                <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="CC" typeId="6977-91de-ecff-307e">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1541,6 +1542,7 @@
             <modifier type="append" value="D6" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Vehicle" id="676f-5806-7019-e312" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
       </infoLinks>
       <rules>
         <rule name="Damaged 1-4 Wounds Remaining" id="ce84-5be6-3708-9a6a" hidden="false">
@@ -1602,13 +1604,14 @@
               <characteristics>
                 <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
                 <characteristic name="T" typeId="2fcd-2126-34e8-0944">10</characteristic>
-                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">2+</characteristic>
-                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">2+</characteristic>
-                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">2+</characteristic>
-                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">12</characteristic>
-                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">3</characteristic>
-                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
-                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">14</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">14</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">14</characteristic>
+                <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">2+</characteristic>
+                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">15</characteristic>
+                <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">3</characteristic>
+                <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="CC" typeId="6977-91de-ecff-307e">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1683,6 +1686,7 @@
             <modifier type="append" value="D6" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Vehicle" id="07ee-e747-402f-fbba" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1778,10 +1782,12 @@
                 <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">4+</characteristic>
                 <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">3+</characteristic>
                 <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">3+</characteristic>
-                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">10</characteristic>
-                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">0</characteristic>
-                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
-                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">10</characteristic>
+                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">0</characteristic>
+                <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">0</characteristic>
+                <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic typeId="6977-91de-ecff-307e" name="CC"/>
+                <characteristic typeId="b78a-b837-2b76-1986" name="New Characteristic Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1851,14 +1857,14 @@
             <profile name="M113 APC" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="6244-e56c-bd29-be53">
               <characteristics>
                 <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
-                <characteristic name="T" typeId="2fcd-2126-34e8-0944">8</characteristic>
-                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">2+</characteristic>
-                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">3+</characteristic>
-                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">3+</characteristic>
-                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">6</characteristic>
-                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">2</characteristic>
-                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
-                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">10</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">8</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">8</characteristic>
+                <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">3+</characteristic>
+                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">6</characteristic>
+                <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">2</characteristic>
+                <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="CC" typeId="6977-91de-ecff-307e">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1905,6 +1911,7 @@
             <modifier type="append" value="12 War Dogs Infantry and Knights Infantry models. It cannot transport Knights Cherubim and Nuntius Timoris." field="description"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Vehicle" id="a892-e055-5697-b080" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="90"/>
@@ -3376,15 +3383,15 @@ Riposte Stance: If this unit is targeted by an attack made with Melee Weapons, w
           <profiles>
             <profile name="Catapult" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="ff12-3fdb-c0f1-5742">
               <characteristics>
-                <characteristic name="M" typeId="59a0-32b9-8030-1543">8&quot;</characteristic>
-                <characteristic name="T" typeId="2fcd-2126-34e8-0944">6</characteristic>
-                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">4+</characteristic>
-                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">4+</characteristic>
-                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">5+</characteristic>
-                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">6</characteristic>
-                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">0</characteristic>
-                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
-                <characteristic name="CC" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="M" typeId="59a0-32b9-8030-1543">6&quot;</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">6</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">6</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">6</characteristic>
+                <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">6+</characteristic>
+                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">6</characteristic>
+                <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">0</characteristic>
+                <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="CC" typeId="6977-91de-ecff-307e">0</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3454,6 +3461,9 @@ Repositioning - This unit is not able to make attacks.</characteristic>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="150"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Vehicle" id="a6ca-3023-8cc5-8cc9" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

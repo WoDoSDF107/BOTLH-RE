@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="44f3-7dc2-b2b0-fe8b" name="Automatons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="44f3-7dc2-b2b0-fe8b" name="Automatons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Fetch, Decode, Execute" id="951e-0d6a-b6c5-1f9b" hidden="false">
-      <description>When an Automaton unit with this rule makes an attack against an enemy infantry unit, after selecting a target but before making any rolls, select one body part to target. 
+      <description>Once per turn, when an Automaton unit with this rule makes an attack against an enemy unit, they may choose to use this rule. 
+
+
+After selecting a target but before making any rolls, select one body part to target.
+
+
+**----------** **Infantry** **----------**
 **Head**: Until all attacks have been resolved, this unit&apos;s weapons suffer a -1 to hit rolls, but receive an improvement of 1 to their AP characteristic. 
 **Body**: Until all attacks have been resolved, this unit&apos;s weapons receive a +1 to hit rolls. 
 **Arms**: Until the start of your next turn, enemy units successfully hit by this attack suffer a -1 to hit rolls.
 **Legs**: Until the start of your next turn, enemy units successfully hit by this attack suffer a -2&quot; to their Movement characteristic.
-Each effect can only be applied once per unit.</description>
+
+
+
+**----------** **Vehicles** **----------**
+**Vital Systems**: Until all attacks have been resolved, this unit&apos;s weapons suffer a -1 to hit rolls, but receive an improvement of 1 to their AP characteristic. 
+**Hull**: Until all attacks have been resolved, this unit&apos;s weapons receive a +1 to hit rolls. 
+**Armaments**: Until the start of your next turn, enemy units successfully hit by this attack suffer a -1 to hit rolls.
+**Propulsion System**: Until the start of your next turn, enemy units successfully hit by this attack suffer a -2&quot; to their Movement characteristic.
+</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -76,11 +90,87 @@ Each effect can only be applied once per unit.</description>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="a71e-275d-b9b7-b5c3"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pyro Trooper" hidden="false" id="5185-10e7-3da0-c166">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Pyro Trooper" hidden="false" id="dfbc-1e72-f316-ac24">
+              <profiles>
+                <profile name="Pyro Trooper" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="3749-1e4a-8fdf-6d38">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Portable Flamer" hidden="false" id="5eb8-68fc-ca88-8d9d">
+                  <profiles>
+                    <profile name="Portable Flamer" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="6635-e165-0475-a9c8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="910b-bab0-6061-64b0">8&quot;</characteristic>
+                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6</characteristic>
+                        <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">N/A</characteristic>
+                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
+                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                        <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Torrent</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Torrent" id="1e30-e345-5782-16bb" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f55a-78b8-aac8-07e2-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f55a-78b8-aac8-07e2-max"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18de-4df5-2756-9805-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18de-4df5-2756-9805-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2202-a59a-be48-8527"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="da1d-5ec8-061b-db98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Fetch, Decode, Execute" id="b05d-1600-41d9-6f21" hidden="false" type="rule" targetId="951e-0d6a-b6c5-1f9b"/>
         <infoLink name="BANNER" id="b20d-6de3-4385-3fbb" hidden="false" type="rule" targetId="b018-ded1-add1-e18e"/>
+        <infoLink name="Jet Pack Jump" id="665c-9e1f-d0c4-ba7b" hidden="false" type="profile" targetId="47a2-4e94-35fa-c8b2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Overcharged Jet Pack" hidden="false" id="93a3-f5f0-059d-61cf" type="selectionEntry" targetId="1f71-2ae1-fa51-281d"/>
+        <entryLink import="true" name="White Phosphorus Grenade" hidden="false" id="cbc0-7ea0-9fb8-8ac6" type="selectionEntry" targetId="53e7-c76e-8a24-a913"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Berserkers" hidden="false" id="7b0e-43cb-0ad1-fe82">
       <selectionEntries>
@@ -111,7 +201,7 @@ Each effect can only be applied once per unit.</description>
                 <profile name="Meatsaw" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="9522-8eaa-4fd3-3a50">
                   <characteristics>
                     <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">5</characteristic>
-                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">4+</characteristic>
                     <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
                     <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
                     <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
@@ -148,13 +238,30 @@ Each effect can only be applied once per unit.</description>
       </profiles>
       <infoLinks>
         <infoLink name="Fetch, Decode, Execute" id="d3bf-870b-bdbb-0ca2" hidden="false" type="rule" targetId="951e-0d6a-b6c5-1f9b"/>
+        <infoLink name="Jet Pack Jump" id="cf28-b688-7f7b-c869" hidden="false" type="profile" targetId="47a2-4e94-35fa-c8b2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Overcharged Jet Pack" hidden="false" id="cfac-a690-d1ae-a5ff" type="selectionEntry" targetId="1f71-2ae1-fa51-281d"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="90"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Devastator" hidden="false" id="cfc8-2f44-18fa-7a14">
       <categoryLinks>
-        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="6536-0e40-abaf-b9ba" primary="true" name="Infantry"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="6536-0e40-abaf-b9ba" primary="false" name="Infantry"/>
         <categoryLink targetId="b781-3d68-d2ed-0765" id="1de2-d10d-a421-2486" primary="false" name="Automatons"/>
         <categoryLink targetId="acbc-85de-f294-b448" id="af56-0f1a-3e06-7a01" primary="false" name="Mechanical"/>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="922f-b874-8fc1-2a6b" primary="true" name="Character"/>
+        <categoryLink targetId="33ee-b756-5da0-5503" id="c7e8-6874-eca8-86b1" primary="false" name="Leader"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Devastator" hidden="false" id="dc9f-114d-7678-289b">
@@ -220,12 +327,37 @@ Each effect can only be applied once per unit.</description>
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Devastator" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="c407-0b7d-cec0-441f">
+        <profile name="Devastation" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="c407-0b7d-cec0-441f">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">While making an attack with Ranged Weapons, if the target of that unit is the closest possible target, increase the strength of that Ranged Weapon by 1.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When the bearer&apos;s unit targets an enemy unit with Ranged Weapons, if that target unit is the closest possible target, increase the Strength characteristic of those Ranged Weapons by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Fetch, Decode, Execute" id="c972-7d46-e356-9395" hidden="false" type="rule" targetId="951e-0d6a-b6c5-1f9b"/>
+        <infoLink name="Jet Pack Jump" id="53b5-2e13-da15-1add" hidden="false" type="profile" targetId="47a2-4e94-35fa-c8b2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Leader" id="e369-4090-e14d-4342" hidden="false">
+          <description>This model can be attached to the following units:
+
+Troopers</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Overcharged Jet Pack" hidden="false" id="60d2-fcad-d08a-89cd" type="selectionEntry" targetId="1f71-2ae1-fa51-281d"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heavy Devastator" hidden="false" id="9819-5db7-133d-2f57">
       <categoryLinks>
@@ -241,7 +373,7 @@ Each effect can only be applied once per unit.</description>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">4&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
                 <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
@@ -255,9 +387,9 @@ Each effect can only be applied once per unit.</description>
                   <characteristics>
                     <characteristic name="Range" typeId="910b-bab0-6061-64b0">16&quot;</characteristic>
                     <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">7</characteristic>
-                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">5+</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
                     <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
-                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
                     <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
                     <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Sustained Hits 1</characteristic>
                   </characteristics>
@@ -307,6 +439,19 @@ Each effect can only be applied once per unit.</description>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Fetch, Decode, Execute" id="b0be-62fe-039e-acf2" hidden="false" type="rule" targetId="951e-0d6a-b6c5-1f9b"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="90"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scout Strider" hidden="false" id="50d0-2fdf-5521-859f">
       <categoryLinks>
@@ -320,14 +465,14 @@ Each effect can only be applied once per unit.</description>
             <profile name="Scout Strider" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="e033-e18c-5ac7-d57d">
               <characteristics>
                 <characteristic name="M" typeId="59a0-32b9-8030-1543">8&quot;</characteristic>
-                <characteristic name="T" typeId="2fcd-2126-34e8-0944">5</characteristic>
-                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">4+</characteristic>
-                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">5+</characteristic>
-                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">6+</characteristic>
-                <characteristic name="W" typeId="04c5-b2ed-5c10-cd42">3</characteristic>
-                <characteristic name="OC" typeId="8e7c-bc56-bb7f-c2b4">3</characteristic>
-                <characteristic name="MF" typeId="4395-2ce2-d480-3d3c">0</characteristic>
-                <characteristic name="CC" typeId="d469-e29f-097b-3790">1</characteristic>
+                <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">9</characteristic>
+                <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">7</characteristic>
+                <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">5</characteristic>
+                <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">4+</characteristic>
+                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">3</characteristic>
+                <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">3</characteristic>
+                <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+                <characteristic name="CC" typeId="6977-91de-ecff-307e">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -380,9 +525,9 @@ Each effect can only be applied once per unit.</description>
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile name="Exposed Rider" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="ccfa-dd37-d478-1a07">
+        <profile name="Advanced Reconnaissance" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="ccfa-dd37-d478-1a07">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When making a save roll for an attack made against this unit, if you roll a 6, you can replace one of your failed saves with a successful save (including a 1), but if the result is a 1, this unit suffers an additional D3 wounds. </characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the end of your first movement phase, if an enemy unit is within 24&quot; of and visible to this enemy unit (unless it has the Stealth or Lone Operative keywords), that unit is **Marked** for the remainder of the battle.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -392,7 +537,500 @@ Each effect can only be applied once per unit.</description>
             <modifier type="append" value="6&quot;" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Vehicle" id="db87-f357-b73e-87af" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
+        <infoLink name="Fetch, Decode, Execute" id="0b79-ee78-3886-ca50" hidden="false" type="rule" targetId="951e-0d6a-b6c5-1f9b"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hulk Scorcher" hidden="false" id="c667-fd2f-0a5d-7746">
+      <profiles>
+        <profile name="Hulk Scorcher" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="0407-6be1-ef33-f096">
+          <characteristics>
+            <characteristic name="M" typeId="59a0-32b9-8030-1543">6&quot;</characteristic>
+            <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">12</characteristic>
+            <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">12</characteristic>
+            <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">8</characteristic>
+            <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">3+</characteristic>
+            <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">6</characteristic>
+            <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">2</characteristic>
+            <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+            <characteristic name="CC" typeId="6977-91de-ecff-307e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mechanical Goliath" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6321-247d-b223-fbc2">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">The first time an enemy unit performs an Attack/Riposte roll with this unit in the Fight phase, if the result of that dice is higher than the roll made by this unit, that unit must reroll their dice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="b8c7-6417-5a44-5f3c">
+          <profiles>
+            <profile name="Heavy Flamer" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="6459-5e33-aaf3-fff4">
+              <characteristics>
+                <characteristic name="Range" typeId="910b-bab0-6061-64b0">12&quot;</characteristic>
+                <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">2D6</characteristic>
+                <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">N/A</characteristic>
+                <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
+                <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Torrent, Rapid Fire 6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Torrent" id="4d87-b88c-9e68-2173" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+            <infoLink name="Rapid Fire" id="3b66-a9e5-e5cb-3adb" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="407e-9647-e8f2-350b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="407e-9647-e8f2-350b-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Rotary Saw" hidden="false" id="0eda-1d62-16ee-04d3">
+          <profiles>
+            <profile name="Heavy Rotary Saw" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="1eae-75a5-5dfa-7141">
+              <characteristics>
+                <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">D3 + 3</characteristic>
+                <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
+                <characteristic name="S" typeId="e681-af26-3aee-d26b">12</characteristic>
+                <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
+                <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
+                <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Cleave</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7d4-fd0b-cd0a-8583-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7d4-fd0b-cd0a-8583-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Cleave" id="d7fc-de43-8821-720b" hidden="false" type="rule" targetId="e182-e31a-f8fa-84b0"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Heavy Stomp" hidden="false" id="75ea-9c27-5dec-e730" type="selectionEntry" targetId="1286-c16d-9240-485e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9978-5ceb-97d5-67b7-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9978-5ceb-97d5-67b7-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Overcharged Jet Pack" hidden="false" id="142a-226e-73ae-9e59" type="selectionEntry" targetId="1f71-2ae1-fa51-281d"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="b781-3d68-d2ed-0765" id="28d0-fe52-7e66-9a77" primary="false" name="Automatons"/>
+        <categoryLink targetId="acbc-85de-f294-b448" id="15e7-45e8-ae17-619c" primary="false" name="Mechanical"/>
+        <categoryLink targetId="1fd3-1951-3be2-5a2d" id="c588-aeee-ed11-7991" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6065-5ec2-4bd5-89fc" id="9685-2993-4d6c-023e" primary="false" name="Hulk"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Fetch, Decode, Execute" id="16bc-0139-3678-387f" hidden="false" type="rule" targetId="951e-0d6a-b6c5-1f9b"/>
+        <infoLink name="Jet Pack Jump" id="6fe7-4972-9733-f257" hidden="false" type="profile" targetId="47a2-4e94-35fa-c8b2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="180"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Stomp" hidden="false" id="1286-c16d-9240-485e">
+      <profiles>
+        <profile name="Heavy Stomp" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="f9dd-8996-ab34-daa3">
+          <characteristics>
+            <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">D3 + 1</characteristic>
+            <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">4+</characteristic>
+            <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
+            <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+            <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+            <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Extra Attacks</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Extra Attacks" id="5070-0391-7954-f04c" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fabricator" hidden="false" id="96b6-4046-9bcf-bd64">
+      <categoryLinks>
+        <categoryLink targetId="b781-3d68-d2ed-0765" id="c2af-6d75-f458-4266" primary="false" name="Automatons"/>
+        <categoryLink targetId="d294-2dd0-8be8-a024" id="bca7-01f6-4e5f-d570" primary="true" name="Fortification"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fabricator" hidden="false" id="ba37-30a5-138a-0218">
+          <profiles>
+            <profile name="Fabricator" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="d434-dea4-856b-166b">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">0&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">7</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2617-e532-d023-b4dc-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2617-e532-d023-b4dc-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Fabricator" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6235-8321-f19b-0aa6">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">This ability may be performed in the Reinforcements step of your Movement Phase. If you have any destroyed Trooper units, roll a D6. On a 2+, return one Trooper unit to the battlefield within 3&quot; of this fortification.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="90"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hulk Bruiser" hidden="false" id="790f-b39a-7e24-a1d0">
+      <profiles>
+        <profile name="Hulk Bruiser" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="c6ac-5484-603f-be69">
+          <characteristics>
+            <characteristic name="M" typeId="59a0-32b9-8030-1543">6&quot;</characteristic>
+            <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">12</characteristic>
+            <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">12</characteristic>
+            <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">8</characteristic>
+            <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">3+</characteristic>
+            <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">6</characteristic>
+            <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">2</characteristic>
+            <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
+            <characteristic name="CC" typeId="6977-91de-ecff-307e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Superior Firepower" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="575d-52a8-8c81-ed71">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When this unit targets an enemy Infantry unit with Ranged Weapons, those Ranged Weapons receive the Sustained Hits 1 keyword. When this unit targets an enemy Vehicle unit with Ranged Weapons, those Ranged Weapons receive the Devastating Wounds keyword.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fusion Autocannon" hidden="false" id="520a-fa8d-119e-fecc">
+          <profiles>
+            <profile name="Fusion Autocannon" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="3323-e5fc-8bb9-be1a">
+              <characteristics>
+                <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
+                <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D3 + 6</characteristic>
+                <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">8</characteristic>
+                <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
+                <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eec-c4e7-2811-04cf-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eec-c4e7-2811-04cf-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rotary Munitions Launcher" hidden="false" id="5049-8b2c-28df-b1cb">
+          <profiles>
+            <profile name="Rotary Munition Launcher" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="0335-dda4-d191-7ea3">
+              <characteristics>
+                <characteristic name="Range" typeId="910b-bab0-6061-64b0">36&quot;</characteristic>
+                <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6 + 6</characteristic>
+                <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
+                <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d0a-d5ae-580b-d751-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d0a-d5ae-580b-d751-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Heavy Stomp" hidden="false" id="cff4-5ebc-04c5-3881" type="selectionEntry" targetId="1286-c16d-9240-485e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d33d-f6f7-c621-89b3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d33d-f6f7-c621-89b3-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Overcharged Jet Pack" hidden="false" id="2671-64c6-a259-7b5e" type="selectionEntry" targetId="1f71-2ae1-fa51-281d"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="b781-3d68-d2ed-0765" id="773f-584f-14ac-4d25" primary="false" name="Automatons"/>
+        <categoryLink targetId="acbc-85de-f294-b448" id="cc1b-f166-4cb9-1f72" primary="false" name="Mechanical"/>
+        <categoryLink targetId="1fd3-1951-3be2-5a2d" id="0dd6-7339-a79e-6d38" primary="true" name="Vehicle"/>
+        <categoryLink targetId="6065-5ec2-4bd5-89fc" id="d659-4e2e-d24c-9a71" primary="false" name="Hulk"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Fetch, Decode, Execute" id="a44a-7d56-6800-7abc" hidden="false" type="rule" targetId="951e-0d6a-b6c5-1f9b"/>
+        <infoLink name="Jet Pack Jump" id="c079-5195-ac71-bdcc" hidden="false" type="profile" targetId="47a2-4e94-35fa-c8b2">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="200"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Detachment" hidden="false" id="e9e3-082d-26e0-c5d4">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Detachment" id="e5e1-c4d4-ccc2-83d1" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Incineration Corps" hidden="false" id="da1d-5ec8-061b-db98">
+              <rules>
+                <rule name="Incineration Corps" id="c293-0b0b-6d6a-955e" hidden="false">
+                  <description>Ranged Weapons with the Torrent keyword additionally receive the Pistol keyword.</description>
+                </rule>
+              </rules>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pyro Trooper" hidden="false" id="e9c1-4d29-74a0-d1a8">
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Pyro Trooper" hidden="false" id="5606-756c-f1f3-7be9">
+                      <profiles>
+                        <profile name="Pyro Trooper" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="2d18-c3e0-eac2-5ace">
+                          <characteristics>
+                            <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                            <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                            <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                            <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                            <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                            <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                            <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Portable Flamer" hidden="false" id="4bc7-f710-b25c-c30d">
+                          <profiles>
+                            <profile name="Portable Flamer" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="2834-681c-827e-f9da">
+                              <characteristics>
+                                <characteristic name="Range" typeId="910b-bab0-6061-64b0">8&quot;</characteristic>
+                                <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6</characteristic>
+                                <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">N/A</characteristic>
+                                <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
+                                <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                                <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                                <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Torrent</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Torrent" id="8017-a068-12a9-a362" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45aa-16ba-6818-127f-min"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45aa-16ba-6818-127f-max"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Steel Fist" hidden="false" id="e98c-fb97-4d45-7e1a">
+                          <profiles>
+                            <profile name="Steel Fist" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="44b3-f9b5-e5a1-13ab">
+                              <characteristics>
+                                <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                                <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                                <characteristic name="S" typeId="e681-af26-3aee-d26b">2</characteristic>
+                                <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                                <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                                <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="535b-f3f4-2e00-8c7a"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b4c-9c6c-007a-6ff2"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f485-2d80-c6ca-185c-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f485-2d80-c6ca-185c-max"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be5-0397-46a2-c719"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="da1d-5ec8-061b-db98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="White Phosphorus Grenade" hidden="false" id="53e7-c76e-8a24-a913">
+                  <costs>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="20"/>
+                  </costs>
+                  <profiles>
+                    <profile name="White Phosphorus Grenade" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="52c0-24d2-c3fb-753d">
+                      <characteristics>
+                        <characteristic name="Range" typeId="910b-bab0-6061-64b0">8&quot;</characteristic>
+                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
+                        <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
+                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                        <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" id="0417-1962-47ca-5ddb" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93e6-1728-aad8-1334"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="da1d-5ec8-061b-db98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Jet Brigade" hidden="false" id="5701-0cdb-e599-3568">
+              <rules>
+                <rule name="Jet Brigade" id="739c-da71-af5f-fb53" hidden="false">
+                  <description>You may only take Infantry Units (and a maximum of 1 of each Hulk variant) as part of your army, however, all units in your army have the Fly keyword, and have the Jet Pack Jump ability. (Excluded units: Heavy Devastator)</description>
+                </rule>
+              </rules>
+              <profiles>
+                <profile name="Jet Pack Jump" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="47a2-4e94-35fa-c8b2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, at the start of your movement phase, change this unit’s movement characteristic to 12” until the end of the phase. Until the start of your next turn after using this ability, enemy units targeting this unit with Ranged Weapons receive a -1 to hit rolls.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Overcharged Jet Pack" hidden="false" id="1f71-2ae1-fa51-281d">
+                  <infoLinks>
+                    <infoLink name="Scouts" id="2eab-e589-ff04-232d" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                      <modifiers>
+                        <modifier type="append" value="6&quot;" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="63af-3ec8-a48e-34a6" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e02-3a2b-9013-89c5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a9c-9aaa-2e7c-5912"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="fc8f-0753-e056-abec" targetId="13d8-826b-b842-d554" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ec3a-7ab9-9ff9-a0ae-min" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ec3a-7ab9-9ff9-a0ae-max" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cannon Tower" hidden="false" id="b173-ae39-b6e4-8034">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Laser Cannon" hidden="false" id="52b4-bf86-0756-c090">
+          <profiles>
+            <profile name="Laser Cannon" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="53b5-9d62-4dc6-5a9d">
+              <characteristics>
+                <characteristic name="Range" typeId="910b-bab0-6061-64b0">36&quot;</characteristic>
+                <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
+                <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">9</characteristic>
+                <characteristic name="AP" typeId="782f-75ab-b021-e58a">-2</characteristic>
+                <characteristic name="D" typeId="c860-c282-c3a0-93e0">3</characteristic>
+                <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bdd8-d66d-f483-27fb-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdd8-d66d-f483-27fb-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b781-3d68-d2ed-0765" id="e43c-c112-4e0d-7df7" primary="false" name="Automatons"/>
+        <categoryLink targetId="d294-2dd0-8be8-a024" id="d3ca-77e5-ecd1-92ec" primary="true" name="Fortification"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cannon Tower" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="72a2-8243-3411-6b1c">
+          <characteristics>
+            <characteristic name="M" typeId="c100-b9db-eacc-d3e0">0&quot;</characteristic>
+            <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+            <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+            <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
+            <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+            <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+            <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cannon Tower" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6fae-6404-8257-96b5">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When targeting Mechanical units, increase the Armour Penetration characteristic of this unit&apos;s Ranged Weapons by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="5701-0cdb-e599-3568" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="155"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
