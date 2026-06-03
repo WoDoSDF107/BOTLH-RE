@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="War Dogs - Men at Range" hidden="false" id="337b-5b2d-432e-ab9f">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="War Dog" hidden="false" id="b5f6-13fe-38e8-f132">
+          <profiles>
+            <profile name="War Dog" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="da9b-9819-e63a-5175">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfe0-c0f7-5088-3ba2"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="b723-4900-df3b-1e02"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Combat Knife" hidden="false" id="fb8e-04a7-4ee6-c9ff">
+              <profiles>
+                <profile name="Combat Knife" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="a42b-98f0-984a-5410">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cc1-f94f-ef45-af67"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0b7-acbb-ea07-92c0"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Wargear" hidden="false" id="bd33-92ec-2c5b-bf22" type="selectionEntryGroup" targetId="45e6-f1ba-37c6-c833">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1fd-bf4e-9adb-e721"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78ba-c96c-a3b4-0eb2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mk 2 Grenade" hidden="false" id="ee71-c09e-de70-7faa">
+          <profiles>
+            <profile name="Mk 2 Grenade" typeId="dd4a-4c9c-f85c-48bb" typeName="Support Weapons" hidden="false" id="052f-db70-cdfa-af85">
+              <characteristics>
+                <characteristic name="Range" typeId="5b97-cbf5-625e-9854">12&quot;</characteristic>
+                <characteristic name="A" typeId="8524-9648-72fe-b421">D6</characteristic>
+                <characteristic name="BS" typeId="997f-09a2-3a86-b592">3+</characteristic>
+                <characteristic name="S" typeId="06fa-f7bd-a348-0c1c">5</characteristic>
+                <characteristic name="AP" typeId="fd77-21cf-cf04-7b75">0</characteristic>
+                <characteristic name="D" typeId="d0f8-90c2-c3d5-128f">1</characteristic>
+                <characteristic name="Keywords" typeId="7739-e288-77e6-4099">Blast, Ignores Cover</characteristic>
+                <characteristic name="Description" typeId="6fc9-dd4f-aa26-990f">Used in Shooting Phase, Cannot be used in engagement range</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ec9-843a-3413-8728"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="5022-fc71-0085-a15a" primary="false" name="His True Sons"/>
+        <categoryLink targetId="9a88-260d-af6a-898f" id="0529-c004-4d3d-6615" primary="false" name="War Dogs"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="e446-66e3-1802-0799" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Dog Wargear" hidden="false" id="bf84-210b-24c3-c2c3">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ranged Weapons" id="45e6-f1ba-37c6-c833" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="M14" hidden="false" id="654c-e410-fd36-25d0">
+              <profiles>
+                <profile name="M14" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="c845-bd06-9511-6711">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="L42a1" hidden="false" id="f147-6d4a-f474-cdde">
+              <profiles>
+                <profile name="L42a1" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="86b6-95da-bfec-1e70">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">36&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">5+</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">6</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault, Heavy, Precision</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Winchester 1897" hidden="false" id="d791-74f3-1774-ca06">
+              <profiles>
+                <profile name="Winchester 1897" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="5462-4e9d-7caa-1a9a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">6&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">5+</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">2</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Assault, Sustained Hits 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="M3 Grease Gun" hidden="false" id="f3bb-5b01-1cd2-f858">
+              <profiles>
+                <profile name="M3 Grease Gun" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="5608-1afd-4e59-4551">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">8&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">2</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">5+</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid fire 2, Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="M2 Flamethrower" hidden="false" id="83e0-b2fb-f33d-c8f7">
+              <profiles>
+                <profile name="M2 Flamethrower" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="6a84-1093-094c-1239">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">4&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">N/A</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Torrent</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Torrent" id="302f-ab70-4bea-c4c2" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="778b-3848-e3a6-2f9a" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Weapons" id="f717-f8ce-8155-6b19" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Machete" hidden="false" id="1d09-1c25-df44-1edd">
+              <profiles>
+                <profile name="Machete" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="e65d-703b-9361-579a">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="1"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mace" hidden="false" id="a614-67c9-ef91-e384">
+              <profiles>
+                <profile name="Mace" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="4c0e-73c7-6c44-2c6f">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin Axes" hidden="false" id="42ce-1675-6ad3-f401">
+              <profiles>
+                <profile name="Twin Axes" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="dce7-a1aa-4a17-dd8a">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">CC Modifier 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="3"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="CC Modifier" id="ad6d-c5ca-661b-e815" hidden="false" type="rule" targetId="1f11-635b-21fb-f93c">
+                  <modifiers>
+                    <modifier type="append" value="1" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bastard Sword" hidden="false" id="f945-9318-1a49-a2ff">
+              <profiles>
+                <profile name="Bastard Sword" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="b7a6-51b1-a22d-5c33">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Dogs - Men at Arms" hidden="false" id="be46-af35-4a44-ac1f">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="War Dog" hidden="false" id="00f8-7292-1962-55b6">
+          <profiles>
+            <profile name="War Dog" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="ba8f-6764-0826-384f">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bf4-b034-bbf8-85c3"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="a067-82cb-221f-4ca8"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="2c38-b1d0-e51d-3428" type="selectionEntryGroup" targetId="f717-f8ce-8155-6b19">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fac3-419a-f786-d9c4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a79b-e06c-2a28-703d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="ac5d-b9d4-0e81-d962" primary="false" name="His True Sons"/>
+        <categoryLink targetId="9a88-260d-af6a-898f" id="bfe0-6883-29bb-a768" primary="false" name="War Dogs"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="a1c3-5030-f14b-8f07" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="War Dogs" id="9a88-260d-af6a-898f" hidden="false"/>
+    <categoryEntry name="His True Sons" id="781a-0a70-79cd-276d" hidden="false"/>
+  </categoryEntries>
+  <sharedRules>
+    <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
+      <description>If a model bears a weapon with this keyword, increase the Close Combat characteristic of that model by x, with x being the value at the end of this rule.</description>
+    </rule>
+  </sharedRules>
+</catalogue>

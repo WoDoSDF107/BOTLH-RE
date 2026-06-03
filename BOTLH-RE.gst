@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="34" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="35" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -254,15 +254,38 @@ When doing so:
       <description>This model has a transport capacity of</description>
     </rule>
     <rule name="Vehicle" id="8f96-dddd-0807-6654" hidden="false">
-      <description>When targeting a vehicle unit, after performing a hit roll, you must perform an Armour test. To perform an Armour test, first roll a wound roll and add the Strength value of that model&apos;s weapon to the roll.
+      <description>Vehicles units use different rules to normal models.
 
-If the result is less than the target&apos;s Armour, that roll misses.
-If the result is equal to the target&apos;s Armour, the roll succeeds, but the Armour Penetration characteristic of that weapon is set to 0 for that attack.
-If the result is greater than the target&apos;s Armour, the roll succeeds.
-If the result is twice the target&apos;s Armour, the roll succeeds and automatically wounds the target vehicle, ignoring the Save roll.</description>
+**Vehicle Rotation**
+A vehicle unit can only rotate in the Movement Phase or Charge Phase. During the Movement Phase, the vehicle unit is able to pivot before and after making a movement. During the Charge Phase, a vehicle may rotate before making a Charge, but not after. They also may rotate if they did not make a movement or charge, and they still count as Remaining Stationary if they do this.
+
+
+**Vehicle Armour Faces**
+Vehicle units have 4 faces, One Front, Two Sides, and One Rear.
+
+
+**Targeting a Vehicle**
+
+
+To target a side, measure from your unit&apos;s base to the target&apos;s base, the target side is whatever is visible to that unit. If your unit&apos;s weapon has the Indirect Fire keyword, you still must use the targeting rules. When targeting a unit within Engagement Range with a Ranged or Melee Weapon, use the side touching your model&apos;s base.
+
+When targeting a vehicle unit, after performing a hit roll, you must perform an Armour test. To perform an Armour test, first roll a wound roll and add the Strength value of that model&apos;s weapon to the roll.
+
+**Missed Hit:** If the result is less than the target&apos;s Armour, that roll misses.
+**Glancing Hit:** If the result is equal to the target&apos;s Armour, the roll succeeds, but the Armour Penetration characteristic of that weapon is set to 0 for that attack.
+**Penetrating Hit:** If the result is greater than the target&apos;s Armour, the roll succeeds.
+**Devastating Hit:** If the result is twice the target&apos;s Armour, the roll succeeds and automatically wounds the target vehicle, ignoring the Save roll.
+
+
+If your unit&apos;s weapon has the Lethal Hits keyword, a Critical Hit counts as an automatic Glancing Hit.
+If your unit&apos;s weapon has the Devastating Wounds keyword, a Critical Wound counts as an automatic Devastating Hit, regardless of that weapon&apos;s Strength Characteristic.
+If your unit&apos;s weapon has the Anti-Vehicle keyword, a roll of x automatically scores a Glancing Hit, and a Critical Wound counts as an automatic Devastating Hit, regardless of that weapon&apos;s Strength Characteristic.</description>
     </rule>
     <rule name="Cleave" id="e182-e31a-f8fa-84b0" hidden="false">
       <description>Each time you determine how many attacks are made with a Cleave weapon, add 1 to the result for every five models that were in the target unit when you selected it as the target (rounding down).</description>
+    </rule>
+    <rule name="Cone of Vision - " id="2118-f4b1-a51a-0937" hidden="false">
+      <description>A vehicle model with this rule can only select Shooting and Charge targets within it&apos;s Cone of Vision. The size of this model&apos;s cone of vision is defined in the name of this rule. A target&apos;s eligibility is decided by measuring from this model&apos;s base to the base of the target unit, if that unit is visible to any of the vehicle sides listed in this rule&apos;s name, that target is eligible.</description>
     </rule>
   </sharedRules>
   <publications>

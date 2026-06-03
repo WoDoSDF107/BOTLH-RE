@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e443-3885-6320-b9dd" name="Automatons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e443-3885-6320-b9dd" name="Automatons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Troopers" hidden="false" id="2305-a25a-dd3e-6a1b" type="selectionEntry" targetId="3099-2b5d-7234-d48a"/>
     <entryLink import="true" name="Berserkers" hidden="false" id="041f-5025-29d0-cefc" type="selectionEntry" targetId="7b0e-43cb-0ad1-fe82"/>
@@ -11,6 +11,9 @@
     <entryLink import="true" name="Fabricator" hidden="false" id="24e0-fbb0-9129-9c3f" type="selectionEntry" targetId="96b6-4046-9bcf-bd64"/>
     <entryLink import="true" name="Detachment" hidden="false" id="f343-717d-6048-c5a3" type="selectionEntry" targetId="e9e3-082d-26e0-c5d4"/>
     <entryLink import="true" name="Cannon Tower" hidden="false" id="a980-66ab-02b4-ad9b" type="selectionEntry" targetId="b173-ae39-b6e4-8034"/>
+    <entryLink import="true" name="Commissar" hidden="false" id="cd78-0ea1-a347-180c" type="selectionEntry" targetId="7a6d-f688-221b-d960"/>
+    <entryLink import="true" name="Rocket Devastator" hidden="false" id="366a-d08c-48df-f7c6" type="selectionEntry" targetId="5ca7-e744-418d-1ebf"/>
+    <entryLink import="true" name="Shredder Tank" hidden="false" id="9911-4c42-c09f-f4c8" type="selectionEntry" targetId="1879-b219-740c-ca33"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Automatons - Library" id="ae87-c661-8453-b8cc" targetId="44f3-7dc2-b2b0-fe8b"/>
