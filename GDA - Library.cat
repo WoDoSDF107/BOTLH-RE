@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="26" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="bd2a-a4e1-9521-462a" name="GDA - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="15" revision="27" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Assault Squad" hidden="false" id="7873-af87-f1b7-8324">
       <costs>
@@ -2032,11 +2032,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Rending" id="da88-7879-acc8-bc2e" hidden="false">
-          <description>If the Strength characteristic of this weapon is greater than that of the target unit&apos;s Toughness characteristic, this weapon automatically wounds.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink name="Rending" id="e0e1-1140-d59c-c72a" hidden="false" type="rule" targetId="da88-7879-acc8-bc2e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="18eb-bfa5-d514-3c34">
       <costs>

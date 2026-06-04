@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="35" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="36" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -50,6 +50,11 @@
         <characteristicType name="OC" id="4395-2ce2-d480-3d3c"/>
         <characteristicType name="MF" id="d469-e29f-097b-3790"/>
         <characteristicType name="CC" id="6977-91de-ecff-307e"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Support Weapons" id="9faa-64d3-43b4-045a" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Description" id="15ec-a129-7e37-e62d"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -286,6 +291,9 @@ If your unit&apos;s weapon has the Anti-Vehicle keyword, a roll of x automatical
     </rule>
     <rule name="Cone of Vision - " id="2118-f4b1-a51a-0937" hidden="false">
       <description>A vehicle model with this rule can only select Shooting and Charge targets within it&apos;s Cone of Vision. The size of this model&apos;s cone of vision is defined in the name of this rule. A target&apos;s eligibility is decided by measuring from this model&apos;s base to the base of the target unit, if that unit is visible to any of the vehicle sides listed in this rule&apos;s name, that target is eligible.</description>
+    </rule>
+    <rule name="Rending" id="da88-7879-acc8-bc2e" hidden="false">
+      <description>If the Strength characteristic of this weapon is greater than that of the target unit&apos;s Toughness characteristic, this weapon automatically passes a wound roll. If that target unit is a Vehicle, this is an automatic Penetrating Hit.</description>
     </rule>
   </sharedRules>
   <publications>

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="His True Sons - Library" id="d1a5-556c-629b-1879" targetId="b508-b2ed-d9b7-1028"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="War Dogs - Fire Support Squad" hidden="false" id="de47-00b8-15e9-81f0" type="selectionEntry" targetId="337b-5b2d-432e-ab9f"/>
+    <entryLink import="true" name="War Dogs - Men at Range" hidden="false" id="de47-00b8-15e9-81f0" type="selectionEntry" targetId="337b-5b2d-432e-ab9f"/>
     <entryLink import="true" name="War Dogs - Men at Arms" hidden="false" id="435a-f874-6510-30f5" type="selectionEntry" targetId="be46-af35-4a44-ac1f"/>
+    <entryLink import="true" name="War Dogs - Veteran Marksmen" hidden="false" id="113d-a979-3be2-0398" type="selectionEntry" targetId="6448-0874-2cf6-6f92"/>
+    <entryLink import="true" name="War Dogs - Veteran Warriors" hidden="false" id="2c4a-c3a7-6556-d9e7" type="selectionEntry" targetId="8dd6-d08c-2f37-93e0"/>
+    <entryLink import="true" name="War Dogs - Siege Breakers" hidden="false" id="b333-59d4-97a2-250f" type="selectionEntry" targetId="0d8e-706d-e20f-da03"/>
+    <entryLink import="true" name="Knights - Knight Brothers" hidden="false" id="3612-8eec-259d-a5ad" type="selectionEntry" targetId="3cbd-896b-582a-bc35"/>
+    <entryLink import="true" name="War Dogs - M48 Patton" hidden="false" id="ef88-5f59-f20c-0871" type="selectionEntry" targetId="9193-2b12-020b-02fe"/>
+    <entryLink import="true" name="Knights - Knights Seraphim" hidden="false" id="b1fb-52ea-e3d0-05bf" type="selectionEntry" targetId="c4e4-4258-b86d-eb5d"/>
   </entryLinks>
 </catalogue>
