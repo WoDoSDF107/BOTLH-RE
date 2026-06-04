@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Range" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -60,8 +60,9 @@
       <categoryLinks>
         <categoryLink targetId="781a-0a70-79cd-276d" id="5022-fc71-0085-a15a" primary="false" name="His True Sons"/>
         <categoryLink targetId="9a88-260d-af6a-898f" id="0529-c004-4d3d-6615" primary="false" name="War Dogs"/>
-        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="e446-66e3-1802-0799" primary="true" name="Infantry"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="e446-66e3-1802-0799" primary="false" name="Infantry"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="39a3-c03e-fd76-777d" primary="false" name="Human"/>
+        <categoryLink targetId="2ec6-998d-34df-5c47" id="f4e3-67cb-1262-34ea" primary="true" name="Troops"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wargear - War Dogs" hidden="false" id="bf84-210b-24c3-c2c3">
@@ -474,8 +475,9 @@
       <categoryLinks>
         <categoryLink targetId="781a-0a70-79cd-276d" id="ac5d-b9d4-0e81-d962" primary="false" name="His True Sons"/>
         <categoryLink targetId="9a88-260d-af6a-898f" id="bfe0-6883-29bb-a768" primary="false" name="War Dogs"/>
-        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="a1c3-5030-f14b-8f07" primary="true" name="Infantry"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="a1c3-5030-f14b-8f07" primary="false" name="Infantry"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="0029-8375-d151-3ed8" primary="false" name="Human"/>
+        <categoryLink targetId="2ec6-998d-34df-5c47" id="ef0c-20df-f663-103d" primary="true" name="Troops"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
@@ -507,6 +509,29 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d966-a7e7-114f-d3fb"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ae2-c738-5c01-0bce"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="M79 Grenade Launcher" hidden="false" id="6269-84fc-d3c9-d9e1">
+                  <profiles>
+                    <profile name="M79 Grenade Launcher" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="b8f2-0377-e368-bc39">
+                      <characteristics>
+                        <characteristic name="Range" typeId="910b-bab0-6061-64b0">18&quot;</characteristic>
+                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
+                        <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
+                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
+                        <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="93d8-de8e-d0eb-1eb2" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
             <entryLink import="true" name="Combat Knife" hidden="false" id="05fc-18f9-7e06-0586" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
           </entryLinks>
@@ -692,10 +717,11 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="88a0-79e9-a370-3028" primary="true" name="Infantry"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="88a0-79e9-a370-3028" primary="false" name="Infantry"/>
         <categoryLink targetId="781a-0a70-79cd-276d" id="de6a-ed2e-6f46-c4aa" primary="false" name="His True Sons"/>
         <categoryLink targetId="9a88-260d-af6a-898f" id="01cd-edce-d2b6-ab2f" primary="false" name="War Dogs"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="aac6-e623-931a-68fb" primary="false" name="Human"/>
+        <categoryLink targetId="2ec6-998d-34df-5c47" id="f665-10f4-f23e-b21c" primary="true" name="Troops"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combat Knife" hidden="false" id="8f00-2f34-ca32-b079">
@@ -735,7 +761,7 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="1"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="3"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Mace of Damnation" hidden="false" id="3f0c-a6e0-79eb-6c0f">
@@ -752,7 +778,7 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="4"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Axe of the Carpenter" hidden="false" id="49ce-55dc-d69b-b254">
@@ -776,7 +802,7 @@
                     </infoLink>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="4"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Greatsword of the One True God" hidden="false" id="92a0-b2ed-bc9f-6077">
@@ -805,14 +831,14 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Shield of Faith" hidden="false" id="3ab0-fe9b-20c4-3938">
                   <profiles>
-                    <profile name="Shield of Faith" typeId="9faa-64d3-43b4-045a" typeName="Support Weapons" hidden="false" id="4732-bd9f-68bc-29d9">
+                    <profile name="Invulnerable Save" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4357-0306-d076-ec61">
                       <characteristics>
-                        <characteristic name="Description" typeId="15ec-a129-7e37-e62d">When an enemy model declares damage made with a melee weapon against a model with at least one Shield of Faith weapon, roll one D6 for every point of damage to be inflicted. On a 5+, that damage is instead allocated to the enemy model. When allocating damage, any models in the unit without a Shield of Faith weapon must be selected first.</characteristic>
+                        <characteristic name="Description" typeId="5cee-5283-c95d-c323">4+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -837,7 +863,7 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="The Four Winged Angel" hidden="false" id="3a07-23c0-b5e8-183d">
@@ -854,7 +880,7 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Blessed Halberd of the Archangel Uriel" hidden="false" id="7bf8-a465-4e2a-9948">
@@ -876,7 +902,7 @@
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">18</characteristic>
                         <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-4</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">5</characteristic>
-                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Rending</characteristic>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -887,7 +913,6 @@
                       </modifiers>
                     </infoLink>
                     <infoLink name="Cleave" id="6bf9-3eba-f440-67c7" hidden="false" type="rule" targetId="e182-e31a-f8fa-84b0"/>
-                    <infoLink name="Rending" id="a4c8-611c-c395-c43e" hidden="false" type="rule" targetId="da88-7879-acc8-bc2e"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
@@ -899,15 +924,15 @@
                       <characteristics>
                         <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
-                        <characteristic name="S" typeId="e681-af26-3aee-d26b">24</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-5</characteristic>
-                        <characteristic name="D" typeId="6930-1108-fb51-4fa6">7</characteristic>
-                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Rending</characteristic>
+                        <characteristic name="S" typeId="e681-af26-3aee-d26b">12</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-4</characteristic>
+                        <characteristic name="D" typeId="6930-1108-fb51-4fa6">6</characteristic>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Devastating Wounds</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Rending" id="e35f-a61d-e743-0cd7" hidden="false" type="rule" targetId="da88-7879-acc8-bc2e"/>
+                    <infoLink name="Devastating Wounds" id="e35f-a61d-e743-0cd7" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
@@ -1015,11 +1040,23 @@
         <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="097d-b752-2e36-bee9" primary="false" name="Knights"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="2031-946b-d95a-8ec7" primary="false" name="Human"/>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="c815-6520-985b-ab6e" primary="false" name="Infantry"/>
-        <categoryLink targetId="6649-8286-d076-2067" id="6efe-b14b-1ff4-a4d1" primary="true" name="Heavy Infantry"/>
+        <categoryLink targetId="6649-8286-d076-2067" id="6efe-b14b-1ff4-a4d1" primary="true" name="Elites"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
       </costs>
+      <modifiers>
+        <modifier type="unset-primary" value="6649-8286-d076-2067" field="category" scope="root-entry" affects="self.entries.forces.recursive.3cbd-896b-582a-bc35">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="b508-b2ed-d9b7-1028" childId="6529-2251-e5c5-aa59" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="0dfd-0bc5-60ba-673c" field="category" scope="root-entry" affects="self.entries.forces.recursive.3cbd-896b-582a-bc35">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="b508-b2ed-d9b7-1028" childId="6529-2251-e5c5-aa59" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="TEST STUFF" hidden="false" id="828c-44ea-5142-1140" subType="mount">
       <selectionEntries>
@@ -1149,15 +1186,18 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="6649-8286-d076-2067" id="e7f6-a9b1-278b-4e31" primary="true" name="Heavy Infantry"/>
+        <categoryLink targetId="6649-8286-d076-2067" id="e7f6-a9b1-278b-4e31" primary="true" name="Elites"/>
         <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="0632-1f53-2e2e-3331" primary="false" name="Knights"/>
         <categoryLink targetId="781a-0a70-79cd-276d" id="ae7d-038b-26fd-8d1a" primary="false" name="His True Sons"/>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="57b8-e54c-9def-75f6" primary="false" name="Infantry"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="7f91-f4cd-6cb9-4d95" primary="false" name="Human"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="80"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="40"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="07b0-5090-b004-df5e" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Captain" hidden="false" id="77a0-1a38-3e74-fada">
       <selectionEntries>
@@ -1182,6 +1222,18 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c51e-4768-7b38-c3d2"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="668e-3bc3-6cc5-bff7" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="92a0-b2ed-bc9f-6077" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
@@ -1202,6 +1254,10 @@
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e248-ef80-06b1-91c1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e248-ef80-06b1-91c1-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -1211,6 +1267,141 @@
         <categoryLink targetId="33ee-b756-5da0-5503" id="f277-29e5-ff36-9616" primary="false" name="Leader"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="3201-6feb-e6f0-82fe" primary="false" name="Human"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="165"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights - Squire" hidden="false" id="bb24-4714-5289-4ec1">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Squire" hidden="false" id="a110-bb47-984f-6994">
+          <profiles>
+            <profile name="Squire" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="d1a2-6d8d-0d54-3de2">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2669-74a7-e408-c308-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2669-74a7-e408-c308-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="2634-5885-dd62-4339" id="0aaf-ed02-9bd8-8048" primary="true" name="Support"/>
+        <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="c9ca-a445-4e69-195e" primary="false" name="Knights"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="7efb-0166-0919-a361" primary="false" name="His True Sons"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="963f-f162-69cd-334f" primary="false" name="Human"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="3361-5743-609c-3ce9" primary="false" name="Infantry"/>
+        <categoryLink targetId="9c21-a33c-fd69-b8c4" id="c4c2-a7b6-08e4-e38c" primary="false" name="Specialist"/>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="3e6b-6126-aa58-8860" primary="false" name="Character"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Knight Attendant" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="3848-ed55-18cf-c036">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per turn, this unit may perform one of the following actions:
+
+**Armour Bearer** - 
+At the start of any phase during your turn, if this unit is not within engagement range of an enemy unit, restore 1 lost Wound to the bearer&apos;s unit.
+
+
+**Arms Bearer** - 
+The bearer&apos;s unit may reroll 1 hit roll and 1 wound roll per turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Specialist" id="c9c7-1eb7-37f5-7971" hidden="false">
+          <description>This model can be attached to the following units:
+
+
+Knights Brothers</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Force Rule" hidden="false" id="8c6b-431d-12f0-6f9d">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Force Rules" id="c674-fff5-ecdc-0ae5" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sword of Michael - Frontline Assault Force" hidden="false" id="41a7-3695-ad2d-accc">
+              <profiles>
+                <profile name="Sword of Michael - Frontline Assault Force" typeId="b4db-b357-9af5-137a" typeName="Force Rule" hidden="false" id="3f45-91e5-3c95-5fe8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="985a-3ffd-fcf7-3d59">a</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="fc1e-1a65-5226-864d-min" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fc1e-1a65-5226-864d-max" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="fc1e-1a65-5226-864d-min">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="06fc-0e49-5845-7f3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="fc1e-1a65-5226-864d-max">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="06fc-0e49-5845-7f3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="06fc-0e49-5845-7f3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sword of Michael - Chosen Sons" hidden="false" id="9f39-8504-f512-2920">
+              <profiles>
+                <profile name="Sword of Michael - Chosen Sons" typeId="b4db-b357-9af5-137a" typeName="Force Rule" hidden="false" id="6c53-a01b-4a10-4e30">
+                  <characteristics>
+                    <characteristic name="Description" typeId="985a-3ffd-fcf7-3d59">a</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="a4dd-b918-bcbd-60ac-min" includeChildSelections="true" includeChildForces="true"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a4dd-b918-bcbd-60ac-max" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="a4dd-b918-bcbd-60ac-min">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="6529-2251-e5c5-aa59" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="a4dd-b918-bcbd-60ac-max">
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="roster" childId="6529-2251-e5c5-aa59" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="6529-2251-e5c5-aa59" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="248f-c872-d870-45ea" id="72e4-68c4-8706-46a1" primary="true" name="Force Rule"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="5681-94a1-804c-8071-min" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5681-94a1-804c-8071-max" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -1218,7 +1409,11 @@
     <categoryEntry name="His True Sons" id="781a-0a70-79cd-276d" hidden="false"/>
     <categoryEntry name="Knights" id="1af4-a8fd-ccdb-4abd" hidden="false"/>
     <categoryEntry name="Elites" id="6649-8286-d076-2067" hidden="false"/>
-    <categoryEntry name="Command" id="94e3-ff49-273a-5079" hidden="false"/>
+    <categoryEntry name="High Command" id="94e3-ff49-273a-5079" hidden="false"/>
+    <categoryEntry name="Support" id="2634-5885-dd62-4339" hidden="false"/>
+    <categoryEntry name="Troops" id="2ec6-998d-34df-5c47" hidden="false"/>
+    <categoryEntry name="Command" id="48cc-4b50-c60d-2444" hidden="false"/>
+    <categoryEntry name="Force Rule" id="248f-c872-d870-45ea" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
@@ -1231,37 +1426,67 @@
   <forceEntries>
     <forceEntry name="Sword of Michael - Chosen Sons" id="6529-2251-e5c5-aa59" hidden="false">
       <categoryLinks>
-        <categoryLink name="Heavy Infantry" hidden="false" id="db6f-7e2f-b2d2-2be0" targetId="6649-8286-d076-2067">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad61-4e7f-8a37-0b26"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink name="Force Rule" hidden="false" id="9494-64a5-e571-ded5" targetId="248f-c872-d870-45ea"/>
         <categoryLink name="Command" hidden="false" id="8fe1-dc3a-26d7-6f96" targetId="94e3-ff49-273a-5079">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2358-f05f-c913-3afb"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="db6f-7e2f-b2d2-2be0" targetId="6649-8286-d076-2067">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad61-4e7f-8a37-0b26"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="5d15-b860-9139-f76b" targetId="2634-5885-dd62-4339"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Sword of Michael - Frontline Assault Force" id="06fc-0e49-5845-7f3d" hidden="false">
+    <forceEntry name="Sword of Michael - Frontline Assault Force" id="06fc-0e49-5845-7f3d" hidden="false" sortIndex="0">
       <categoryLinks>
-        <categoryLink name="Infantry" hidden="false" id="0949-6382-6bad-22d6" targetId="0dfd-0bc5-60ba-673c"/>
-        <categoryLink name="Heavy Infantry" hidden="false" id="0383-034e-0728-7440" targetId="6649-8286-d076-2067">
+        <categoryLink name="Force Rule" hidden="false" id="e1d2-8e0a-e32f-c24f" targetId="248f-c872-d870-45ea"/>
+        <categoryLink name="Command" hidden="false" id="92c9-3075-7b04-dc4d" targetId="94e3-ff49-273a-5079">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2b5-52bf-0bc6-34a9"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="04a2-3396-6a1c-a819" targetId="2ec6-998d-34df-5c47">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="48c8-fb26-7c50-345b"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc8b-47c4-feb0-44a8"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="4" field="48c8-fb26-7c50-345b">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="089e-2849-b653-28bc" targetId="2634-5885-dd62-4339"/>
+        <categoryLink name="Elites" hidden="false" id="0383-034e-0728-7440" targetId="6649-8286-d076-2067">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2252-dea3-a71f-0bba"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="2252-dea3-a71f-0bba">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink name="Vehicle" hidden="false" id="f17b-a51f-cb7e-1326" targetId="1fd3-1951-3be2-5a2d">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e9e5-e0f1-15ac-c6c9"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Command" hidden="false" id="92c9-3075-7b04-dc4d" targetId="94e3-ff49-273a-5079">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2b5-52bf-0bc6-34a9"/>
-          </constraints>
-        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <profileTypes>
+    <profileType name="Force Rule" id="b4db-b357-9af5-137a" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Description" id="985a-3ffd-fcf7-3d59"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
 </catalogue>

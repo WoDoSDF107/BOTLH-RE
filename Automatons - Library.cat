@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="44f3-7dc2-b2b0-fe8b" name="Automatons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="44f3-7dc2-b2b0-fe8b" name="Automatons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Fetch, Decode, Execute" id="951e-0d6a-b6c5-1f9b" hidden="false">
       <description>Once per phase, when an Automaton unit with this rule makes an attack against an enemy unit, they may choose to use this rule. 
@@ -1255,12 +1255,12 @@ Troopers</description>
                 <profile name="HEAT Rocket Pod Array" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="d986-72fa-c973-1f67">
                   <characteristics>
                     <characteristic name="Range" typeId="910b-bab0-6061-64b0">24&quot;</characteristic>
-                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+6</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6</characteristic>
                     <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
                     <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">6</characteristic>
                     <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
                     <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast, Heavy</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast, Heavy 6</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

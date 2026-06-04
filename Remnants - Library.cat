@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="22" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="2429-5a44-1f91-64aa" name="Remnants - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="2" revision="23" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Recon Unit" hidden="false" id="8a59-9caa-f190-f885">
       <selectionEntries>
@@ -380,7 +380,7 @@
             <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
             <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
             <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Heavy</characteristic>
+            <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Heavy 3</characteristic>
           </characteristics>
         </profile>
         <profile name="➤ M60 HE Rounds" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="24b0-0cb1-1379-8fb0">
