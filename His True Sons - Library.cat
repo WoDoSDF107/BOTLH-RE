@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Range" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -381,7 +381,7 @@
                         <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
                         <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
                         <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 6, Torrent </characteristic>
+                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Rapid Fire 6, Torrent</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -541,10 +541,11 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="9b06-9e3e-af25-2197" primary="true" name="Infantry"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="9b06-9e3e-af25-2197" primary="false" name="Infantry"/>
         <categoryLink targetId="781a-0a70-79cd-276d" id="19ff-22ac-4a8d-4946" primary="false" name="His True Sons"/>
         <categoryLink targetId="9a88-260d-af6a-898f" id="b8b7-a3fe-e4da-cb7d" primary="false" name="War Dogs"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="cfe9-8b76-295a-f274" primary="false" name="Human"/>
+        <categoryLink targetId="6649-8286-d076-2067" id="4441-05d5-b5fe-f1f1" primary="true" name="Elites"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="20"/>
@@ -596,8 +597,9 @@
       <categoryLinks>
         <categoryLink name="His True Sons" hidden="false" id="e486-6957-fdc6-234a" targetId="781a-0a70-79cd-276d" primary="false"/>
         <categoryLink name="War Dogs" hidden="false" id="1818-b603-2054-c7fd" targetId="9a88-260d-af6a-898f" primary="false"/>
-        <categoryLink name="Infantry" hidden="false" id="fa19-52cb-58e8-2ca2" targetId="0dfd-0bc5-60ba-673c" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="fa19-52cb-58e8-2ca2" targetId="0dfd-0bc5-60ba-673c" primary="false"/>
         <categoryLink name="Human" hidden="false" id="dc06-b793-abac-7cd1" targetId="0052-4108-3b9f-e544" primary="false"/>
+        <categoryLink targetId="6649-8286-d076-2067" id="c1a7-5f03-7360-f6f1" primary="true" name="Elites"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
@@ -1157,12 +1159,66 @@
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="80"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights - Knight Captain" hidden="false" id="77a0-1a38-3e74-fada">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Knight Captain" hidden="false" id="1316-d08c-04b7-307c">
+          <profiles>
+            <profile name="Knight Captain" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="589c-8772-8a1d-7edb">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">6</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="d45b-0dd8-cce7-7bdd" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Off-Hand" hidden="false" id="0864-6e72-8a0f-ab69" type="selectionEntryGroup" targetId="d819-0abb-37df-1709">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c51e-4768-7b38-c3d2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Main Hand" id="ff3e-7848-35b9-34fc" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Main Hand" hidden="false" id="c854-d169-bbae-b6d0" type="selectionEntryGroup" targetId="d2d0-a6aa-063d-f3e6">
+                      <modifiers>
+                        <modifier type="set" value="Main Hand - Special Weapons" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Main Hand" hidden="false" id="31a6-14d2-1c12-1bfa" type="selectionEntryGroup" targetId="da81-c21c-49af-fba4"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26df-ecb9-c3bd-0a0f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="812a-303d-20c5-603e"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="94e3-ff49-273a-5079" id="89ad-c873-703f-133c" primary="true" name="Command"/>
+        <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="4def-85d9-7b96-9ed6" primary="false" name="Knights"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="c57f-7d9a-fc35-d3f7" primary="false" name="His True Sons"/>
+        <categoryLink targetId="33ee-b756-5da0-5503" id="f277-29e5-ff36-9616" primary="false" name="Leader"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="3201-6feb-e6f0-82fe" primary="false" name="Human"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="War Dogs" id="9a88-260d-af6a-898f" hidden="false"/>
     <categoryEntry name="His True Sons" id="781a-0a70-79cd-276d" hidden="false"/>
     <categoryEntry name="Knights" id="1af4-a8fd-ccdb-4abd" hidden="false"/>
-    <categoryEntry name="Heavy Infantry" id="6649-8286-d076-2067" hidden="false"/>
+    <categoryEntry name="Elites" id="6649-8286-d076-2067" hidden="false"/>
+    <categoryEntry name="Command" id="94e3-ff49-273a-5079" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
@@ -1175,14 +1231,36 @@
   <forceEntries>
     <forceEntry name="Sword of Michael - Chosen Sons" id="6529-2251-e5c5-aa59" hidden="false">
       <categoryLinks>
-        <categoryLink name="Heavy Infantry" hidden="false" id="db6f-7e2f-b2d2-2be0" targetId="6649-8286-d076-2067"/>
+        <categoryLink name="Heavy Infantry" hidden="false" id="db6f-7e2f-b2d2-2be0" targetId="6649-8286-d076-2067">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad61-4e7f-8a37-0b26"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Command" hidden="false" id="8fe1-dc3a-26d7-6f96" targetId="94e3-ff49-273a-5079">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2358-f05f-c913-3afb"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Sword of Michael - Frontline Assault Force" id="06fc-0e49-5845-7f3d" hidden="false">
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="0949-6382-6bad-22d6" targetId="0dfd-0bc5-60ba-673c"/>
-        <categoryLink name="Heavy Infantry" hidden="false" id="0383-034e-0728-7440" targetId="6649-8286-d076-2067"/>
-        <categoryLink name="Vehicle" hidden="false" id="f17b-a51f-cb7e-1326" targetId="1fd3-1951-3be2-5a2d"/>
+        <categoryLink name="Heavy Infantry" hidden="false" id="0383-034e-0728-7440" targetId="6649-8286-d076-2067">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2252-dea3-a71f-0bba"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Vehicle" hidden="false" id="f17b-a51f-cb7e-1326" targetId="1fd3-1951-3be2-5a2d">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e9e5-e0f1-15ac-c6c9"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Command" hidden="false" id="92c9-3075-7b04-dc4d" targetId="94e3-ff49-273a-5079">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2b5-52bf-0bc6-34a9"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
