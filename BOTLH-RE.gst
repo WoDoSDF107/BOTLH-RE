@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="36" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="37" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -58,20 +58,6 @@
       </characteristicTypes>
     </profileType>
   </profileTypes>
-  <forceEntries>
-    <forceEntry name="Army Roster" id="d4ab-4ef8-1994-7cca" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Configuration" hidden="false" id="d97c-1e3d-293c-c6a6" targetId="13d8-826b-b842-d554"/>
-        <categoryLink name="Epic Hero" hidden="false" id="5909-ebd3-07fc-491b" targetId="5f21-8748-809b-03d9"/>
-        <categoryLink name="Character" hidden="false" id="1ff4-b404-46ba-e0ee" targetId="5b8f-4c9b-9026-374c"/>
-        <categoryLink name="Infantry" hidden="false" id="c283-d414-9663-a6c5" targetId="0dfd-0bc5-60ba-673c"/>
-        <categoryLink name="Vehicle" hidden="false" id="feab-864e-bc40-d980" targetId="1fd3-1951-3be2-5a2d"/>
-        <categoryLink name="Dedicated Transport" hidden="false" id="6983-ddcc-4642-0d57" targetId="c12f-061e-8965-3818"/>
-        <categoryLink name="Swarm" hidden="false" id="97d1-88fd-8169-48cc" targetId="2749-d422-0662-482c"/>
-        <categoryLink name="Fortification" hidden="false" id="257f-191d-0da4-9237" targetId="d294-2dd0-8be8-a024"/>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
   <categoryEntries>
     <categoryEntry name="Infantry" id="0dfd-0bc5-60ba-673c" hidden="false"/>
     <categoryEntry name="Character" id="5b8f-4c9b-9026-374c" hidden="false"/>

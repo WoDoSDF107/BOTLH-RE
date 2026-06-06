@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="His True Sons - Library" id="d1a5-556c-629b-1879" targetId="b508-b2ed-d9b7-1028"/>
   </catalogueLinks>
@@ -12,8 +12,11 @@
     <entryLink import="true" name="Knights - Knight Brothers" hidden="false" id="3612-8eec-259d-a5ad" type="selectionEntry" targetId="3cbd-896b-582a-bc35"/>
     <entryLink import="true" name="War Dogs - M48 Patton" hidden="false" id="ef88-5f59-f20c-0871" type="selectionEntry" targetId="9193-2b12-020b-02fe"/>
     <entryLink import="true" name="Knights - Knights Seraphim" hidden="false" id="b1fb-52ea-e3d0-05bf" type="selectionEntry" targetId="c4e4-4258-b86d-eb5d"/>
-    <entryLink import="true" name="Knights - Knight Captain" hidden="false" id="cf3c-b68c-ab39-75db" type="selectionEntry" targetId="77a0-1a38-3e74-fada"/>
-    <entryLink import="true" name="Force Rule" hidden="false" id="620f-84b2-9649-b131" type="selectionEntry" targetId="8c6b-431d-12f0-6f9d"/>
+    <entryLink import="true" name="Knights - Knight Commander" hidden="false" id="cf3c-b68c-ab39-75db" type="selectionEntry" targetId="77a0-1a38-3e74-fada"/>
     <entryLink import="true" name="Knights - Squire" hidden="false" id="cbfd-25d4-95cb-fa38" type="selectionEntry" targetId="bb24-4714-5289-4ec1"/>
+    <entryLink import="true" name="Knights - Clergymen" hidden="false" id="b0bd-de04-705c-b577" type="selectionEntry" targetId="7c28-5e25-119a-f244"/>
+    <entryLink import="true" name="War Dogs - M151 Jeep" hidden="false" id="8d07-b7a2-2a38-9de7" type="selectionEntry" targetId="c2ac-f703-be32-123d"/>
+    <entryLink import="true" name="War Dogs - M24 Chaffee" hidden="false" id="af54-1ccf-4cc0-360d" type="selectionEntry" targetId="010b-26e6-29bc-c74c"/>
+    <entryLink import="true" name="Knights - WLA Combat Bike" hidden="false" id="8021-245e-96f3-dec4" type="selectionEntry" targetId="8702-daff-dd67-0e6b"/>
   </entryLinks>
 </catalogue>
