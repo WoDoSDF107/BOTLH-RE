@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Range" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -93,7 +93,7 @@
                   <characteristics>
                     <characteristic name="Range" typeId="910b-bab0-6061-64b0">36&quot;</characteristic>
                     <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
-                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">5+</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
                     <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
                     <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
                     <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
@@ -145,30 +145,6 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="M2 Flamethrower" hidden="false" id="83e0-b2fb-f33d-c8f7">
-              <profiles>
-                <profile name="M2 Flamethrower" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="6a84-1093-094c-1239">
-                  <characteristics>
-                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">4&quot;</characteristic>
-                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
-                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">N/A</characteristic>
-                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
-                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
-                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Torrent</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Torrent" id="302f-ab70-4bea-c4c2" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="778b-3848-e3a6-2f9a" includeChildSelections="true" includeChildForces="true"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -469,6 +445,34 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Special Weapons" id="1e18-ab9a-fb0d-f0a7" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="M2 Flamethrower" hidden="false" id="83e0-b2fb-f33d-c8f7">
+              <profiles>
+                <profile name="M2 Flamethrower" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="6a84-1093-094c-1239">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0">4&quot;</characteristic>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">N/A</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Torrent</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Torrent" id="302f-ab70-4bea-c4c2" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="778b-3848-e3a6-2f9a" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="be46-af35-4a44-ac1f">
@@ -564,6 +568,9 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="M2 Flamethrower" hidden="false" id="51d8-e575-e6bd-599a" type="selectionEntry" targetId="83e0-b2fb-f33d-c8f7"/>
+              </entryLinks>
             </entryLink>
             <entryLink import="true" name="Combat Knife" hidden="false" id="05fc-18f9-7e06-0586" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
           </entryLinks>
@@ -615,11 +622,11 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="War Dogs - Veteran Warriors" hidden="false" id="8dd6-d08c-2f37-93e0">
+    <selectionEntry type="unit" import="true" name="Knights - Squires" hidden="false" id="8dd6-d08c-2f37-93e0">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="War Dog Veteran" hidden="false" id="f805-5342-a80a-9b2d">
+        <selectionEntry type="upgrade" import="true" name="Squire" hidden="false" id="f805-5342-a80a-9b2d">
           <profiles>
-            <profile name="War Dog Veteran Warrior" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="6f29-a853-7993-4451">
+            <profile name="Squire" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="6f29-a853-7993-4451">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
@@ -653,16 +660,16 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="His True Sons" hidden="false" id="e486-6957-fdc6-234a" targetId="781a-0a70-79cd-276d" primary="false"/>
-        <categoryLink name="War Dogs" hidden="false" id="1818-b603-2054-c7fd" targetId="9a88-260d-af6a-898f" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="fa19-52cb-58e8-2ca2" targetId="0dfd-0bc5-60ba-673c" primary="false"/>
         <categoryLink name="Human" hidden="false" id="dc06-b793-abac-7cd1" targetId="0052-4108-3b9f-e544" primary="false"/>
-        <categoryLink targetId="6649-8286-d076-2067" id="c1a7-5f03-7360-f6f1" primary="true" name="Elites"/>
+        <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="4bdf-fbd4-be85-ef7b" primary="false" name="Knights"/>
+        <categoryLink targetId="2ec6-998d-34df-5c47" id="c6b6-bd38-bfc9-7797" primary="true" name="Troops"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
       </costs>
       <profiles>
-        <profile name="Tempered by War" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4e32-f2cd-48c6-b843">
+        <profile name="Trained by the Elite" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4e32-f2cd-48c6-b843">
           <characteristics>
             <characteristic name="Description" typeId="5cee-5283-c95d-c323">Improve the Weapon Skill characteristics of all of this unit&apos;s Melee Weapons by 1 (to a maximum of 3+).</characteristic>
           </characteristics>
@@ -800,10 +807,10 @@
                   <profiles>
                     <profile name="Mace of Damnation" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="3ce0-6892-fafb-d282">
                       <characteristics>
-                        <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                        <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-2</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
                         <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
                       </characteristics>
@@ -834,18 +841,15 @@
                   <profiles>
                     <profile name="Greatsword of the One True God" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="b450-2143-048e-4c81">
                       <characteristics>
-                        <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">D3</characteristic>
+                        <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">8</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-2</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Rending</characteristic>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <infoLinks>
-                    <infoLink name="Rending" id="462f-63e1-87ba-3725" hidden="false" type="rule" targetId="da88-7879-acc8-bc2e"/>
-                  </infoLinks>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
                   </costs>
@@ -1230,11 +1234,11 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="07b0-5090-b004-df5e" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Knights - Knight Commander" hidden="false" id="77a0-1a38-3e74-fada">
+    <selectionEntry type="unit" import="true" name="Knights - Knight Captain" hidden="false" id="77a0-1a38-3e74-fada">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Knight Commander" hidden="false" id="1316-d08c-04b7-307c">
+        <selectionEntry type="model" import="true" name="Knight Captain" hidden="false" id="1316-d08c-04b7-307c">
           <profiles>
-            <profile name="Knight Commander" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="589c-8772-8a1d-7edb">
+            <profile name="Knight Captain" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="589c-8772-8a1d-7edb">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">7</characteristic>
@@ -1249,8 +1253,7 @@
               <characteristics>
                 <characteristic name="Description" typeId="5cee-5283-c95d-c323">While this unit is present on the battlefield (including if it is embarked within Transport), you may select any of the abilities from the Divine Mandates ability to use whenever their description states they can be used.
 
-Additionally, while this model is not destroyed, your Force Rule is active.
-</characteristic>
+Additionally, while this model is not destroyed, your Force Rule is active.</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="append" value="**Frontline Assault Force:**
@@ -1307,7 +1310,7 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
             </profile>
             <profile name="Inspiring Aura" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="a6b9-de21-8044-9c51">
               <characteristics>
-                <characteristic name="Description" typeId="5cee-5283-c95d-c323">All friendly Infantry Units within 6&quot; of this model can reroll failed Mental Fortitude Tests, reroll failed Close Combat rolls, and reroll failed Save rolls of 1.</characteristic>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">All friendly Infantry models within 6&quot; of this model can reroll failed Mental Fortitude Tests, reroll failed Close Combat rolls, and reroll failed Save rolls of 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1444,7 +1447,7 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
                     </profile>
                     <profile name="FM Radio" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="6658-6f59-bec6-4790">
                       <characteristics>
-                        <characteristic name="Description" typeId="5cee-5283-c95d-c323">While this model is present in it&apos;s unit, increase the Target range of Divine Mandates by 6&quot;. </characteristic>
+                        <characteristic name="Description" typeId="5cee-5283-c95d-c323">While this model is present in it&apos;s unit, increase the Target range of Divine Mandates by 6&quot;.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1502,7 +1505,7 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
                     </profile>
                     <profile name="Ancient Tapestry" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="d922-2ca4-dfd0-4ed0">
                       <characteristics>
-                        <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Command Phase, select one visible friendly unit within 12&quot;, that unit receives GLEE until the end of your turn. </characteristic>
+                        <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Command Phase, select one visible friendly unit within 12&quot;, that unit receives GLEE until the end of your turn.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1564,11 +1567,11 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Knights - Squire" hidden="false" id="bb24-4714-5289-4ec1">
+    <selectionEntry type="unit" import="true" name="Knights - Junior Squire" hidden="false" id="bb24-4714-5289-4ec1">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Squire" hidden="false" id="a110-bb47-984f-6994">
+        <selectionEntry type="model" import="true" name="Junior Squire" hidden="false" id="a110-bb47-984f-6994">
           <profiles>
-            <profile name="Squire" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="d1a2-6d8d-0d54-3de2">
+            <profile name="Junior Squire" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="d1a2-6d8d-0d54-3de2">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
                 <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
@@ -1579,7 +1582,7 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
-            <profile name="Knight Attendant" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="3848-ed55-18cf-c036">
+            <profile name="Earn thy Place" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="3848-ed55-18cf-c036">
               <characteristics>
                 <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per turn, this unit may perform one of the following actions:
 
@@ -1827,7 +1830,7 @@ Knights Brothers</description>
             </profile>
             <profile name="Blitzkrieg" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="bfa0-80ed-6924-e868">
               <characteristics>
-                <characteristic name="Description" typeId="5cee-5283-c95d-c323">During your or your opponent&apos;s Fight Phase, after this unit has allocated all of its attacks, if this unit destroyed at least one enemy model, it may make a move of 6&quot; in it&apos;s Front direction.</characteristic>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">During your or your opponent&apos;s Fight Phase, after this unit has allocated all of its attacks, if this unit destroyed at least one enemy model, it may make a move of 6&quot; in it&apos;s Front direction. If this unit must pass through an enemy model to finish that move, this unit must make a Desperate Escape test.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1867,11 +1870,18 @@ Knights Brothers</description>
     <categoryEntry name="Fast Attack" id="9472-8d6f-293d-16ab" hidden="false">
       <rules>
         <rule name="Quick Turn" id="c1d1-d3e7-459b-b523" hidden="false">
-          <description>Fast Attack vehicles are able to perform a Quick Turn during their movement phase. To perform a Quick Turn, a vehicle must perform a movement a number of inches below it&apos;s total Movement characteristic. It may then pivot in any direction and perform a movement equal to or less than the remainder of their total Movement characteristic. </description>
+          <description>Vehicles with this rule are able to perform a Quick Turn during their movement phase. To perform a Quick Turn, a vehicle must perform a movement a number of inches below it&apos;s total Movement characteristic. It may then pivot in any direction and perform a movement equal to or less than the remainder of their total Movement characteristic.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink name="Vehicle" id="9c82-d2cb-7a40-1488" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
+      </infoLinks>
     </categoryEntry>
-    <categoryEntry name="Heavy Support" id="5365-843b-d1fb-49f0" hidden="false"/>
+    <categoryEntry name="Heavy Support" id="5365-843b-d1fb-49f0" hidden="false">
+      <infoLinks>
+        <infoLink name="Vehicle" id="31a7-88c7-ddde-5441" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <sharedRules>
     <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
@@ -1949,11 +1959,25 @@ Knights Brothers</description>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eba0-8512-e578-5399"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="eba0-8512-e578-5399">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink name="Heavy Support" hidden="false" id="a14c-21fc-1213-c31e" targetId="5365-843b-d1fb-49f0">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b24-f0e6-4509-bc4f"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="2b24-f0e6-4509-bc4f">
+              <repeats>
+                <repeat value="2000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>

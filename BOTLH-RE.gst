@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="37" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="38" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -285,4 +285,21 @@ If your unit&apos;s weapon has the Anti-Vehicle keyword, a roll of x automatical
   <publications>
     <publication name="Github" id="2927-a797-ec12-86bf" hidden="false" publisherUrl="https://github.com/WoDoSDF107/BOTLH-RE"/>
   </publications>
+  <forceEntries>
+    <forceEntry name="Army Roster" id="4e36-980c-d8ef-45ca" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="8908-7ff1-f866-8d42" targetId="13d8-826b-b842-d554"/>
+        <categoryLink name="Epic Hero" hidden="false" id="c9c2-bf77-2b4b-190c" targetId="5f21-8748-809b-03d9"/>
+        <categoryLink name="Character" hidden="false" id="7703-582e-14aa-6156" targetId="5b8f-4c9b-9026-374c"/>
+        <categoryLink name="Infantry" hidden="false" id="7dc5-cfbd-fe89-7b84" targetId="0dfd-0bc5-60ba-673c"/>
+        <categoryLink name="Swarm" hidden="false" id="ac33-5a5d-a287-e3c5" targetId="2749-d422-0662-482c"/>
+        <categoryLink name="Vehicle" hidden="false" id="d0f8-4a66-0d7c-ea8d" targetId="1fd3-1951-3be2-5a2d"/>
+        <categoryLink name="Mounted" hidden="false" id="0243-81bd-ecc5-7b59" targetId="80a0-870d-cbc8-089e"/>
+        <categoryLink name="Fortification" hidden="false" id="1431-24d9-dc62-ed8a" targetId="d294-2dd0-8be8-a024"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" scope="b508-b2ed-d9b7-1028" affects="self.entries.forces.recursive"/>
+      </modifiers>
+    </forceEntry>
+  </forceEntries>
 </gameSystem>

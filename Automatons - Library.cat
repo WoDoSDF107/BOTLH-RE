@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="44f3-7dc2-b2b0-fe8b" name="Automatons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="44f3-7dc2-b2b0-fe8b" name="Automatons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="33" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Fetch, Decode, Execute" id="951e-0d6a-b6c5-1f9b" hidden="false">
       <description>Once per phase, when an Automaton unit with this rule makes an attack against an enemy unit, they may choose to use this rule. 
