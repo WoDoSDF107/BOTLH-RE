@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Range" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -94,7 +94,7 @@
                     <characteristic name="Range" typeId="910b-bab0-6061-64b0">36&quot;</characteristic>
                     <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">1</characteristic>
                     <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
-                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">3</characteristic>
                     <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
                     <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
                     <characteristic name="Keywords" typeId="34fe-41f9-008b-920f"/>
@@ -145,85 +145,6 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Melee Weapons" id="f717-f8ce-8155-6b19" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Machete" hidden="false" id="1d09-1c25-df44-1edd">
-              <profiles>
-                <profile name="Machete" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="e65d-703b-9361-579a">
-                  <characteristics>
-                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
-                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
-                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
-                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
-                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="1"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Mace" hidden="false" id="a614-67c9-ef91-e384">
-              <profiles>
-                <profile name="Mace" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="4c0e-73c7-6c44-2c6f">
-                  <characteristics>
-                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
-                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
-                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
-                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
-                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="4"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Twin Axes" hidden="false" id="42ce-1675-6ad3-f401">
-              <profiles>
-                <profile name="Twin Axes" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="dce7-a1aa-4a17-dd8a">
-                  <characteristics>
-                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
-                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
-                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
-                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
-                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">CC Modifier 1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="4"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="CC Modifier" id="ad6d-c5ca-661b-e815" hidden="false" type="rule" targetId="1f11-635b-21fb-f93c">
-                  <modifiers>
-                    <modifier type="append" value="1" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Bastard Sword" hidden="false" id="f945-9318-1a49-a2ff">
-              <profiles>
-                <profile name="Bastard Sword" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="b7a6-51b1-a22d-5c33">
-                  <characteristics>
-                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
-                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
-                    <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
-                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
-                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="3"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -475,18 +396,18 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="be46-af35-4a44-ac1f">
+    <selectionEntry type="unit" import="true" name="Heretics - Treachery of Heretics" hidden="false" id="be46-af35-4a44-ac1f">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="War Dog" hidden="false" id="00f8-7292-1962-55b6">
+        <selectionEntry type="upgrade" import="true" name="Heretic" hidden="false" id="00f8-7292-1962-55b6">
           <profiles>
-            <profile name="War Dog" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="ba8f-6764-0826-384f">
+            <profile name="Heretic" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="ba8f-6764-0826-384f">
               <characteristics>
                 <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">2</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">7+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
               </characteristics>
             </profile>
@@ -495,29 +416,50 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bf4-b034-bbf8-85c3"/>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="a067-82cb-221f-4ca8"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Melee Weapons" hidden="false" id="2c38-b1d0-e51d-3428" type="selectionEntryGroup" targetId="f717-f8ce-8155-6b19">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fac3-419a-f786-d9c4"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a79b-e06c-2a28-703d"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="2"/>
           </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Barbed Cudgel" hidden="false" id="d9c6-8522-5daa-4d11">
+              <profiles>
+                <profile name="Barbed Cudgel" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="8486-a080-2e4a-a19b">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">6+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="959b-ec8a-ceb5-6286"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="1"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="781a-0a70-79cd-276d" id="ac5d-b9d4-0e81-d962" primary="false" name="His True Sons"/>
-        <categoryLink targetId="9a88-260d-af6a-898f" id="bfe0-6883-29bb-a768" primary="false" name="War Dogs"/>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="a1c3-5030-f14b-8f07" primary="false" name="Infantry"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="0029-8375-d151-3ed8" primary="false" name="Human"/>
-        <categoryLink targetId="2ec6-998d-34df-5c47" id="ef0c-20df-f663-103d" primary="true" name="Troops"/>
+        <categoryLink targetId="2f24-8fb8-a22d-6992" id="afb6-e50e-8be3-62ff" primary="true" name="Horde"/>
+        <categoryLink targetId="7728-48df-94dc-579a" id="392f-ec2f-ad2c-4687" primary="false" name="Heretics"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
       </costs>
+      <profiles>
+        <profile name="Burst of Wrathful Panic" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="b1f4-2638-2b88-ec61">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the end of your opponent&apos;s Shooting Phase, if this unit was selected as the target of a Shooting attack and lost one or more models as a result, this unit may make a movement of 6&quot;, as long as that movement ends as close to the unit that targeted it as possible. This unit cannot end that move within Engagement Range of an enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Veteran Marksmen" hidden="false" id="6448-0874-2cf6-6f92">
       <selectionEntries>
@@ -862,7 +804,7 @@
                   <profiles>
                     <profile name="Invulnerable Save" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4357-0306-d076-ec61">
                       <characteristics>
-                        <characteristic name="Description" typeId="5cee-5283-c95d-c323">4+</characteristic>
+                        <characteristic name="Description" typeId="5cee-5283-c95d-c323">This model has an Invulnerable Save of 4+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -931,9 +873,9 @@
                       <characteristics>
                         <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
-                        <characteristic name="S" typeId="e681-af26-3aee-d26b">18</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-4</characteristic>
-                        <characteristic name="D" typeId="6930-1108-fb51-4fa6">5</characteristic>
+                        <characteristic name="S" typeId="e681-af26-3aee-d26b">10</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
+                        <characteristic name="D" typeId="6930-1108-fb51-4fa6">4</characteristic>
                         <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
                       </characteristics>
                     </profile>
@@ -1008,10 +950,93 @@
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Pistol" id="b6ab-4b7f-5506-b648" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                    <infoLink name="Torrent" id="fcdc-f60a-4251-2a11" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Squire Weapons" id="f717-f8ce-8155-6b19" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Machete" hidden="false" id="1d09-1c25-df44-1edd">
+              <profiles>
+                <profile name="Machete" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="e65d-703b-9361-579a">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="1"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mace" hidden="false" id="a614-67c9-ef91-e384">
+              <profiles>
+                <profile name="Mace" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="4c0e-73c7-6c44-2c6f">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin Axes" hidden="false" id="42ce-1675-6ad3-f401">
+              <profiles>
+                <profile name="Twin Axes" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="dce7-a1aa-4a17-dd8a">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">CC Modifier 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="4"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="CC Modifier" id="ad6d-c5ca-661b-e815" hidden="false" type="rule" targetId="1f11-635b-21fb-f93c">
+                  <modifiers>
+                    <modifier type="append" value="1" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bastard Sword" hidden="false" id="f945-9318-1a49-a2ff">
+              <profiles>
+                <profile name="Bastard Sword" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="b7a6-51b1-a22d-5c33">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -1026,7 +1051,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">4</characteristic>
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
               </characteristics>
             </profile>
@@ -1110,7 +1135,7 @@
                 <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">10</characteristic>
                 <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">8</characteristic>
                 <characteristic name="SR" typeId="04c5-b2ed-5c10-cd42">3+</characteristic>
-                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">9</characteristic>
+                <characteristic name="W" typeId="8e7c-bc56-bb7f-c2b4">12</characteristic>
                 <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">3</characteristic>
                 <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
                 <characteristic name="CC" typeId="6977-91de-ecff-307e">0</characteristic>
@@ -1154,7 +1179,7 @@
       <profiles>
         <profile name="Thundering War Weapon" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="f29e-4868-795a-6d57">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Enemy units successfully damaged by this model&apos;s Main Armament receive SHOCK until the start of your next turn.</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Enemy units successfully damaged by this model&apos;s Main Armament must perform a Composure Test. If they fail, that unit receives SHOCK until the start of your next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1226,6 +1251,7 @@
         <categoryLink targetId="781a-0a70-79cd-276d" id="ae7d-038b-26fd-8d1a" primary="false" name="His True Sons"/>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="57b8-e54c-9def-75f6" primary="false" name="Infantry"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="7f91-f4cd-6cb9-4d95" primary="false" name="Human"/>
+        <categoryLink targetId="c0c1-dcd1-4983-28aa" id="3009-eb16-4e51-16ba" primary="false" name="Knights Seraphim"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="40"/>
@@ -1245,7 +1271,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">9</characteristic>
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
               </characteristics>
             </profile>
@@ -1357,16 +1383,20 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e248-ef80-06b1-91c1-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e248-ef80-06b1-91c1-max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="94e3-ff49-273a-5079" id="5b75-4404-32b3-96e4" primary="true" name="High Command"/>
+            <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="19f8-518e-e406-ab85" primary="false" name="Knights"/>
+            <categoryLink targetId="781a-0a70-79cd-276d" id="cb72-a824-882b-502f" primary="false" name="His True Sons"/>
+            <categoryLink targetId="0052-4108-3b9f-e544" id="6188-af00-9c89-2973" primary="false" name="Human"/>
+            <categoryLink targetId="5b8f-4c9b-9026-374c" id="a702-7168-2762-8863" primary="false" name="Character"/>
+            <categoryLink targetId="0dfd-0bc5-60ba-673c" id="e59c-fa91-0168-f60b" primary="false" name="Infantry"/>
+            <categoryLink targetId="33ee-b756-5da0-5503" id="1af9-5b25-4646-2be9" primary="false" name="Leader"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="94e3-ff49-273a-5079" id="89ad-c873-703f-133c" primary="true" name="High Command"/>
-        <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="4def-85d9-7b96-9ed6" primary="false" name="Knights"/>
-        <categoryLink targetId="781a-0a70-79cd-276d" id="c57f-7d9a-fc35-d3f7" primary="false" name="His True Sons"/>
-        <categoryLink targetId="33ee-b756-5da0-5503" id="f277-29e5-ff36-9616" primary="false" name="Leader"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="3201-6feb-e6f0-82fe" primary="false" name="Human"/>
-        <categoryLink targetId="5b8f-4c9b-9026-374c" id="34b6-e62d-1d1e-570d" primary="false" name="Character"/>
-        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="654f-29be-d575-88fe" primary="false" name="Infantry"/>
+        <categoryLink targetId="94e3-ff49-273a-5079" id="e351-d23f-4d3c-a241" primary="true" name="High Command"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="170"/>
@@ -1454,6 +1484,9 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
                   <categoryLinks>
                     <categoryLink targetId="781a-0a70-79cd-276d" id="f6f3-0791-fde3-4224" primary="false" name="His True Sons"/>
                     <categoryLink targetId="9a88-260d-af6a-898f" id="8300-368b-f976-cdee" primary="false" name="War Dogs"/>
+                    <categoryLink targetId="0052-4108-3b9f-e544" id="e3c1-00aa-d6e6-61a1" primary="false" name="Human"/>
+                    <categoryLink targetId="5b8f-4c9b-9026-374c" id="0487-35fa-a8f5-58a8" primary="false" name="Character"/>
+                    <categoryLink targetId="0dfd-0bc5-60ba-673c" id="e1d3-1441-85bd-4e31" primary="false" name="Infantry"/>
                   </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
@@ -1489,6 +1522,13 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed35-1701-ff91-81f5-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed35-1701-ff91-81f5-max"/>
                   </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="5b8f-4c9b-9026-374c" id="ef8a-7252-e587-44a7" primary="false" name="Character"/>
+                    <categoryLink targetId="0dfd-0bc5-60ba-673c" id="8869-d8de-3baa-7f09" primary="false" name="Infantry"/>
+                    <categoryLink targetId="0052-4108-3b9f-e544" id="ad53-e434-0bdd-157b" primary="false" name="Human"/>
+                    <categoryLink targetId="781a-0a70-79cd-276d" id="abca-a2b0-d01d-c5ed" primary="false" name="His True Sons"/>
+                    <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="89f0-3e12-c205-6777" primary="false" name="Knights"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Flag Bearer" hidden="false" id="5d33-5900-78df-811d">
                   <profiles>
@@ -1527,6 +1567,13 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9360-5d7c-4aed-ad26-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9360-5d7c-4aed-ad26-max"/>
                   </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="5b8f-4c9b-9026-374c" id="db46-fa59-fff8-1f47" primary="false" name="Character"/>
+                    <categoryLink targetId="0dfd-0bc5-60ba-673c" id="0218-f25b-fcfd-d7dc" primary="false" name="Infantry"/>
+                    <categoryLink targetId="0052-4108-3b9f-e544" id="5bf2-a25a-8473-1575" primary="false" name="Human"/>
+                    <categoryLink targetId="781a-0a70-79cd-276d" id="a279-f5f2-cfc7-8ff3" primary="false" name="His True Sons"/>
+                    <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="2c92-8574-723a-b03c" primary="false" name="Knights"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Force Field Technician" hidden="false" id="6649-4f49-277f-d624">
                   <profiles>
@@ -1554,6 +1601,13 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="425d-d810-e964-045c-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="425d-d810-e964-045c-max"/>
                   </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="9a88-260d-af6a-898f" id="08a2-8e48-3560-db14" primary="false" name="War Dogs"/>
+                    <categoryLink targetId="0052-4108-3b9f-e544" id="5edf-989b-39e6-a5f9" primary="false" name="Human"/>
+                    <categoryLink targetId="5b8f-4c9b-9026-374c" id="9ced-afbf-d26e-1165" primary="false" name="Character"/>
+                    <categoryLink targetId="781a-0a70-79cd-276d" id="5241-8099-81da-8856" primary="false" name="His True Sons"/>
+                    <categoryLink targetId="0dfd-0bc5-60ba-673c" id="c2a9-0039-48be-03f6" primary="false" name="Infantry"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -1761,7 +1815,7 @@ Knights Brothers</description>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="70"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="War Dogs - M24 Chaffee" hidden="false" id="010b-26e6-29bc-c74c">
+    <selectionEntry type="unit" import="true" name="War Dogs - M24 Chaffee" hidden="false" id="010b-26e6-29bc-c74c">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="M24 Chaffee" hidden="false" id="bd06-9f8e-ef61-0cf9">
           <profiles>
@@ -1788,6 +1842,10 @@ Knights Brothers</description>
               </constraints>
             </entryLink>
           </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35ba-49e3-e26e-1cc2-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35ba-49e3-e26e-1cc2-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -1858,6 +1916,324 @@ Knights Brothers</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="War Dogs - Sheepdog" hidden="false" id="804a-21bf-0e3f-d4d8">
+      <categoryLinks>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="acee-8135-c8b0-31f6" primary="false" name="Infantry"/>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="3cb2-a7fb-a3b1-f81a" primary="false" name="Character"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="ed73-5b22-6db9-df8d" primary="false" name="Human"/>
+        <categoryLink targetId="33ee-b756-5da0-5503" id="3914-8081-fe70-8c4b" primary="false" name="Leader"/>
+        <categoryLink targetId="9a88-260d-af6a-898f" id="f528-4ce1-f0bd-8988" primary="false" name="War Dogs"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="985d-5805-9d00-379a" primary="false" name="His True Sons"/>
+        <categoryLink targetId="2634-5885-dd62-4339" id="b36c-323e-87fa-0578" primary="true" name="Support"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="War Dog" hidden="false" id="0ade-6cb6-535c-a7d4">
+          <profiles>
+            <profile name="War Dog Sheepdog" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="7177-f721-fc7d-5da1">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">6+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f246-f6ad-8c6a-d0e3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f246-f6ad-8c6a-d0e3-max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ranged Weapons" hidden="false" id="967a-f49d-1373-c6ae" type="selectionEntryGroup" targetId="45e6-f1ba-37c6-c833">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9683-efd6-47bf-706b"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fccc-08ce-3d55-7ff8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Combat Knife" hidden="false" id="7422-d69e-8bf2-f09f" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
+      </costs>
+      <profiles>
+        <profile name="Guide the Herd" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="9665-3c33-8a1e-7bbd">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">When performing a Composure Test, this unit may reroll one D6. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="fa9c-39b6-0eaa-5818">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Knight Sergeant" hidden="false" id="bac6-e379-510f-4f2e">
+          <profiles>
+            <profile name="Knight Sergeant" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="e091-d076-9188-a1b8">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">2</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">5</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="27ea-34d0-0c07-163d" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Main Hand" hidden="false" id="a128-3ff4-3596-a1aa" type="selectionEntryGroup" targetId="da81-c21c-49af-fba4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2cf-e9a9-1067-d4cc"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abf5-188e-9e40-e35e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Off-Hand" hidden="false" id="03bc-8c04-6c87-0267" type="selectionEntryGroup" targetId="d819-0abb-37df-1709">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ed3-e8f1-eca6-3b63"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="92a0-b2ed-bc9f-6077" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8db8-c00d-a06d-b6dd"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e434-04aa-fb20-ed23-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e434-04aa-fb20-ed23-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Lifetime of Warfare" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="700f-6460-a9a5-0d28">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per battle, when this unit is targeted by a Divine Mandate, reduce the MP cost of that Divine Mandate by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sworn Hatred" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="ab27-8ccb-fb4f-4400">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">At the start of your Shooting Phase, select one visible enemy unit within 18&quot;, that unit is this unit&apos;s Target Infidel. Weapons equipped by models in this unit receive +1 to their Strength Characteristic while targeting it&apos;s Target Infidel. Each time this unit&apos;s Target Infidel is destroyed, select one new enemy unit to be this unit&apos;s Target Infidel. This ability can be used even if this unit is embarked within a Transport.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="110"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2c3b-34b8-b79a-afec" id="5c60-6237-faf9-4a12" primary="true" name="Command"/>
+        <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="cedf-ee7e-9bfb-3f6b" primary="false" name="Knights"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="e30f-aa6d-6e6c-630a" primary="false" name="His True Sons"/>
+        <categoryLink targetId="33ee-b756-5da0-5503" id="2830-ce65-4927-6c27" primary="false" name="Leader"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="81da-cca5-7b8f-acc4" primary="false" name="Human"/>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="c822-5fef-e9bf-5d78" primary="false" name="Character"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Divine Mandates List" hidden="false" id="a52d-fe9f-f708-0ec8" subType="crew">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Frontline Assault Force" hidden="false" id="10c1-fc35-f09c-b7c4">
+          <profiles>
+            <profile name="Frontline Assault Force" typeId="1b5f-730f-9148-226b" typeName="Divine Mandates" hidden="false" id="c619-4a3e-e4dd-c1d5">
+              <characteristics>
+                <characteristic name="Description" typeId="3d14-93cc-4e82-9d0e">**Frontline Assault Force**
+
+
+Back to the Front (1 MP) - 
+WHEN: Any phase during your turn except for your Command Phase.
+TARGET: Any War Dogs Infantry Unit within 24&quot; of your High Command unit.
+EFFECT: The target unit may make a normal move of D6+2&quot; in any direction. The range of that movement cannot exceed the Movement characteristic of the target unit.
+RESTRICTIONS: The target unit cannot be within, or end a move within, Engagement Range of an enemy unit.
+
+
+
+
+Lay Suppressing Fire (1 MP) - 
+WHEN: Start of your Shooting Phase
+TARGET: Any visible Enemy Unit within 12&quot; of your High Command unit
+EFFECT: Until the end of your turn, the next time that unit is targeted by one of your units with an attack made by Ranged Weapons, if one or more attacks made by that unit were successful, that enemy unit receives SHOCK until the end of their turn.
+RESTRICTIONS: The target unit cannot be within Engagement Range of a friendly unit.
+
+
+
+
+Flank and Surround (2 MP) - 
+When: The Reinforcements step of the Enemy Movement Phase
+TARGET: Any friendly unit within Strategic Reserves
+EFFECT: That unit receives the Deep Strike rule until it is deployed on the battlefield, and can be set up as that rule declares.
+RESTRICTIONS: That unit must be set up within 3&quot; of the broad side of the battlefield edge. The usual Deep Strike restrictions also apply.
+
+
+
+
+Eyes on the Objective (1 MP) -
+When: Your Command Phase
+TARGET: One Objective marker within 16&quot; of your High Command unit
+EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit rolls of 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights - Archangel Michael the Taxiarch" hidden="false" id="3850-48ad-2a8c-1c8a">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Michael the Taxiarch" hidden="false" id="9dea-ad62-03bb-4ecb">
+          <profiles>
+            <profile name="Michael the Taxiarch" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="04a0-b452-98d9-69d6">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">8</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">2+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">10</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">15</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">15</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Heavenly Commander" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="e0bf-1b21-9434-d12e">
+              <characteristics>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">While this unit is present on the battlefield (including if it is embarked within Transport), you may select any of the abilities from the Divine Mandates ability to use whenever their description states they can be used.
+
+Additionally, while this model is not destroyed, your Force Rule is active.</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="append" value="**Frontline Assault Force:**
+
+All units are eligible to Shoot and Charge in a turn in which they advanced. Additionally, if a unit Remained Stationary, they receive an improvement of 1 to their Save Roll characteristic (to a maximum of 3+)." field="5cee-5283-c95d-c323" join="
+
+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="06fc-0e49-5845-7f3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Divine Mandates" typeId="1b5f-730f-9148-226b" typeName="Divine Mandates" hidden="false" id="aa93-b236-3f2b-4ece">
+              <characteristics>
+                <characteristic name="Description" typeId="3d14-93cc-4e82-9d0e">While this unit is present on the battlefield (including if it is embarked within Transport), you may select any of the following abilities to use whenever their description states they can be used.</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="append" value="**Frontline Assault Force**
+
+Back to the Front (1 MP) - 
+WHEN: Any phase during your turn except for your Command Phase.
+TARGET: Any War Dogs Infantry Unit within 24&quot; of your High Command unit.
+EFFECT: The target unit may make a normal move of D6+2&quot; in any direction. The range of that movement cannot exceed the Movement characteristic of the target unit.
+RESTRICTIONS: The target unit cannot be within, or end a move within, Engagement Range of an enemy unit.
+
+
+Lay Suppressing Fire (1 MP) - 
+WHEN: Start of your Shooting Phase
+TARGET: Any visible Enemy Unit within 12&quot; of your High Command unit
+EFFECT: Until the end of your turn, the next time that unit is targeted by one of your units with an attack made by Ranged Weapons, if one or more attacks made by that unit were successful, that enemy unit receives SHOCK until the end of their turn.
+RESTRICTIONS: The target unit cannot be within Engagement Range of a friendly unit.
+
+
+Flank and Surround (2 MP) - 
+When: The Reinforcements step of the Enemy Movement Phase
+TARGET: Any friendly unit within Strategic Reserves
+EFFECT: That unit receives the Deep Strike rule until it is deployed on the battlefield, and can be set up as that rule declares.
+RESTRICTIONS: That unit must be set up within 3&quot; of the broad side of the battlefield edge. The usual Deep Strike restrictions also apply.
+
+
+Eyes on the Objective (1 MP) -
+When: Your Command Phase
+TARGET: One Objective marker within 16&quot; of your High Command unit
+EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit rolls of 1.
+" field="3d14-93cc-4e82-9d0e" join="
+
+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="06fc-0e49-5845-7f3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Chosen Leader of Heaven&apos;s Armies" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="41b1-266c-e423-d339">
+              <characteristics>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per turn, you may select one &quot;The Taxiarch&quot; ability.</characteristic>
+              </characteristics>
+              <attributes>
+                <attribute name="Green Flavour" typeId="42c0-6238-d350-8bdd">Cleave</attribute>
+              </attributes>
+            </profile>
+            <profile name="Fear Inducing Presence" typeId="812e-79df-c357-fc96" typeName="The Taxiarch" hidden="false" id="f006-ec79-fe60-a8f0">
+              <characteristics>
+                <characteristic name="Description" typeId="6b64-fa35-e83f-9a6d">At the start of your Shooting Phase, select visible one enemy unit within 12&quot;. That unit must perform a Composure test, if the target&apos;s total Close Combat value is less than that of this unit, subtract 2 from the total of that test. If they fail that test, apply PANIC until the start of your turn.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Rejuvenating Faith" typeId="812e-79df-c357-fc96" typeName="The Taxiarch" hidden="false" id="0939-8a70-0619-98c9">
+              <characteristics>
+                <characteristic name="Description" typeId="6b64-fa35-e83f-9a6d">During your Command Phase, you may select this ability as active. Select one visible Knights unit within 12&quot; of this model below it&apos;s Starting Strength. That unit must perform a Composure Test, adding 3 to the result if that unit within 6&quot; of this model, if it succeeds, that unit regains one lost model on its full total wounds.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="" typeId="812e-79df-c357-fc96" typeName="The Taxiarch" hidden="false" id="ad84-1e1e-4273-5d6d">
+              <characteristics>
+                <characteristic name="Description" typeId="6b64-fa35-e83f-9a6d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="211a-5c18-9bf0-64d7-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="211a-5c18-9bf0-64d7-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Righteous Fury" hidden="false" id="7ef9-52a5-daaf-2210">
+              <profiles>
+                <profile name="Righteous Fury" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="990d-996e-18fd-33b4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="910b-bab0-6061-64b0"/>
+                    <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6"/>
+                    <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75"/>
+                    <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37"/>
+                    <characteristic name="AP" typeId="782f-75ab-b021-e58a"/>
+                    <characteristic name="D" typeId="c860-c282-c3a0-93e0"/>
+                    <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Pistol</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0bf-473a-f640-af87-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0bf-473a-f640-af87-max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Pistol" id="4be2-45c1-7e7d-840e" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="High Command" hidden="false" id="efe8-1108-5a60-ba48" targetId="94e3-ff49-273a-5079" primary="true"/>
+        <categoryLink name="Knights" hidden="false" id="f2cb-e1da-5286-1eaa" targetId="1af4-a8fd-ccdb-4abd" primary="false"/>
+        <categoryLink name="His True Sons" hidden="false" id="371a-9679-8040-c221" targetId="781a-0a70-79cd-276d" primary="false"/>
+        <categoryLink name="Leader" hidden="false" id="d3da-4473-49f7-5846" targetId="33ee-b756-5da0-5503" primary="false"/>
+        <categoryLink name="Human" hidden="false" id="0eb0-72c4-47e7-4e6d" targetId="0052-4108-3b9f-e544" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="b377-adc5-34e7-6d16" targetId="5b8f-4c9b-9026-374c" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="53b2-9a13-eb3c-73fd" targetId="0dfd-0bc5-60ba-673c" primary="false"/>
+        <categoryLink targetId="5f21-8748-809b-03d9" id="1572-7d35-890c-dab0" primary="false" name="Epic Hero"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="350"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="COLD HEART" id="2a4a-584a-91a7-1c4e" hidden="false" type="rule" targetId="3742-1bf9-a0f8-0b11"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="War Dogs" id="9a88-260d-af6a-898f" hidden="false"/>
@@ -1877,11 +2253,11 @@ Knights Brothers</description>
         <infoLink name="Vehicle" id="9c82-d2cb-7a40-1488" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry name="Heavy Support" id="5365-843b-d1fb-49f0" hidden="false">
-      <infoLinks>
-        <infoLink name="Vehicle" id="31a7-88c7-ddde-5441" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
-      </infoLinks>
-    </categoryEntry>
+    <categoryEntry name="Heavy Support" id="5365-843b-d1fb-49f0" hidden="false"/>
+    <categoryEntry name="Heretics" id="7728-48df-94dc-579a" hidden="false"/>
+    <categoryEntry name="Horde" id="2f24-8fb8-a22d-6992" hidden="false"/>
+    <categoryEntry name="Command" id="2c3b-34b8-b79a-afec" hidden="false"/>
+    <categoryEntry name="Knights Seraphim" id="c0c1-dcd1-4983-28aa" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
@@ -1918,6 +2294,18 @@ Knights Brothers</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc0-4671-1aa6-6c7e"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Command" hidden="false" id="81aa-11ed-5628-6e68" targetId="2c3b-34b8-b79a-afec">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a754-2e82-6294-804e"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="a754-2e82-6294-804e">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink name="Troops" hidden="false" id="04a2-3396-6a1c-a819" targetId="2ec6-998d-34df-5c47">
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="48c8-fb26-7c50-345b"/>
@@ -1931,9 +2319,21 @@ Knights Brothers</description>
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="0383-034e-0728-7440" targetId="6649-8286-d076-2067">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2252-dea3-a71f-0bba"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="2252-dea3-a71f-0bba">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink name="Support" hidden="false" id="089e-2849-b653-28bc" targetId="2634-5885-dd62-4339">
           <constraints>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="1a68-1774-bf57-cfc1"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1a68-1774-bf57-cfc1"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="1a68-1774-bf57-cfc1">
@@ -1943,12 +2343,12 @@ Knights Brothers</description>
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="0383-034e-0728-7440" targetId="6649-8286-d076-2067">
+        <categoryLink name="Horde" hidden="false" id="dc94-20f7-5a8a-0f26" targetId="2f24-8fb8-a22d-6992">
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2252-dea3-a71f-0bba"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e158-d609-a569-294d"/>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="1" field="2252-dea3-a71f-0bba">
+            <modifier type="increment" value="1" field="e158-d609-a569-294d">
               <repeats>
                 <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
@@ -1980,12 +2380,20 @@ Knights Brothers</description>
           </modifiers>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" scope="primary-catalogue" affects="self.entries.forces.recursive.c0c1-dcd1-4983-28aa"/>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <profileTypes>
     <profileType name="Divine Mandates" id="1b5f-730f-9148-226b" hidden="false">
       <characteristicTypes>
         <characteristicType name="Description" id="3d14-93cc-4e82-9d0e"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="The Taxiarch" id="812e-79df-c357-fc96" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Description" id="6b64-fa35-e83f-9a6d"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>

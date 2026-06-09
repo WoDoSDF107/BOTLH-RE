@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="38" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="39" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -61,7 +61,11 @@
   <categoryEntries>
     <categoryEntry name="Infantry" id="0dfd-0bc5-60ba-673c" hidden="false"/>
     <categoryEntry name="Character" id="5b8f-4c9b-9026-374c" hidden="false"/>
-    <categoryEntry name="Vehicle" id="1fd3-1951-3be2-5a2d" hidden="false"/>
+    <categoryEntry name="Vehicle" id="1fd3-1951-3be2-5a2d" hidden="false">
+      <infoLinks>
+        <infoLink name="Vehicle" id="31a7-88c7-ddde-5441" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
+      </infoLinks>
+    </categoryEntry>
     <categoryEntry name="Dedicated Transport" id="c12f-061e-8965-3818" hidden="false"/>
     <categoryEntry name="Swarm" id="2749-d422-0662-482c" hidden="false"/>
     <categoryEntry name="Mounted" id="80a0-870d-cbc8-089e" hidden="false"/>
@@ -206,10 +210,10 @@ When doing so:
       <description>Weapons with **[TWIN-LINKED]** in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack’s Wound roll.</description>
     </rule>
     <rule name="SHOCK" id="2765-d3e8-a17e-e2e1" hidden="false">
-      <description>Units afflicted with SHOCK receive -1 to hit rolls and their OC value is halved.</description>
+      <description>Units afflicted with SHOCK receive -1 to hit rolls and their total OC value is halved.</description>
     </rule>
     <rule name="PANIC" id="cebd-b3e3-70e0-8ce7" hidden="false">
-      <description>Units afflicted with PANIC receive a -2 to hit rolls, a +1 to their save, and their OC is set to 0.</description>
+      <description>Units afflicted with PANIC receive a -2 to hit rolls, their Save Roll characteristic is worsened by 1, and their total OC is set to 0.</description>
     </rule>
     <rule name="GLEE" id="d2f5-4431-e163-aa86" hidden="false">
       <description>Units affected by GLEE receive a + 3&quot; to their movement characteristic, a +1 to their hit rolls, and only must roll once for Precision weapons.</description>
