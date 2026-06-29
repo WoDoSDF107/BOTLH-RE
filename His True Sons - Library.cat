@@ -1916,6 +1916,7 @@ Knights Brothers</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+<<<<<<< Updated upstream
     <selectionEntry type="unit" import="true" name="War Dogs - Sheepdog" hidden="false" id="804a-21bf-0e3f-d4d8">
       <categoryLinks>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="acee-8135-c8b0-31f6" primary="false" name="Infantry"/>
@@ -2234,6 +2235,9 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
         <infoLink name="COLD HEART" id="2a4a-584a-91a7-1c4e" hidden="false" type="rule" targetId="3742-1bf9-a0f8-0b11"/>
       </infoLinks>
     </selectionEntry>
+=======
+    <selectionEntry type="upgrade" import="true" name="update" hidden="false" id="757f-d73c-17a0-e1d2"/>
+>>>>>>> Stashed changes
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="War Dogs" id="9a88-260d-af6a-898f" hidden="false"/>
