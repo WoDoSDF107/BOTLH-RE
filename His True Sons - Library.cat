@@ -25,7 +25,7 @@
             <entryLink import="true" name="Combat Knife" hidden="false" id="93a1-89b9-4bbe-c8de" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="3"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Wargear" id="16d9-99f8-fbc6-b9e0" hidden="false">
@@ -70,6 +70,9 @@
         <categoryLink targetId="0052-4108-3b9f-e544" id="39a3-c03e-fd76-777d" primary="false" name="Human"/>
         <categoryLink targetId="2ec6-998d-34df-5c47" id="f4e3-67cb-1262-34ea" primary="true" name="Troops"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wargear - War Dogs" hidden="false" id="bf84-210b-24c3-c2c3">
       <selectionEntryGroups>
@@ -610,7 +613,7 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="3"/>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
           </costs>
           <modifiers>
             <modifier type="decrement" value="1" field="ee85-71a1-cd3d-99f0" affects="self.entries.forces.recursive.upgrade.profiles.Melee Weapons"/>
