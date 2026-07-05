@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="His True Sons - Library" id="d1a5-556c-629b-1879" targetId="b508-b2ed-d9b7-1028"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="War Dogs - Men at Range" hidden="false" id="de47-00b8-15e9-81f0" type="selectionEntry" targetId="337b-5b2d-432e-ab9f"/>
+    <entryLink import="true" name="War Dogs - Men at Arms" hidden="false" id="de47-00b8-15e9-81f0" type="selectionEntry" targetId="337b-5b2d-432e-ab9f"/>
     <entryLink import="true" name="War Dogs - Veteran Marksmen" hidden="false" id="113d-a979-3be2-0398" type="selectionEntry" targetId="6448-0874-2cf6-6f92"/>
     <entryLink import="true" name="Knights - Squires" hidden="false" id="2c4a-c3a7-6556-d9e7" type="selectionEntry" targetId="8dd6-d08c-2f37-93e0"/>
     <entryLink import="true" name="War Dogs - Siege Breakers" hidden="false" id="b333-59d4-97a2-250f" type="selectionEntry" targetId="0d8e-706d-e20f-da03"/>
@@ -17,5 +17,7 @@
     <entryLink import="true" name="War Dogs - M151 Jeep" hidden="false" id="8d07-b7a2-2a38-9de7" type="selectionEntry" targetId="c2ac-f703-be32-123d"/>
     <entryLink import="true" name="War Dogs - M24 Chaffee" hidden="false" id="af54-1ccf-4cc0-360d" type="selectionEntry" targetId="010b-26e6-29bc-c74c"/>
     <entryLink import="true" name="Knights - WLA Combat Bike" hidden="false" id="8021-245e-96f3-dec4" type="selectionEntry" targetId="8702-daff-dd67-0e6b"/>
+    <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="ec3e-85fe-9b55-f825" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab"/>
+    <entryLink import="true" name="Knights - Nuntius Timoris" hidden="false" id="788a-8099-ad4e-0498" type="selectionEntry" targetId="c271-151a-88a9-d0ab"/>
   </entryLinks>
 </catalogue>

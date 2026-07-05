@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -1207,7 +1207,7 @@
                 <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
                 <characteristic name="W" typeId="7547-1a30-8027-a225">8</characteristic>
                 <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">7</characteristic>
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
               </characteristics>
             </profile>
@@ -1238,7 +1238,7 @@ All units are eligible to Shoot and Charge in a turn in which they advanced. Add
 
 Back to the Front (1 MP) - 
 WHEN: Any phase during your turn except for your Command Phase.
-TARGET: Any War Dogs Infantry Unit within 24&quot; of your High Command unit.
+TARGET: Any War Dogs Infantry Unit within 18&quot; of your High Command unit.
 EFFECT: The target unit may make a normal move of D6+2&quot; in any direction. The range of that movement cannot exceed the Movement characteristic of the target unit.
 RESTRICTIONS: The target unit cannot be within, or end a move within, Engagement Range of an enemy unit.
 
@@ -1820,6 +1820,135 @@ Knights Brothers</description>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knights - Knight Sergeant" hidden="false" id="0f8b-c6d3-b415-d6ab">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Knight Sergeant" hidden="false" id="942e-1181-53f4-45ba">
+          <profiles>
+            <profile name="Knight Sergeant" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="4106-b559-52df-59bc">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Never Submit, Never Falter" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="81ca-e3d0-e074-d0ae">
+              <characteristics>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">This unit may reroll failed Charge rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wargear" id="c6a6-f297-c8bd-8c29" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Main Hand" hidden="false" id="6683-a61b-6abb-99e5" type="selectionEntryGroup" targetId="da81-c21c-49af-fba4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e082-6141-0dfc-c5f7"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d2a-5164-428f-6d0b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Off-Hand" hidden="false" id="8b30-6571-53e7-2aa6" type="selectionEntryGroup" targetId="d819-0abb-37df-1709">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd31-8a40-a6e4-03ba"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9337-37f9-e931-18bc-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9337-37f9-e931-18bc-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="74b0-13ca-2f86-afbd" id="36af-8d74-625c-a035" primary="true" name="Command"/>
+        <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="68b9-dd9b-b619-5a55" primary="false" name="Knights"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="f655-00a1-51a0-ee98" primary="false" name="His True Sons"/>
+        <categoryLink targetId="33ee-b756-5da0-5503" id="b3b3-3f79-bd20-7214" primary="false" name="Leader"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="b04a-b60e-239a-182e" primary="false" name="Human"/>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="6368-91c3-8f32-089d" primary="false" name="Character"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="3062-3d70-0639-8dbc" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="95"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Knights - Nuntius Timoris" hidden="false" id="c271-151a-88a9-d0ab">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Nuntius Timoris" hidden="false" id="098f-d2bf-570a-c729">
+          <profiles>
+            <profile name="Nuntius Timoris" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="db0c-6d80-f914-05b3">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">3+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">2</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">6</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Witness Them Suffer" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="13ef-8a9d-70a4-a556">
+              <characteristics>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">During your Shooting Phase, select one visible enemy unit within 16&quot;, that unit must perform a Composure test. If that total is less than 20, that unit receives SHOCK. If that unit is within Engagement Range, that unit receives PANIC on a result less than 20.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mind-Bending Screams" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="d982-b392-d280-89e3">
+              <characteristics>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">When an enemy unit within 6&quot; of this model performs a Composure Test, subtract 1 from the total result of that test. If this unit is engaged with an enemy unit, instead subtract 2 from the total result.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fb9-2ccc-d179-691b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fb9-2ccc-d179-691b-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="St. Peter&apos;s Last Edict" hidden="false" id="de69-1d06-7dc1-a323">
+              <profiles>
+                <profile name="St. Peter&apos;s Last Edict" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="b4d0-81ae-c963-6109">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">4+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">7</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-2</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">5</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Precision</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Precision" id="e9fd-54e6-1c07-deeb" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="168f-16d2-291b-da98-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="168f-16d2-291b-da98-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="2634-5885-dd62-4339" id="846a-1aa9-1032-6061" primary="true" name="Support"/>
+        <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="a81e-2558-2180-830b" primary="false" name="Knights"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="319a-3b1c-3622-bf4c" primary="false" name="His True Sons"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="073e-030c-0f82-50a5" primary="false" name="Infantry"/>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="538b-bb2d-9266-b2e6" primary="false" name="Character"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="9fea-ee1a-372d-5ec3" primary="false" name="Human"/>
+        <categoryLink targetId="9c21-a33c-fd69-b8c4" id="c75c-a8ae-3ae8-9787" primary="false" name="Specialist"/>
+        <categoryLink targetId="5f21-8748-809b-03d9" id="253c-a2be-8cac-c189" primary="false" name="Epic Hero"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="89c5-c260-8a98-7422" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="120"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="War Dogs" id="9a88-260d-af6a-898f" hidden="false"/>
@@ -1844,6 +1973,7 @@ Knights Brothers</description>
         <infoLink name="Vehicle" id="31a7-88c7-ddde-5441" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Command" id="74b0-13ca-2f86-afbd" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
@@ -1879,6 +2009,18 @@ Knights Brothers</description>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2b5-52bf-0bc6-34a9"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc0-4671-1aa6-6c7e"/>
           </constraints>
+        </categoryLink>
+        <categoryLink name="Command" hidden="false" id="216b-c6ac-d6bc-f8fc" targetId="74b0-13ca-2f86-afbd">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1f0b-3b29-fab1-0af8"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="1f0b-3b29-fab1-0af8">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink name="Troops" hidden="false" id="04a2-3396-6a1c-a819" targetId="2ec6-998d-34df-5c47">
           <constraints>
