@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -19,7 +19,7 @@
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfe0-c0f7-5088-3ba2"/>
-            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="b723-4900-df3b-1e02"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b723-4900-df3b-1e02"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Combat Knife" hidden="false" id="93a1-89b9-4bbe-c8de" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
@@ -507,29 +507,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d966-a7e7-114f-d3fb"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ae2-c738-5c01-0bce"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="M79 Grenade Launcher" hidden="false" id="6269-84fc-d3c9-d9e1">
-                  <profiles>
-                    <profile name="M79 Grenade Launcher" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="b8f2-0377-e368-bc39">
-                      <characteristics>
-                        <characteristic name="Range" typeId="910b-bab0-6061-64b0">18&quot;</characteristic>
-                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
-                        <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">4+</characteristic>
-                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">4</characteristic>
-                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
-                        <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
-                        <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Blast</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="93d8-de8e-d0eb-1eb2" includeChildSelections="true" includeChildForces="true"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink import="true" name="M2 Flamethrower" hidden="false" id="51d8-e575-e6bd-599a" type="selectionEntry" targetId="83e0-b2fb-f33d-c8f7"/>
               </entryLinks>
@@ -1188,6 +1165,7 @@
         <categoryLink targetId="781a-0a70-79cd-276d" id="ae7d-038b-26fd-8d1a" primary="false" name="His True Sons"/>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="57b8-e54c-9def-75f6" primary="false" name="Infantry"/>
         <categoryLink targetId="0052-4108-3b9f-e544" id="7f91-f4cd-6cb9-4d95" primary="false" name="Human"/>
+        <categoryLink targetId="5661-101f-573c-237c" id="7c48-18c3-a43a-c623" primary="false" name="Knights Seraphim"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="40"/>
@@ -1225,6 +1203,15 @@ All units are eligible to Shoot and Charge in a turn in which they advanced. Add
 ">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="06fc-0e49-5845-7f3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" value="**Psychological Warfare Division:**
+
+All Horde Units receive Feel No Pain 4+." field="5cee-5283-c95d-c323" join="
+
+">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f8e2-61a3-1fea-ccb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1272,7 +1259,7 @@ EFFECT: Units within 4&quot; of that Objective marker can reroll missed hit roll
             </profile>
             <profile name="Inspiring Aura" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="a6b9-de21-8044-9c51">
               <characteristics>
-                <characteristic name="Description" typeId="5cee-5283-c95d-c323">All friendly Infantry models within 6&quot; of this model can reroll failed Mental Fortitude Tests, reroll failed Close Combat rolls, and reroll failed Save rolls of 1.</characteristic>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">All friendly Infantry models within 6&quot; of this model can reroll failed Composure Tests, reroll failed Close Combat rolls, and reroll failed Save rolls of 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1949,6 +1936,141 @@ Knights Brothers</description>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="120"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heretics - Treachery of Heretics" hidden="false" id="78a1-6d0d-d685-4e1e">
+      <categoryLinks>
+        <categoryLink targetId="4018-7b6f-0e5b-f685" id="cd02-35e6-4fe5-a9d6" primary="true" name="Horde"/>
+        <categoryLink targetId="2c79-105c-1a52-144f" id="9cb6-31b2-948b-fed7" primary="false" name="Heretics"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="c649-97ec-5671-9d08" primary="false" name="His True Sons"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="f097-7950-a30c-3680" primary="false" name="Human"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="36a9-e4ad-d0f1-f84a" primary="false" name="Infantry"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Heretic" hidden="false" id="f08a-d801-6f7f-6a56">
+          <profiles>
+            <profile name="Heretic" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="9a3e-90f0-1c49-d6e1">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">2</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">7+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">0</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81d7-7378-58db-3f23"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="7bc8-27e3-18d7-2979"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Barbed Maul" hidden="false" id="a9a8-b1bc-03d3-4170">
+              <profiles>
+                <profile name="Barbed Maul" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="f9c3-5c9f-fa2f-1709">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">5+</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">3</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8030-690c-110f-cc20"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heretics - Tormentor" hidden="false" id="8dcc-d910-e638-cebd">
+      <categoryLinks>
+        <categoryLink targetId="2c79-105c-1a52-144f" id="76fe-2cf1-a7c3-c9ec" primary="false" name="Heretics"/>
+        <categoryLink targetId="74b0-13ca-2f86-afbd" id="21de-a516-f8b3-bb78" primary="true" name="Command"/>
+        <categoryLink targetId="781a-0a70-79cd-276d" id="bc4c-603e-2fb1-5dcb" primary="false" name="His True Sons"/>
+        <categoryLink targetId="0dfd-0bc5-60ba-673c" id="ef26-5dce-292b-deb9" primary="false" name="Infantry"/>
+        <categoryLink targetId="5b8f-4c9b-9026-374c" id="f2de-61b2-3bd5-7e00" primary="false" name="Character"/>
+        <categoryLink targetId="0052-4108-3b9f-e544" id="193f-8ba9-bf5a-6cc1" primary="false" name="Human"/>
+        <categoryLink targetId="33ee-b756-5da0-5503" id="f912-b8b4-d2d6-0ec4" primary="false" name="Leader"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tormentor" hidden="false" id="0130-7313-1031-73ec">
+          <profiles>
+            <profile name="Dreadmonger" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="5793-7d98-7ea8-a56d">
+              <characteristics>
+                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                <characteristic name="T" typeId="4e8c-3287-4126-05a4">6</characteristic>
+                <characteristic name="SR" typeId="55e5-4318-7023-255d">4+</characteristic>
+                <characteristic name="W" typeId="7547-1a30-8027-a225">3</characteristic>
+                <characteristic name="OC" typeId="17b7-6486-cf25-b101">0</characteristic>
+                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">N/A</characteristic>
+                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cat o&apos; Nine Tails" hidden="false" id="da9c-5940-6a89-7c4b">
+              <profiles>
+                <profile name="Cat o&apos; Nine Tails" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="ddd0-f1a4-b568-7b2c">
+                  <characteristics>
+                    <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">D6</characteristic>
+                    <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">D6+1</characteristic>
+                    <characteristic name="S" typeId="e681-af26-3aee-d26b">D6</characteristic>
+                    <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">D3</characteristic>
+                    <characteristic name="D" typeId="6930-1108-fb51-4fa6">D3</characteristic>
+                    <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Stun</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebd7-2b09-5c6c-1ded-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebd7-2b09-5c6c-1ded-max"/>
+              </constraints>
+              <rules>
+                <rule name="Stun" id="81ab-d67a-f2b8-9ae7" hidden="false">
+                  <description>Whenever a weapon with this keyword successfully damages an enemy unit, that enemy unit suffers a -2&quot; to their total Movement Characteristic until after that unit has next performed a Movement.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1bc-3842-9985-4e9f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1bc-3842-9985-4e9f-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Lord of Hate" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="ff8b-b291-8abe-5fca">
+          <characteristics>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Once per turn, this model is leading a unit, you may select **one** of the following abilities to perform.
+
+**During your Movement Phase**, the bearer&apos;s unit must perform a Composure Test. On a 6+, increase the Movement Characteristic of all models in this unit by 2&quot; until the end of this phase. On a 10+, increase it by 3&quot; instead.
+
+**During your Charge Phase**, before making a Charge Roll, the bearer&apos;s unit must perform a Composure Test. On a 6+, add 2 to the total result of that Charge Roll. On a 10+, improve the bearer&apos;s Close Combat Characteristic by 2 until the end of your turn.
+
+**During any Fight Phase**, the bearer&apos;s unit must perform a Composure Test. On a 6+, the bearer&apos;s unit receive a +1 to hit rolls until the end of this phase. On a 10+, they additionally receive a +1 to wound rolls until the end of this phase.
+
+
+
+If any of these tests fail, the bearer&apos;s unit suffers D3 Mortal Wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="COLD HEART" id="b5fa-b378-fff6-8de0" hidden="false" type="rule" targetId="3742-1bf9-a0f8-0b11"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="95"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="War Dogs" id="9a88-260d-af6a-898f" hidden="false"/>
@@ -1958,22 +2080,25 @@ Knights Brothers</description>
     <categoryEntry name="High Command" id="94e3-ff49-273a-5079" hidden="false"/>
     <categoryEntry name="Support" id="2634-5885-dd62-4339" hidden="false"/>
     <categoryEntry name="Troops" id="2ec6-998d-34df-5c47" hidden="false"/>
-    <categoryEntry name="Fast Attack" id="9472-8d6f-293d-16ab" hidden="false">
-      <rules>
-        <rule name="Quick Turn" id="c1d1-d3e7-459b-b523" hidden="false">
-          <description>Vehicles with this rule are able to perform a Quick Turn during their movement phase. To perform a Quick Turn, a vehicle must perform a movement a number of inches below it&apos;s total Movement characteristic. It may then pivot in any direction and perform a movement equal to or less than the remainder of their total Movement characteristic.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Vehicle" id="9c82-d2cb-7a40-1488" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Heavy Support" id="5365-843b-d1fb-49f0" hidden="false">
-      <infoLinks>
-        <infoLink name="Vehicle" id="31a7-88c7-ddde-5441" hidden="false" type="rule" targetId="8f96-dddd-0807-6654"/>
-      </infoLinks>
-    </categoryEntry>
+    <categoryEntry name="Fast Attack" id="9472-8d6f-293d-16ab" hidden="false"/>
+    <categoryEntry name="Heavy Support" id="5365-843b-d1fb-49f0" hidden="false"/>
     <categoryEntry name="Command" id="74b0-13ca-2f86-afbd" hidden="false"/>
+    <categoryEntry name="Horde" id="4018-7b6f-0e5b-f685" hidden="false">
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="2cc9-2fd7-d117-4c8d" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="4+" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="f8e2-61a3-1fea-ccb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Heretics" id="2c79-105c-1a52-144f" hidden="false"/>
+    <categoryEntry name="Knights Seraphim" id="5661-101f-573c-237c" hidden="false"/>
   </categoryEntries>
   <sharedRules>
     <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
@@ -1982,6 +2107,9 @@ Knights Brothers</description>
     <rule name="Parry" id="a3ea-796c-328a-c8ff" hidden="false">
       <description>When an enemy model declares damage made with a melee weapon against a model with at least one Parry weapon, roll one D6 for every point of damage to be inflicted. On a 5+, that damage is instead allocated to the enemy model. When allocating damage, any models in the unit without a Parry weapon must be selected first.</description>
     </rule>
+    <rule name="Quick Turn" id="c1d1-d3e7-459b-b523" hidden="false">
+      <description>If every model in a unit has this rule, they are able to perform a Quick Turn during their movement phase. To perform a Quick Turn, a model must perform a movement a number of inches below it&apos;s total Movement characteristic. It may then pivot in any direction and perform a movement equal to or less than the remainder of their total Movement characteristic.</description>
+    </rule>
   </sharedRules>
   <forceEntries>
     <forceEntry name="Sword of Michael - Chosen Sons" id="6529-2251-e5c5-aa59" hidden="false">
@@ -1989,6 +2117,7 @@ Knights Brothers</description>
         <categoryLink name="High Command" hidden="false" id="8fe1-dc3a-26d7-6f96" targetId="94e3-ff49-273a-5079">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2358-f05f-c913-3afb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccbc-e26b-7889-376e"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elites" hidden="false" id="db6f-7e2f-b2d2-2be0" targetId="6649-8286-d076-2067">
@@ -2083,7 +2212,72 @@ Knights Brothers</description>
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Horde" hidden="false" id="b891-b8c3-747f-f94e" targetId="4018-7b6f-0e5b-f685">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f8a8-07f6-61b3-c538"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f8a8-07f6-61b3-c538">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" scope="primary-catalogue" affects="self.entries.forces.recursive.5661-101f-573c-237c"/>
+      </modifiers>
+    </forceEntry>
+    <forceEntry name="Word of Uriel - Psychological Warfare Division" id="f8e2-61a3-1fea-ccb2" hidden="false">
+      <categoryLinks>
+        <categoryLink name="High Command" hidden="false" id="0785-7b1b-7774-9ab8" targetId="94e3-ff49-273a-5079">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42f6-720c-bd5f-6a3b"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e418-7b68-4d9d-5910"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Command" hidden="false" id="0a3a-c244-eac5-c689" targetId="74b0-13ca-2f86-afbd">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="04f8-5166-5703-968a"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="04f8-5166-5703-968a">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Horde" hidden="false" id="5802-c267-3739-fa2e" targetId="4018-7b6f-0e5b-f685">
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="1742-24b2-fb6c-999e"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e50-e211-422b-8003"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="1742-24b2-fb6c-999e">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="2658-8b0b-5ea0-eae1" targetId="6649-8286-d076-2067">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="11e2-a8b2-c9bb-dc19"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="11e2-a8b2-c9bb-dc19">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" scope="primary-catalogue" affects="self.entries.forces.recursive.5661-101f-573c-237c"/>
+      </modifiers>
     </forceEntry>
   </forceEntries>
   <profileTypes>
