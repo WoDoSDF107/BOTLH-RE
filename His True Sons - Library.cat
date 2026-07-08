@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -785,13 +785,20 @@
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">8</characteristic>
                         <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">CC Modifier -2</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="CC Modifier" id="79c3-fc1b-1210-70ca" hidden="false" type="rule" targetId="1f11-635b-21fb-f93c">
+                      <modifiers>
+                        <modifier type="append" value="-2" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1737,6 +1744,10 @@ Knights Brothers</description>
               </constraints>
             </entryLink>
           </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="664b-f1c5-be16-3713-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="664b-f1c5-be16-3713-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -1822,9 +1833,21 @@ Knights Brothers</description>
                 <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">3</characteristic>
               </characteristics>
             </profile>
-            <profile name="Never Submit, Never Falter" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="81ca-e3d0-e074-d0ae">
+            <profile name="Divine Champions" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="81ca-e3d0-e074-d0ae">
               <characteristics>
-                <characteristic name="Description" typeId="5cee-5283-c95d-c323">This unit may reroll failed Charge rolls.</characteristic>
+                <characteristic name="Description" typeId="5cee-5283-c95d-c323">During your Charge Phase, after selecting your Charge target but before making a Charge roll, you may issue a Challenge. To issue a Challenge, select one ability from the Challenge table below, that ability is active until the end of your turn.
+
+**Despite All Odds**
+If any model in the target unit has a greater Toughness characteristic than any model in this unit, all of this unit&apos;s weapons receive the Lethal Hits keyword. However, if the target unit scores a Critical Hit when making an attack against this unit, automatically inflict 1 Mortal Wound. 
+
+**I Feel Quite Hungry**
+The target unit always fights first regardless of Close Combat value, but any missed hit rolls they confer automatically inflict 1 Mortal Wound to that target unit.
+
+**Their Best is Not Good Enough**
+All models in the target unit receive a +1 to their hit rolls, but all melee weapons in this unit receive an improvement of 1 to their Attacks characteristic.
+
+
+If this unit declares a Challenge against another unit, but fails the Charge Roll, the target unit may perform a Shooting Attack against this unit using one of its Ranged Weapon profiles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1861,7 +1884,7 @@ Knights Brothers</description>
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="3062-3d70-0639-8dbc" primary="false" name="Infantry"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="95"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="120"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Knights - Nuntius Timoris" hidden="false" id="c271-151a-88a9-d0ab">
@@ -2102,7 +2125,7 @@ If any of these tests fail, the bearer&apos;s unit suffers D3 Mortal Wounds.</ch
   </categoryEntries>
   <sharedRules>
     <rule name="CC Modifier" id="1f11-635b-21fb-f93c" hidden="false">
-      <description>If a model bears a weapon with this keyword, increase the Close Combat characteristic of that model by x, with x being the value at the end of this rule.</description>
+      <description>If a model bears a weapon with this keyword, change the Close Combat characteristic of that model by x, with x being the value at the end of this rule.</description>
     </rule>
     <rule name="Parry" id="a3ea-796c-328a-c8ff" hidden="false">
       <description>When an enemy model declares damage made with a melee weapon against a model with at least one Parry weapon, roll one D6 for every point of damage to be inflicted. On a 5+, that damage is instead allocated to the enemy model. When allocating damage, any models in the unit without a Parry weapon must be selected first.</description>
@@ -2176,6 +2199,18 @@ If any of these tests fail, the bearer&apos;s unit suffers D3 Mortal Wounds.</ch
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Horde" hidden="false" id="b891-b8c3-747f-f94e" targetId="4018-7b6f-0e5b-f685">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f8a8-07f6-61b3-c538"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f8a8-07f6-61b3-c538">
+              <repeats>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink name="Elites" hidden="false" id="0383-034e-0728-7440" targetId="6649-8286-d076-2067">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2252-dea3-a71f-0bba"/>
@@ -2208,18 +2243,6 @@ If any of these tests fail, the bearer&apos;s unit suffers D3 Mortal Wounds.</ch
             <modifier type="increment" value="1" field="2b24-f0e6-4509-bc4f">
               <repeats>
                 <repeat value="2000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Horde" hidden="false" id="b891-b8c3-747f-f94e" targetId="4018-7b6f-0e5b-f685">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f8a8-07f6-61b3-c538"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="f8a8-07f6-61b3-c538">
-              <repeats>
-                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
           </modifiers>
