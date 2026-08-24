@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="39" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-0cac-03d0-97e0-4db0" name="BOTLH-RE" battleScribeVersion="2.03" revision="40" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profileTypes>
     <profileType name="Abilities" id="fe4c-5b77-ab77-e578" hidden="false">
       <characteristicTypes>
@@ -83,6 +83,8 @@
     <categoryEntry name="Epic Hero" id="5f21-8748-809b-03d9" hidden="false"/>
     <categoryEntry name="Configuration" id="13d8-826b-b842-d554" hidden="false"/>
     <categoryEntry name="Fly" id="bd44-b2c0-15bd-1790" hidden="false"/>
+    <categoryEntry name="Monster" id="2398-64d3-87bf-9eba" hidden="false"/>
+    <categoryEntry name="Undead" id="9056-deda-2cb8-500d" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="pts" id="7bd5-a3cc-211e-f62e" defaultCostLimit="-1"/>
@@ -216,7 +218,7 @@ When doing so:
       <description>Units afflicted with PANIC receive a -2 to hit rolls, their Save Roll characteristic is worsened by 1, and their total OC is set to 0.</description>
     </rule>
     <rule name="GLEE" id="d2f5-4431-e163-aa86" hidden="false">
-      <description>Units affected by GLEE receive a + 3&quot; to their movement characteristic, a +1 to their hit rolls, and only must roll once for Precision weapons.</description>
+      <description>Units affected by GLEE receive a + 3&quot; to their movement characteristic and a +1 to their hit rolls.</description>
     </rule>
     <rule name="MARKED" id="e65c-b05a-4234-06c9" hidden="false">
       <description>Units attacking MARKED units reroll missed hit rolls.</description>
@@ -298,6 +300,7 @@ If your unit&apos;s weapon has the Anti-Vehicle keyword, a roll of x automatical
         <categoryLink name="Infantry" hidden="false" id="7dc5-cfbd-fe89-7b84" targetId="0dfd-0bc5-60ba-673c"/>
         <categoryLink name="Swarm" hidden="false" id="ac33-5a5d-a287-e3c5" targetId="2749-d422-0662-482c"/>
         <categoryLink name="Vehicle" hidden="false" id="d0f8-4a66-0d7c-ea8d" targetId="1fd3-1951-3be2-5a2d"/>
+        <categoryLink name="Monster" hidden="false" id="c5b6-a7de-f363-c843" targetId="2398-64d3-87bf-9eba"/>
         <categoryLink name="Mounted" hidden="false" id="0243-81bd-ecc5-7b59" targetId="80a0-870d-cbc8-089e"/>
         <categoryLink name="Fortification" hidden="false" id="1431-24d9-dc62-ed8a" targetId="d294-2dd0-8be8-a024"/>
       </categoryLinks>

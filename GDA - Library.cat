@@ -1442,7 +1442,6 @@
             <profile name="M48 Patton" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="8728-f5c4-87d5-5f80">
               <characteristics>
                 <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
-                <characteristic name="T" typeId="2fcd-2126-34e8-0944">8</characteristic>
                 <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">12</characteristic>
                 <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">10</characteristic>
                 <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">8</characteristic>
@@ -1603,7 +1602,6 @@
             <profile name="M1 Abrams" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="fdf9-d3ad-ee49-5f0b">
               <characteristics>
                 <characteristic name="M" typeId="59a0-32b9-8030-1543">10&quot;</characteristic>
-                <characteristic name="T" typeId="2fcd-2126-34e8-0944">10</characteristic>
                 <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">14</characteristic>
                 <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">14</characteristic>
                 <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">14</characteristic>
@@ -1778,7 +1776,6 @@
             <profile name="CH47 Chinook" typeId="a4bf-d46f-db19-28f9" typeName="Vehicle Unit" hidden="false" id="bd2f-a73f-30a8-d767">
               <characteristics>
                 <characteristic name="M" typeId="59a0-32b9-8030-1543">20&quot;</characteristic>
-                <characteristic name="T" typeId="2fcd-2126-34e8-0944">8</characteristic>
                 <characteristic name="Front" typeId="f3f8-1ae7-4be7-9365">4+</characteristic>
                 <characteristic name="Side" typeId="b79e-1d83-ab8f-4de7">3+</characteristic>
                 <characteristic name="Back" typeId="3f6d-e0d8-46cd-5302">3+</characteristic>
@@ -1787,7 +1784,6 @@
                 <characteristic name="OC" typeId="4395-2ce2-d480-3d3c">0</characteristic>
                 <characteristic name="MF" typeId="d469-e29f-097b-3790">0</characteristic>
                 <characteristic typeId="6977-91de-ecff-307e" name="CC"/>
-                <characteristic typeId="b78a-b837-2b76-1986" name="New Characteristic Type"/>
               </characteristics>
             </profile>
           </profiles>

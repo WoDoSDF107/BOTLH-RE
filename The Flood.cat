@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="627b-8753-750c-af8e" name="The Flood" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="39" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Flood Infection Form" hidden="false" id="d63f-f3d6-950f-8390" type="selectionEntry" targetId="56ad-8f17-a69d-d056"/>
+    <entryLink import="true" name="Flood Carrier Form" hidden="false" id="9af5-b2d7-2b95-0e96" type="selectionEntry" targetId="3fd7-bbc8-d9dd-04f2"/>
+    <entryLink import="true" name="Floodhost Corpseclade" hidden="false" id="1396-e266-4639-8cb5" type="selectionEntry" targetId="295e-6d78-4d37-e5d0"/>
+    <entryLink import="true" name="Flood Tank Form" hidden="false" id="2ef7-9d29-9428-b969" type="selectionEntry" targetId="cfca-2559-6e42-e8e2"/>
+    <entryLink import="true" name="Floodhost Infection Cohort" hidden="false" id="a836-f022-99fc-9955" type="selectionEntry" targetId="ddca-fc14-4b1f-a950"/>
+  </entryLinks>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="The Flood - Library" id="5dfe-d7ae-bc98-a0f7" targetId="b1ef-9b1c-1246-676f"/>
+  </catalogueLinks>
+</catalogue>

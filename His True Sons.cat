@@ -21,5 +21,6 @@
     <entryLink import="true" name="Knights - Nuntius Timoris" hidden="false" id="788a-8099-ad4e-0498" type="selectionEntry" targetId="c271-151a-88a9-d0ab"/>
     <entryLink import="true" name="Heretics - Treachery of Heretics" hidden="false" id="f885-0d2c-e51f-eb80" type="selectionEntry" targetId="78a1-6d0d-d685-4e1e"/>
     <entryLink import="true" name="Heretics - Tormentor" hidden="false" id="bed0-a1a3-2aef-e910" type="selectionEntry" targetId="8dcc-d910-e638-cebd"/>
+    <entryLink import="true" name="War Dogs - Sheepdog" hidden="false" id="2d39-0257-e1f1-eca8" type="selectionEntry" targetId="91af-6d18-9bc7-5ffe"/>
   </entryLinks>
 </catalogue>
