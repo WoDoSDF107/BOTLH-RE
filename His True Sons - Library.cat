@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="War Dog" hidden="false" id="b5f6-13fe-38e8-f132">
+        <selectionEntry type="model" import="true" name="War Dog" hidden="false" id="b5f6-13fe-38e8-f132">
           <profiles>
             <profile name="War Dog" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="da9b-9819-e63a-5175">
               <characteristics>
@@ -89,25 +89,32 @@
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="♛ Attached Command" id="1c46-2c6b-04f4-a0b1" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="70c2-f35f-2b1c-e2b1" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab"/>
-          </entryLinks>
+        <selectionEntryGroup name="Attached Characters" id="047d-1d3a-94c5-22f2" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="♛ Attached Command" id="1c46-2c6b-04f4-a0b1" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="70c2-f35f-2b1c-e2b1" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f58d-b05e-fa1f-b919"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Command" hidden="false" id="453f-461b-c021-d5f2" targetId="74b0-13ca-2f86-afbd" primary="true"/>
+              </categoryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="♝ Attached Support" id="7ef0-b60a-c929-984f" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="War Dogs - Sheepdog" hidden="false" id="571b-6b83-adfa-e877" type="selectionEntry" targetId="91af-6d18-9bc7-5ffe"/>
+                <entryLink import="true" name="War Dogs - Designated Marksman" hidden="false" id="00c9-3d15-1dbc-dbc2" type="selectionEntry" targetId="7121-ffd9-9ee9-1c11"/>
+                <entryLink import="true" name="War Dogs - Grenadier" hidden="false" id="3301-f5b9-5899-eea6" type="selectionEntry" targetId="8adc-903c-5514-e881"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9024-c324-cbb8-5cef"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f58d-b05e-fa1f-b919"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink targetId="74b0-13ca-2f86-afbd" id="453f-461b-c021-d5f2" primary="true" name="Command"/>
-          </categoryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="♝ Attached Support" id="7ef0-b60a-c929-984f" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="War Dogs - Sheepdog" hidden="false" id="571b-6b83-adfa-e877" type="selectionEntry" targetId="91af-6d18-9bc7-5ffe"/>
-            <entryLink import="true" name="War Dogs - Designated Marksman" hidden="false" id="00c9-3d15-1dbc-dbc2" type="selectionEntry" targetId="7121-ffd9-9ee9-1c11"/>
-            <entryLink import="true" name="War Dogs - Grenadier" hidden="false" id="3301-f5b9-5899-eea6" type="selectionEntry" targetId="8adc-903c-5514-e881"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9024-c324-cbb8-5cef"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fcb4-d4e8-8089-02b1"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -697,7 +704,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Squires" id="5a53-17c9-49be-32ee" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Squire" hidden="false" id="f805-5342-a80a-9b2d">
+            <selectionEntry type="model" import="true" name="Squire" hidden="false" id="f805-5342-a80a-9b2d">
               <profiles>
                 <profile name="Squire" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="6f29-a853-7993-4451">
                   <characteristics>
@@ -1192,7 +1199,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Brothers" hidden="false" id="3cbd-896b-582a-bc35">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Knight Brother" hidden="false" id="96f0-780d-d7cc-09f5">
+        <selectionEntry type="model" import="true" name="Knight Brother" hidden="false" id="96f0-780d-d7cc-09f5">
           <profiles>
             <profile name="Knight Brother" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="5695-f526-9afd-ccdb">
               <characteristics>
@@ -1252,18 +1259,6 @@
       <costs>
         <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="35"/>
       </costs>
-      <modifiers>
-        <modifier type="unset-primary" value="6649-8286-d076-2067" field="category" scope="root-entry" affects="self.entries.forces.recursive.3cbd-896b-582a-bc35">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="b508-b2ed-d9b7-1028" childId="6529-2251-e5c5-aa59" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set-primary" value="0dfd-0bc5-60ba-673c" field="category" scope="root-entry" affects="self.entries.forces.recursive.3cbd-896b-582a-bc35">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="b508-b2ed-d9b7-1028" childId="6529-2251-e5c5-aa59" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile name="... Then So It Shall Be" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4ce3-64b2-e5a3-55e7">
           <characteristics>
@@ -2799,11 +2794,11 @@ RESTRICTIONS: When adding a new unit, do not add any Attached Character models, 
         </categoryLink>
         <categoryLink name="Troops" hidden="false" id="04a2-3396-6a1c-a819" targetId="2ec6-998d-34df-5c47">
           <constraints>
-            <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="48c8-fb26-7c50-345b" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="48c8-fb26-7c50-345b" includeChildSelections="true" includeChildForces="true"/>
             <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="dc8b-47c4-feb0-44a8" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="4" field="48c8-fb26-7c50-345b">
+            <modifier type="increment" value="2" field="48c8-fb26-7c50-345b">
               <repeats>
                 <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
