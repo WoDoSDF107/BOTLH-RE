@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -558,61 +558,6 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Veteran Marksmen" hidden="false" id="6448-0874-2cf6-6f92">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="War Dog Veteran" hidden="false" id="f0d5-16f9-a7a0-99fb">
-          <profiles>
-            <profile name="War Dog Veteran Marksman" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="842c-c86a-d405-700b">
-              <characteristics>
-                <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
-                <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
-                <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
-                <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
-                <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
-                <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
-                <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f28b-71bd-f581-8db0"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="df46-d5de-ec17-7e37"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Combat Knife" hidden="false" id="05fc-18f9-7e06-0586" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
-          </entryLinks>
-          <costs>
-            <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
-          </costs>
-          <modifiers>
-            <modifier type="decrement" value="1" field="61ae-df8d-ecfb-8c75" affects="self.entries.forces.recursive.e3c2-95ce-5556-b10b.profiles.Ranged Weapons"/>
-          </modifiers>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear" id="05a9-3e87-3067-c724" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Ranged Weapons" hidden="false" id="e3c2-95ce-5556-b10b" type="selectionEntryGroup" targetId="45e6-f1ba-37c6-c833">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d966-a7e7-114f-d3fb"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Special Weapons" hidden="false" id="7b0c-4ffd-255e-c585" type="selectionEntryGroup" targetId="1e18-ab9a-fb0d-f0a7">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="0c78-3dc3-7627-e14b" childId="any" includeChildSelections="true"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="0c78-3dc3-7627-e14b">
-                      <conditions>
-                        <condition type="greaterThan" value="5" field="selections" scope="parent" childId="f0d5-16f9-a7a0-99fb" shared="true" childName="War Dog Veteran"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a361-dc0a-d7f0-9f3e"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f422-aa2a-e73f-b6d3"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mk 2 Grenade" hidden="false" id="a023-c678-a2dd-a102">
           <profiles>
             <profile name="Mk 2 Grenade" typeId="9faa-64d3-43b4-045a" typeName="Support Weapons" hidden="false" id="b1f2-75f1-4d00-454f">
@@ -653,6 +598,96 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="War Dog Veteran Marksmen" id="08c3-0f14-c8fc-f518" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="War Dog Veteran" hidden="false" id="f0d5-16f9-a7a0-99fb">
+              <profiles>
+                <profile name="War Dog Veteran Marksman" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="842c-c86a-d405-700b">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f28b-71bd-f581-8db0"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Combat Knife" hidden="false" id="05fc-18f9-7e06-0586" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="decrement" value="1" field="61ae-df8d-ecfb-8c75" affects="self.entries.forces.recursive.e3c2-95ce-5556-b10b.profiles.Ranged Weapons"/>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="05a9-3e87-3067-c724" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Ranged Weapons" hidden="false" id="e3c2-95ce-5556-b10b" type="selectionEntryGroup" targetId="45e6-f1ba-37c6-c833">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d966-a7e7-114f-d3fb"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a361-dc0a-d7f0-9f3e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f422-aa2a-e73f-b6d3"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="War Dog Veteran w/ Special Weapon" hidden="false" id="c639-f42b-fdf7-eafe">
+              <profiles>
+                <profile name="War Dog Veteran Marksman" typeId="6803-b921-1e0c-0322" typeName="Unit" hidden="false" id="4388-6204-65b4-8ae1">
+                  <characteristics>
+                    <characteristic name="M" typeId="c100-b9db-eacc-d3e0">6&quot;</characteristic>
+                    <characteristic name="T" typeId="4e8c-3287-4126-05a4">3</characteristic>
+                    <characteristic name="SR" typeId="55e5-4318-7023-255d">5+</characteristic>
+                    <characteristic name="W" typeId="7547-1a30-8027-a225">1</characteristic>
+                    <characteristic name="OC" typeId="17b7-6486-cf25-b101">1</characteristic>
+                    <characteristic name="MF" typeId="dbfc-7c96-dcff-d55b">3</characteristic>
+                    <characteristic name="CC" typeId="f4e7-dd5b-6bb4-6485">0</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd72-89ce-d89f-663a"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Combat Knife" hidden="false" id="a96e-4c7a-950d-31d1" type="selectionEntry" targetId="8f00-2f34-ca32-b079"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear" id="4ce2-c307-e12b-638d" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Special Weapons" hidden="false" id="55a7-d7f8-d258-fcde" type="selectionEntryGroup" targetId="1e18-ab9a-fb0d-f0a7">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="d5a2-43eb-a6a3-9415" childId="any" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6de-be8d-c55a-58c7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a08-517b-43d4-eff9"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="d55c-406d-178f-38eb"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Squires" hidden="false" id="8dd6-d08c-2f37-93e0">
       <categoryLinks>
