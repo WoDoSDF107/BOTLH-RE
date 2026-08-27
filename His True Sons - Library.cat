@@ -91,17 +91,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="♛ Attached Command" id="1c46-2c6b-04f4-a0b1" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="70c2-f35f-2b1c-e2b1" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab">
-              <categoryLinks>
-                <categoryLink targetId="0dfd-0bc5-60ba-673c" id="3002-c17c-e1ed-7f37" primary="false" name="Infantry"/>
-                <categoryLink targetId="74b0-13ca-2f86-afbd" id="81e2-5720-6516-29c6" primary="true" name="Command"/>
-                <categoryLink targetId="1af4-a8fd-ccdb-4abd" id="4733-808f-e5ac-d199" primary="false" name="Knights"/>
-                <categoryLink targetId="781a-0a70-79cd-276d" id="2722-fbf6-abb0-bb18" primary="false" name="His True Sons"/>
-                <categoryLink targetId="5b8f-4c9b-9026-374c" id="38e7-6976-f71b-375b" primary="false" name="Character"/>
-                <categoryLink targetId="33ee-b756-5da0-5503" id="2747-041f-e7a5-1f62" primary="false" name="Leader"/>
-                <categoryLink targetId="0052-4108-3b9f-e544" id="4037-ece9-45d5-beff" primary="false" name="Human"/>
-              </categoryLinks>
-            </entryLink>
+            <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="70c2-f35f-2b1c-e2b1" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f58d-b05e-fa1f-b919"/>
@@ -746,17 +736,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="♛ Attached Command" id="a846-ed4f-bbdf-711b" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="a7fe-9450-15a7-7a67" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab">
-              <categoryLinks>
-                <categoryLink name="Infantry" hidden="false" id="77be-b817-f955-483b" targetId="0dfd-0bc5-60ba-673c" primary="false"/>
-                <categoryLink name="Command" hidden="false" id="2af3-a91e-6cdc-c7f8" targetId="74b0-13ca-2f86-afbd" primary="true"/>
-                <categoryLink name="Knights" hidden="false" id="0632-e976-93eb-798f" targetId="1af4-a8fd-ccdb-4abd" primary="false"/>
-                <categoryLink name="His True Sons" hidden="false" id="c8df-c5be-29ae-2f94" targetId="781a-0a70-79cd-276d" primary="false"/>
-                <categoryLink name="Character" hidden="false" id="da1f-f775-0159-874e" targetId="5b8f-4c9b-9026-374c" primary="false"/>
-                <categoryLink name="Leader" hidden="false" id="0531-376f-adfe-1a9d" targetId="33ee-b756-5da0-5503" primary="false"/>
-                <categoryLink name="Human" hidden="false" id="9d45-df12-695b-eebd" targetId="0052-4108-3b9f-e544" primary="false"/>
-              </categoryLinks>
-            </entryLink>
+            <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="a7fe-9450-15a7-7a67" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90bb-150d-1014-145b"/>
