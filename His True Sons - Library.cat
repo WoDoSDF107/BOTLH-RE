@@ -594,7 +594,7 @@
       <profiles>
         <profile name="Tempered by War" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="1202-5ced-d9bf-fb41">
           <characteristics>
-            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Improve the Ballistic Skill characteristics all of this unit&apos;s Ranged Weapons by 1 (to a maximum of 3+).</characteristic>
+            <characteristic name="Description" typeId="5cee-5283-c95d-c323">Improve the Ballistic Skill characteristics all of this unit&apos;s (non-special) Ranged Weapons by 1 (to a maximum of 3+).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -671,14 +671,11 @@
                   <entryLinks>
                     <entryLink import="true" name="Special Weapons" hidden="false" id="55a7-d7f8-d258-fcde" type="selectionEntryGroup" targetId="1e18-ab9a-fb0d-f0a7">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="d5a2-43eb-a6a3-9415" childId="any" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a08-517b-43d4-eff9"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6de-be8d-c55a-58c7"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6de-be8d-c55a-58c7"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a08-517b-43d4-eff9"/>
-                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
