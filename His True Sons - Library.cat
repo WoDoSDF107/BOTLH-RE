@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="b508-b2ed-d9b7-1028" name="His True Sons - Library" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="War Dogs - Men at Arms" hidden="false" id="337b-5b2d-432e-ab9f">
       <selectionEntries>
@@ -86,7 +86,7 @@
         <categoryLink targetId="2ec6-998d-34df-5c47" id="f4e3-67cb-1262-34ea" primary="true" name="Troops"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Attached Characters" id="047d-1d3a-94c5-22f2" hidden="false">
@@ -98,9 +98,6 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f58d-b05e-fa1f-b919"/>
               </constraints>
-              <categoryLinks>
-                <categoryLink name="Command" hidden="false" id="453f-461b-c021-d5f2" targetId="74b0-13ca-2f86-afbd" primary="true"/>
-              </categoryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="♝ Attached Support" id="7ef0-b60a-c929-984f" hidden="false">
               <entryLinks>
@@ -748,9 +745,6 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90bb-150d-1014-145b"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Command" hidden="false" id="773e-1736-2580-b20f" targetId="74b0-13ca-2f86-afbd" primary="true"/>
-          </categoryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -881,7 +875,7 @@
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="1"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="2"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Lance" id="22f5-fd3f-bd36-e545" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
@@ -894,21 +888,24 @@
                         <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">2</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-2</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">2</characteristic>
-                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Armourbane</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="4"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="5"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Armourbane" id="3901-ac80-6e05-26ae" hidden="false" type="rule" targetId="9b85-c9cf-ed64-8b29"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Axe of the Carpenter" hidden="false" id="49ce-55dc-d69b-b254">
                   <profiles>
                     <profile name="Axe of the Carpenter" typeId="552b-5649-2883-20be" typeName="Melee Weapons" hidden="false" id="cd68-0a37-5492-f980">
                       <characteristics>
-                        <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">5</characteristic>
+                        <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">4</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
                         <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
@@ -931,14 +928,14 @@
                         <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">8</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-2</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">3</characteristic>
-                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">CC Modifier -2</characteristic>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">CC Modifier -2, Rending</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
-                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="10"/>
+                    <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="6"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="CC Modifier" id="79c3-fc1b-1210-70ca" hidden="false" type="rule" targetId="1f11-635b-21fb-f93c">
@@ -946,6 +943,7 @@
                         <modifier type="append" value="-2" field="name"/>
                       </modifiers>
                     </infoLink>
+                    <infoLink name="Rending" id="09f8-d0ad-776e-63f4" hidden="false" type="rule" targetId="da88-7879-acc8-bc2e"/>
                   </infoLinks>
                   <modifiers>
                     <modifier type="decrement" value="2" field="f4e7-dd5b-6bb4-6485" scope="parent" affects="profiles.Unit"/>
@@ -998,16 +996,19 @@
                       <characteristics>
                         <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">4D6</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
-                        <characteristic name="S" typeId="e681-af26-3aee-d26b">4</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">0</characteristic>
+                        <characteristic name="S" typeId="e681-af26-3aee-d26b">6</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-1</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">1</characteristic>
-                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8"/>
+                        <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Cleave</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Cleave" id="eb0d-0eca-01a0-1e49" hidden="false" type="rule" targetId="e182-e31a-f8fa-84b0"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Sanctified Grandsword of Heaven" hidden="false" id="668e-3bc3-6cc5-bff7">
                   <profiles>
@@ -1016,14 +1017,14 @@
                         <characteristic name="A" typeId="0b2a-1254-1ef1-aea8">1</characteristic>
                         <characteristic name="WS" typeId="ee85-71a1-cd3d-99f0">3+</characteristic>
                         <characteristic name="S" typeId="e681-af26-3aee-d26b">12</characteristic>
-                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-4</characteristic>
+                        <characteristic name="AP" typeId="d218-9ac4-5cfe-e601">-3</characteristic>
                         <characteristic name="D" typeId="6930-1108-fb51-4fa6">6</characteristic>
                         <characteristic name="Keywords" typeId="fb94-2496-6661-5eb8">Devastating Wounds</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Devastating Wounds" id="e35f-a61d-e743-0cd7" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                    <infoLink name="Devastating Wounds" id="e07b-91e0-646d-1619" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
@@ -1064,23 +1065,21 @@
                     <profile name="Facsimile of The Righteous Fury - Flail Forme" typeId="40ae-6307-2b25-7cc0" typeName="Ranged Weapons" hidden="false" id="121d-5922-cb21-6f0e">
                       <characteristics>
                         <characteristic name="Range" typeId="910b-bab0-6061-64b0">2&quot;</characteristic>
-                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+3</characteristic>
+                        <characteristic name="A" typeId="5e1d-ad8d-5f10-19e6">D6+6</characteristic>
                         <characteristic name="BS" typeId="61ae-df8d-ecfb-8c75">3+</characteristic>
-                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">5</characteristic>
-                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">0</characteristic>
+                        <characteristic name="S" typeId="56b5-1ad0-6ed2-8b37">6</characteristic>
+                        <characteristic name="AP" typeId="782f-75ab-b021-e58a">-1</characteristic>
                         <characteristic name="D" typeId="c860-c282-c3a0-93e0">1</characteristic>
                         <characteristic name="Keywords" typeId="34fe-41f9-008b-920f">Pistol</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <rules>
-                    <rule name="Armourbane" id="515d-7236-d276-7ca1" hidden="false">
-                      <description>If the Strength characteristic of this weapon exceeds the Toughness characteristic of the target enemy model, improve the Armour Penetration characteristic of this weapon by 1 until all attacks have been resolved.</description>
-                    </rule>
-                  </rules>
                   <costs>
                     <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="25"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Armourbane" id="f3aa-4c3f-7661-fd90" hidden="false" type="rule" targetId="9b85-c9cf-ed64-8b29"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1257,7 +1256,7 @@
         <categoryLink targetId="6649-8286-d076-2067" id="6efe-b14b-1ff4-a4d1" primary="true" name="Elites"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="35"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="50"/>
       </costs>
       <profiles>
         <profile name="... Then So It Shall Be" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="4ce3-64b2-e5a3-55e7">
@@ -1272,23 +1271,34 @@
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="♛ Attached Command" id="0fea-0c80-6a7b-45aa" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="b493-1c9a-d069-837a" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab"/>
-          </entryLinks>
+        <selectionEntryGroup name="Attached Characters" id="7acc-64bc-33fd-c14d" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="♛ Attached Command" id="0fea-0c80-6a7b-45aa" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Knights - Knight Sergeant" hidden="false" id="b493-1c9a-d069-837a" type="selectionEntry" targetId="0f8b-c6d3-b415-d6ab">
+                  <categoryLinks>
+                    <categoryLink name="Command" hidden="false" id="30df-af9f-27e5-1d29" targetId="74b0-13ca-2f86-afbd" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05fd-4635-734f-dccc"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="♝ Attached Support" id="1ac9-5dff-d2f3-cd1b" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Knights - Junior Squire" hidden="false" id="0927-637b-3079-8cff" type="selectionEntry" targetId="bb24-4714-5289-4ec1"/>
+                <entryLink import="true" name="Knights - Nuntius Timoris" hidden="false" id="6f0b-cf97-a825-30ff" type="selectionEntry" targetId="c271-151a-88a9-d0ab"/>
+                <entryLink import="true" name="Knights - Scribe" hidden="false" id="f916-8141-7b5f-0321" type="selectionEntry" targetId="7c28-5e25-119a-f244"/>
+                <entryLink import="true" name="War Dogs - Designated Marksman" hidden="false" id="13b5-b76e-1402-6591" type="selectionEntry" targetId="7121-ffd9-9ee9-1c11"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0fa-41dd-970c-73d1"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05fd-4635-734f-dccc"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="♝ Attached Support" id="1ac9-5dff-d2f3-cd1b" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Knights - Junior Squire" hidden="false" id="0927-637b-3079-8cff" type="selectionEntry" targetId="bb24-4714-5289-4ec1"/>
-            <entryLink import="true" name="Knights - Nuntius Timoris" hidden="false" id="6f0b-cf97-a825-30ff" type="selectionEntry" targetId="c271-151a-88a9-d0ab"/>
-            <entryLink import="true" name="Knights - Scribe" hidden="false" id="f916-8141-7b5f-0321" type="selectionEntry" targetId="7c28-5e25-119a-f244"/>
-            <entryLink import="true" name="War Dogs - Designated Marksman" hidden="false" id="13b5-b76e-1402-6591" type="selectionEntry" targetId="7121-ffd9-9ee9-1c11"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0fa-41dd-970c-73d1"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e8c6-5115-50fd-e785"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1441,6 +1451,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="07b0-5090-b004-df5e" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knights - Knight Captain" hidden="false" id="77a0-1a38-3e74-fada">
       <selectionEntries>
@@ -1514,7 +1527,7 @@
         <categoryLink targetId="0dfd-0bc5-60ba-673c" id="654f-29be-d575-88fe" primary="false" name="Infantry"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="140"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="125"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Retinue Options" id="4ca6-1395-47c2-bee0" hidden="false">
@@ -2375,7 +2388,7 @@ If any of these tests fail, the bearer&apos;s unit suffers D3 Mortal Wounds.</ch
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="20"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Dogs - Designated Marksman" hidden="false" id="7121-ffd9-9ee9-1c11">
@@ -2422,7 +2435,7 @@ If any of these tests fail, the bearer&apos;s unit suffers D3 Mortal Wounds.</ch
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="20"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
       </costs>
       <profiles>
         <profile name="Marksman Duties" typeId="fe4c-5b77-ab77-e578" typeName="Abilities" hidden="false" id="ef58-f00a-92ca-2d59">
@@ -2602,7 +2615,7 @@ If any of these tests fail, the bearer&apos;s unit suffers D3 Mortal Wounds.</ch
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="20"/>
+        <cost name="pts" typeId="7bd5-a3cc-211e-f62e" value="15"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="2634-5885-dd62-4339" id="9cde-ac26-ad09-a042" primary="true" name="Support"/>
@@ -2751,6 +2764,9 @@ RESTRICTIONS: When adding a new unit, do not add any Attached Character models, 
     <rule name="Frontline Assault Force" id="12a9-e350-f80c-ac51" hidden="false">
       <description>When a unit in your army performs an Advance move, if the result of that Advance roll is less than 4, that unit may choose to either shoot or charge this turn, it cannot do both unless a unit or weapon ability/keyword states otherwise. Additionally, if a unit Remained Stationary, they receive an improvement of 1 to their Save Roll characteristic (to a maximum of 3+).</description>
     </rule>
+    <rule name="Armourbane" id="9b85-c9cf-ed64-8b29" hidden="false">
+      <description>If the Strength characteristic of this weapon exceeds the Toughness characteristic of the target enemy model, improve the Armour Penetration characteristic of this weapon by 1 until all attacks have been resolved.</description>
+    </rule>
   </sharedRules>
   <forceEntries>
     <forceEntry name="Sword of Michael - Chosen Sons" id="6529-2251-e5c5-aa59" hidden="false">
@@ -2759,6 +2775,11 @@ RESTRICTIONS: When adding a new unit, do not add any Attached Character models, 
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2358-f05f-c913-3afb"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccbc-e26b-7889-376e"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Command" hidden="false" id="3a63-7031-bca9-b8c4" targetId="74b0-13ca-2f86-afbd">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="14c0-b193-f1e1-e5d6"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elites" hidden="false" id="db6f-7e2f-b2d2-2be0" targetId="6649-8286-d076-2067">
@@ -2785,7 +2806,7 @@ RESTRICTIONS: When adding a new unit, do not add any Attached Character models, 
             <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1f0b-3b29-fab1-0af8" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="1" field="1f0b-3b29-fab1-0af8">
+            <modifier type="increment" value="3" field="1f0b-3b29-fab1-0af8">
               <repeats>
                 <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
@@ -2860,15 +2881,12 @@ RESTRICTIONS: When adding a new unit, do not add any Attached Character models, 
           <modifiers>
             <modifier type="increment" value="1" field="2b24-f0e6-4509-bc4f">
               <repeats>
-                <repeat value="2000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                <repeat value="1000" repeats="1" field="7bd5-a3cc-211e-f62e" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
           </modifiers>
         </categoryLink>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden" scope="primary-catalogue" affects="self.entries.forces.recursive.5661-101f-573c-237c"/>
-      </modifiers>
     </forceEntry>
     <forceEntry name="Word of Uriel - Psychological Warfare Division" id="f8e2-61a3-1fea-ccb2" hidden="false">
       <categoryLinks>
@@ -2916,9 +2934,6 @@ RESTRICTIONS: When adding a new unit, do not add any Attached Character models, 
           </modifiers>
         </categoryLink>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden" scope="primary-catalogue" affects="self.entries.forces.recursive.5661-101f-573c-237c"/>
-      </modifiers>
     </forceEntry>
   </forceEntries>
   <profileTypes>
