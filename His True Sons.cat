@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ba08-4d8f-a0e2-c097" name="His True Sons" gameSystemId="sys-0cac-03d0-97e0-4db0" gameSystemRevision="35" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="His True Sons - Library" id="d1a5-556c-629b-1879" targetId="b508-b2ed-d9b7-1028"/>
   </catalogueLinks>
@@ -26,5 +26,6 @@
     <entryLink import="true" name="Heretics - Swarm of Locusts" hidden="false" id="2692-01b2-3c5c-a6d1" type="selectionEntry" targetId="833e-b065-58a6-200b"/>
     <entryLink import="true" name="Knights - Knight Captain in M48 Patton" hidden="false" id="e45d-136e-c5da-4f61" type="selectionEntry" targetId="fd90-953e-b640-774e"/>
     <entryLink import="true" name="War Dogs - Grenadier" hidden="false" id="942e-9524-b215-411f" type="selectionEntry" targetId="8adc-903c-5514-e881"/>
+    <entryLink import="true" name="Ministry - Priest" hidden="false" id="e501-6991-3d60-9879" type="selectionEntry" targetId="36cf-8eef-c2e3-9e6a"/>
   </entryLinks>
 </catalogue>
